@@ -1,5 +1,5 @@
-baseURL = "https://www.example.com/"
-theme = "hugo-base-theme"
+baseURL = "/"
+theme = "mc-server-theme"
 languageCode = "en-us"
 
 title = "New Hugo Site"
