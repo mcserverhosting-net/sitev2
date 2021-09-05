@@ -1,0 +1,46 @@
+<head>
+    <!-- Title -->
+    <title>{{- .Site.Title -}}</title>
+
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta name="description" content="{{if .IsHome}}{{ .Site.Params.description }}{{else}}{{.Description}}{{end}}" />
+
+    <!-- Favicons and Manifest -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Meta Tags -->
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
+
+    <!-- Stylesheets -->
+    {{ $bootstrapMinCSS := resources.Get "vendor/bootstrap-5.0.2/css/bootstrap.min.css" }}
+    {{ $bootstrapRebootMinCSS := resources.Get "vendor/bootstrap-5.0.2/css/bootstrap-reboot.min.css" }}
+    {{ $bootstrapGridMinCSS := resources.Get "vendor/bootstrap-5.0.2/css/bootstrap-grid.min.css" }}
+    {{ $bootstrapUtilitiesMinCSS := resources.Get "vendor/bootstrap-5.0.2/css/bootstrap-utilities.min.css" }}
+  
+    {{ $mainSCSS := resources.Get "scss/main.scss" | resources.ToCSS (dict "outputStyle" "compressed") }}
+    {{ $mainCSS := resources.Get "css/main.css" | minify }}
+
+    <!-- Stylesheets: Choose the ones to include below! -->
+    {{ $stylesheet := slice $bootstrapMinCSS $mainCSS | resources.Concat "css/style.css" }}
+    <link rel="stylesheet" href="{{ $stylesheet.Permalink }}" media="screen">
+
+    <!-- JavaScript -->
+    {{ $bootstrapMinJS := resources.Get "vendor/bootstrap-5.0.2/js/bootstrap.min.js" }}
+    {{ $bootstrapBundleMinJS := resources.Get "vendor/bootstrap-5.0.2/js/bootstrap.bundle.min.js" }}
+    {{ $mainJS := resources.Get "js/main.js" | minify }}
+
+    <!-- JavaScript: Choose the ones to include below! -->
+    {{ $javascript := slice  $bootstrapBundleMinJS $mainJS | resources.Concat "js/script.js" }}
+    <script src="{{ $javascript.Permalink }}"></script>
+    
+    <!-- RSS -->
+    {{ range .AlternativeOutputFormats -}}
+        {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+</head>
