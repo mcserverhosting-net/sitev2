@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://mystifying-shirley-058da0.netlify.app/"
 languageCode = "en-us"
 title = "MC Server"
 theme = "mc-server-theme-amp"
