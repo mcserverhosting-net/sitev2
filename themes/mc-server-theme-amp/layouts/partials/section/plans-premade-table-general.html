@@ -33,8 +33,8 @@
                     data-item-custom{{ add $i 1 }}-type="{{ $e.type }}"
                     data-item-custom{{ add $i 1 }}-value="{{ $e.value }}"
                   {{ end }}
-                  data-item-selected-plan="monthly"
-                  data-plan1-id="monthly"
+                  data-item-selected-plan="monthly-plan"
+                  data-plan1-id="monthly-plan"
                   data-plan1-name="Montlhy Subscription"
                   data-plan1-frequency="monthly"
                   data-item-plan1-price="{{ .Params.product.price }}"
@@ -52,6 +52,21 @@
           {{ end }}
         </tbody>
       </table>
+      <button class="snipcart-add-item"
+    data-item-id="painting_lessons"
+    data-item-name="1h painting class"
+    data-item-price="30"
+    data-item-url="{{ .Permalink }}"
+    data-item-description="Painting lessons - 1h"
+    data-item-selected-plan="weekly-plan"
+
+    data-plan1-id="weekly-plan"
+    data-plan1-name="1h / week for 1 session"
+    data-plan1-frequency="weekly"
+    data-item-plan1-price="20"
+    >
+    Add to cart
+</button>
     </div>
   </div>
 </section>
