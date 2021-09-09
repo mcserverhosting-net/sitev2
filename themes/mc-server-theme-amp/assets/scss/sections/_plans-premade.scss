@@ -1,0 +1,35 @@
+.section-plans-premade {
+  position: relative;
+  width: 100%;
+
+  padding-top: 75%;
+
+  @media (min-width: 768px) { padding-top: 33.3333%; }
+  @media (min-width: 1200px) { padding-top: 500px; }
+
+  // padding-top: 33.333%;
+
+  overflow: hidden;
+
+  amp-img {
+    position: absolute;
+    bottom: 0;
+    left: -25%;
+    right: -25%;
+
+    @media (min-width: 768px) { left: 0; right: 0; }
+
+    z-index: 1;
+  }
+  .overlay {
+    background-color: rgba(0,0,0,0.4);
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 2;
+  }
+}

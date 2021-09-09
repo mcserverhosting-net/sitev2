@@ -1,0 +1,19 @@
+.features-card {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+
+  .features-card-body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.card-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

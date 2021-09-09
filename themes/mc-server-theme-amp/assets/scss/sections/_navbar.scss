@@ -1,0 +1,23 @@
+.navbar {
+  font-weight: 600;
+  min-height: 64px;
+
+  .nav-item.active {
+    .nav-link {
+      color: #00EAFF;
+      border-bottom: solid 2px #00EAFF;
+    }
+  }
+}
+
+.nav-sidebar {
+  font-weight: 600;
+  background-color: #121212;
+
+  .nav-sidebar-item.active {
+    .nav-sidebar-link {
+      color: #00EAFF;
+      border-bottom: solid 2px #00EAFF;
+    }
+  }
+}

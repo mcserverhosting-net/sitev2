@@ -1,0 +1,30 @@
+@import "reset";
+@import "grid";
+@import "utilities";
+
+@import "sections/navbar";
+@import "sections/footer";
+
+@import "sections/hero";
+@import "sections/features";
+@import "sections/cta";
+
+@import "sections/about";
+@import "sections/faqs";
+@import "sections/plans-premade";
+
+@import "sections/table";
+
+@import "sections/snipcart";
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+  background-color: #121212;
+}
+
+button {
+  cursor: pointer;
+}

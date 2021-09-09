@@ -1,0 +1,17 @@
+.button-border-wrapper {
+  padding: 2px;
+  position: relative;
+  background: linear-gradient(to bottom, #00E7FE, #093E88);
+  border-radius: 4px;
+}
+.snipcart-checkout-button {
+  color: #00E7FE;
+  background-color: #121212;
+  border: none;
+  cursor: pointer;
+}
+.snipcart-add-item-button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}

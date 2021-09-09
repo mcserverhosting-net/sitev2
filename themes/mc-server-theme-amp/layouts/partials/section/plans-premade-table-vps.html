@@ -1,0 +1,57 @@
+<section class="section-table padding-y-64">
+  <div class="container">
+    <div class="row padding-bottom-32">
+      <table>
+        <thead class="font-weight-semi-bold background-color-licorice border-radius-8">
+          <tr class="">
+            <th class="text-align-left vertical-align-middle">Plans</th>
+            <th class="text-align-left vertical-align-middle">RAM</th>
+            <th class="text-align-left vertical-align-middle">Storage</th>
+            <th class="text-align-left vertical-align-middle">Server Quota</th>
+            <th class="text-align-left vertical-align-middle">Bungee Quota</th>
+            <th class="text-align-left vertical-align-middle">Price</th>
+            <th class="text-align-left vertical-align-middle">Buy</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{ $currentPage := . }}
+          {{ range (where .Pages ".Params.category" "VPS") }}
+            <tr>
+              <td>{{ .Title }}</td>
+              {{ range .Params.product.customfields }}
+                <td>{{ .value }}</td>
+              {{ end }}
+              <td>{{ .Params.product.price }}</td>
+              <td>
+                <button class="snipcart-add-item snipcart-add-item-button"
+                  data-item-name="{{ .Params.product.name }}"
+                  data-item-id="{{ .Params.product.id }}"
+                  data-item-price="{{ .Params.product.price }}"
+                  data-item-url="{{ $currentPage.Permalink }}"
+                  {{ range $i, $e := .Params.product.customFields }}
+                    data-item-custom{{ add $i 1 }}-name="{{ $e.name }}"
+                    data-item-custom{{ add $i 1 }}-type="{{ $e.type }}"
+                    data-item-custom{{ add $i 1 }}-value="{{ $e.value }}"
+                  {{ end }}
+                  data-item-selected-plan="monthly"
+                  data-plan1-id="monthly"
+                  data-plan1-name="Montlhy Subscription"
+                  data-plan1-frequency="monthly"
+
+                >
+                  <amp-img
+                    alt="Add to Cart"
+                    src="/images/shopping-cart-plus.png"
+                    width="24"
+                    height="24"
+                  >
+                  </amp-img>
+                </button>
+              </td>
+            </tr>
+          {{ end }}
+        </tbody>
+    </table>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,72 @@
+<header class="navbar display-flex align-items-center margin-y-8">
+  <div class="container display-flex align-items-stretch justify-content-space-between">
+    <div class="navbar-logo">
+      <amp-img
+        alt="MC Server Logo"
+        src="/images/mc-server-logo.png"
+        width="189.33"
+        height="64"
+      >
+      </amp-img>
+    </div>
+    <ul class="navbar-menu display-none display-lg-flex align-items-stretch">
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+        <li class="nav-item display-flex align-items-stretch padding-x-8 {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+          <a class="nav-link display-flex align-items-center padding-x-8" href="{{ .URL }}">
+            <span>{{ .Name }}</span>
+          </a>
+        </li>
+      {{ end }}
+      <li class="display-flex align-items-center padding-x-8">
+        <div class="button-border-wrapper">
+          <button class="snipcart-checkout snipcart-checkout-button display-flex align-items-center font-size-16 font-weight-semi-bold border-radius-4 padding-x-16 padding-y-16">
+            <amp-img
+              alt="MC Server Logo"
+              src="/images/shopping-cart.png"
+              width="22.40"
+              height="20"
+            >
+            </amp-img>
+            <span class="padding-x-8">
+              Cart
+            </span>
+            <span class="snipcart-items-count"></span>
+          </button>
+        </div>
+      </li> 
+    </ul>
+    <div class="display-flex display-lg-none align-items-center">
+      <div class="display-flex align-items-center justify-content-center padding-x-8">
+        <div class="button-border-wrapper">
+          <button class="snipcart-checkout snipcart-checkout-button display-flex align-items-center font-size-16 font-weight-semi-bold border-radius-4 padding-x-16 padding-y-16">
+            <amp-img
+              alt="MC Server Logo"
+              src="/images/shopping-cart.png"
+              width="22.40"
+              height="20"
+            >
+            </amp-img>
+            <span class="snipcart-items-count padding-left-8"></span>
+          </button>
+        </div>
+      </div> 
+      <div role="button" on="tap:sidebar.toggle" tabindex="0" class="hamburger cursor-pointer font-size-24 display-flex  align-items-center justify-content-center padding-x-8">
+        <span>☰</span>
+      </div>
+    </div>
+  </div>
+</header>
+<amp-sidebar id="sidebar" layout="nodisplay" side="right" class="nav-sidebar padding-x-32">
+  <!-- <div role="button" aria-label="close sidebar" on="tap:sidebar.toggle" tabindex="0" class="close-sidebar">✕</div> -->
+  <ul class="sidebar nav-sidebar-menu padding-y-32">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+      <li class="nav-sidebar-item padding-x-32 padding-y-16 {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+        <a class="nav-sidebar-link padding-x-8 padding-y-8" href="{{ .URL }}">
+          <span>{{ .Name }}</span>
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+</amp-sidebar>

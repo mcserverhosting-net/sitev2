@@ -1,0 +1,35 @@
+.section-table {
+  th {
+    background-color: #2D3A4A;
+    padding: 26px 8px;
+  }
+  th:first-child {
+    border-radius: 4px 0 0 4px;
+    overflow: hidden;
+    padding: 26px 0 26px 56px;
+  }
+  th:last-child {
+    border-radius: 0 4px 4px 0;
+    overflow: hidden;
+    padding: 26px 56px 26px 0;
+  }
+
+  td {
+    border-bottom: solid 1px #DEDFDE;
+    background-color: #222223;
+    padding: 26px 8px;
+  }
+  td:first-child {
+    border-radius: 4px 0 0 4px;
+    overflow: hidden;
+    padding: 26px 0 26px 56px;
+  }
+  td:last-child {
+    border-radius: 0 4px 4px 0;
+    overflow: hidden;
+    padding: 26px 56px 26px 0;
+  }
+  tr:hover td {
+    background-color: #474746;
+  }
+}

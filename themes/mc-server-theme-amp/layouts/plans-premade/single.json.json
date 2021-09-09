@@ -1,0 +1,9 @@
+{{ $s := newScratch }}
+
+{{ range $key, $value := .Params.product }}
+  {{ $s.Set $key $value }}
+{{ end }}
+
+{{ $s.Set "url" .Permalink }}
+
+{{ jsonify $s.Values }}

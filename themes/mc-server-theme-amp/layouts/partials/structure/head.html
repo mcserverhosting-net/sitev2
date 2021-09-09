@@ -1,0 +1,51 @@
+{{ if ne .Params.amp.enable false }}
+
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html {{ if isset $.Site.Params "amp" }}amp{{ end }} lang="en" class="no-js oldie"><![endif]-->
+<!--[if IE 8 ]><html {{ if isset $.Site.Params "amp" }}amp{{ end }} lang="en" class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html {{ if isset $.Site.Params "amp" }}amp{{ end }} lang="en" class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html {{ if isset $.Site.Params "amp" }}amp{{ end }} lang="{{ with $.Site.LanguageCode }}{{ . }}{{ else }}en{{ end }}" class="no-js"><!--<![endif]-->
+<head>
+    <title>{{ .Title }}</title>
+    <meta name="description" content="{{ .Site.Params.description }}">
+    <meta charset="utf-8">
+
+    {{ partial "amp/header" . }}
+
+    <link rel="canonical" href="{{ .Permalink }}">
+
+    <link rel="icon" href="/favicon.png" type="image/png" sizes="144x144">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    {{ if .RSSLink }}
+    <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ end }}
+
+    <meta name="theme-color" content="{{ $.Site.Params.themeColor }}" />
+
+    {{ partial "seo/main" . }}
+
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="MzE1NDc0ZDktZGRkMC00MmQ1LTkzOGQtYmI1OTExOGVhZTdjNjM3NjY2OTQwNTM1NTYxNjYy -->
+<!-- " id="snipcart"></script> -->
+    <!-- <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" /> -->
+
+    <link rel="preconnect" href="https://app.snipcart.com">
+    <link rel="preconnect" href="https://cdn.snipcart.com">
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css" />
+</head>
+
+<body>
+{{ if isset $.Site.Params "ampmanifest" }}
+{{ with $.Site.Data.app.banner }}{{ partial "amp/app-banner" . }}{{ end }}
+{{ end }}
+
+{{ else }}
+{{ partial "structure/head.no-amp" . }}
+{{ end }}

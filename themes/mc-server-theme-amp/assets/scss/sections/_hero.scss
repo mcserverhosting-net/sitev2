@@ -1,0 +1,18 @@
+.section-hero-title {
+  display: inline-block;
+  position: relative;
+  min-height: 350px;
+
+  // @media (min-width: 768px) { .container-md, .container-sm, .container { max-width: 720px; } }
+  // @media (min-width: 992px) { 
+  .section-hero-text {
+    padding-bottom: 50px;
+
+    @media (min-width: 768px) { 
+      position: absolute;
+      right: 1ch;
+      top: 0;
+      transform: translate(100%, 50px);
+    }
+  }
+}
