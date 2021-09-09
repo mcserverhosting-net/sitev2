@@ -6,7 +6,7 @@ category: "General"
 product:
   id: "general-hut"
   name: "Hut"
-  price: 3.00
+  price: "3.00"
 
   customFields:
     - name: "RAM"
