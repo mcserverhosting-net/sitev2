@@ -2,7 +2,7 @@
   "id": "general-hut",
   "name": "Hut",
   "price": 3.00,
-  "url": "/plans-premade/general/hut/index.json",
+  "url": "https://mystifying-shirley-058da0.netlify.app/plans-premade/general/hut/index.json",
   "selectedplan": "monthly",
 
   "customfields": [

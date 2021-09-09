@@ -27,7 +27,7 @@
                   data-item-name="{{ .Params.product.name }}"
                   data-item-id="{{ .Params.product.id }}"
                   data-item-price="{{ .Params.product.price }}"
-                  data-item-url="{{ .Permalink }}"
+                  data-item-url="{{ .Permalink | absURL }}"
                   {{ range $i, $e := .Params.product.customFields }}
                     data-item-custom{{ add $i 1 }}-name="{{ $e.name }}"
                     data-item-custom{{ add $i 1 }}-type="{{ $e.type }}"
