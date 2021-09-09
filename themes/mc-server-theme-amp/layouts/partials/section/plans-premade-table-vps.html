@@ -33,11 +33,16 @@
                     data-item-custom{{ add $i 1 }}-type="{{ $e.type }}"
                     data-item-custom{{ add $i 1 }}-value="{{ $e.value }}"
                   {{ end }}
-                  data-item-selected-plan="monthly"
-                  data-plan1-id="monthly"
-                  data-plan1-name="Montlhy Subscription"
-                  data-plan1-frequency="monthly"
 
+                  data-item-selected-plan="{{ .Params.product.selectedPlan }}"
+
+                  {{ range $i, $e := .Params.product.availablePlans }}
+                    data-plan{{ add $i 1 }}-id="{{ $e.id }}"
+                    data-plan{{ add $i 1 }}-name="{{ $e.name }}"
+                    data-plan{{ add $i 1 }}-frequency="{{ $e.frequency }}"
+                    data-plan{{ add $i 1 }}-interval="{{ $e.interval }}"
+                    data-item-plan{{ add $i 1 }}-price="{{ $e.itemPrice }}"
+                  {{ end }}
                 >
                   <amp-img
                     alt="Add to Cart"

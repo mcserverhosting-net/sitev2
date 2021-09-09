@@ -10,21 +10,8 @@ enableRobotsTXT = true
 
   amp = true
   ampElements = [
-    "amp-accordion",
-    "amp-ad",
-    "amp-analytics",
-    "amp-app-banner",
-    "amp-carousel",
-    "amp-iframe",
-    "amp-dynamic-css-classes",
-    "amp-form",
-    "amp-fx-flying-carpet",
-    "amp-image-lightbox",
-    "amp-lightbox",
     "amp-sidebar",
-    "amp-social-share",
-    "amp-sticky-ad",
-    "amp-user-notification"
+    "amp-selector",
   ]
 
   themeColor = "#ff1d55"

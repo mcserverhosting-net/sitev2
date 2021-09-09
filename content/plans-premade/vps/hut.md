@@ -24,4 +24,13 @@ product:
     - name: "Thread Count"
       type: "readonly"
       value: "0"
+
+  selectedPlan: "monthly-plan"
+
+  availablePlans:
+    - id: "monthly-plan"
+      name: "Monthly Subscription"
+      frequency: "monthly"
+      interval: 1
+      itemPrice: 3.00
 ---
