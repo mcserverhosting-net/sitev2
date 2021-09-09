@@ -24,4 +24,11 @@ product:
     - name: "Bungee Quota"
       type: "readonly"
       value: "0"
+
+  selectedPlan: "monthly"
+
+  availabelPlans:
+    id: "monthlyn"
+    name: "Monthly Subscription"
+    frequency: "monthly"
 ---
