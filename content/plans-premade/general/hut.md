@@ -27,8 +27,8 @@ product:
 
   selectedPlan: "monthly"
 
-  availabelPlans:
-    id: "monthlyn"
+  availablePlans:
+    id: "monthly"
     name: "Monthly Subscription"
     frequency: "monthly"
 ---
