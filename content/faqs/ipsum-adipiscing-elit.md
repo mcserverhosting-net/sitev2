@@ -1,6 +1,6 @@
 ---
 title: "Lorem ipsum dolor sit amet"
-faqs: "Lorem"
+faqs: "Ipsum"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae
