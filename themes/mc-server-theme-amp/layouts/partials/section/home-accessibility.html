@@ -1,0 +1,26 @@
+<section class="section section-accessibility padding-y-64">
+  <div class="container">
+    <div class="row">
+      <h1 class="font-size-40 font-weight-bold text-align-center">{{ .Params.home.accessible.title }}</h1>
+      <p class="color-whisper text-align-center padding-y-16">
+      {{ .Params.home.accessible.text }}
+      </p>
+    </div>
+    <div class="row padding-y-64 justify-content-center">
+      {{ range .Params.home.accessible.cards }}
+      <div class="column-12 column-sm-6 column-md-3 column-lg-2 padding-y-8">
+        <p class="font-size-40 font-weight-medium text-align-center">{{ .title }}</p>
+        <p class="text-align-center padding-y-8">{{ .text }}</p>
+      </div>
+      {{ end }}
+    </div>
+    <amp-img
+      alt="{{ .Params.home.accessible.image.alt }}"
+      src="{{ .Params.home.accessible.image.src }}"
+      width="{{ .Params.home.accessible.image.width }}"
+      height="{{ .Params.home.accessible.image.height }}"
+      layout="responsive"
+    >
+    </amp-img>
+  </div>
+</section>

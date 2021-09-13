@@ -8,6 +8,7 @@ enableRobotsTXT = true
   title = 'MC Server'
   description = "High performance hosting for your Minecraft, Web, VPS and Database."
 
+
   amp = true
   ampElements = [
     "amp-sidebar",
@@ -33,3 +34,8 @@ enableRobotsTXT = true
 
   stylesheetRegular = ["/base-styling.css"] # these styles are used when amp is disabled for a specific page
   javascriptRegular = ["/script.js"] # these scripts are used when amp is disabled for a specific page
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+  faq = 'faqs'

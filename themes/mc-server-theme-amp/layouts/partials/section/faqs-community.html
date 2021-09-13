@@ -3,14 +3,13 @@
     <div class="row padding-bottom-32">
       <div class="faqs-community-box">
         <h2 class="font-size-32 font-weight-bold text-align-center">
-          Powerful with a Pinch of Bleeding Edge
+          {{ .Params.content.community.title }}
         </h2>
         <p class="color-whisper padding-y-32 text-align-center">
-          Find us on Discord or Discourse. Or send us a messenger pigeon, if that
-          works for you.
+          {{ .Params.content.community.text }}
         </p>
         <div class="display-flex flex-direction-column flex-direction-md-row justify-content-center">
-          <a class="background-color-swamp border-radius-8 margin-16" href="#">
+          <a class="background-color-swamp border-radius-8 margin-16" href="{{ .Params.content.community.discord }}">
             <div class="display-flex align-items-center justify-content-center padding-x-32 padding-y-16">
               <amp-img
                 class=""
@@ -25,7 +24,7 @@
               </span>
             </div>
           </a>
-          <a class="background-color-swamp border-radius-8 margin-16" href="#">
+          <a class="background-color-swamp border-radius-8 margin-16" href="{{ .Params.content.community.discourse }}">
             <div class="display-flex align-items-center justify-content-center padding-x-32 padding-y-16">
               <amp-img
                 class=""

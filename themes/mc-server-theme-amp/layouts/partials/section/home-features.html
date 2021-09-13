@@ -1,0 +1,45 @@
+<section class="section section-features padding-y-64">
+  <div class="container">
+    <div class="row">
+      <h1 class="font-size-40 font-weight-bold text-align-center">
+        {{ .Params.home.features.title }}
+      </h1>
+      <p class="color-whisper text-align-center padding-y-16">
+        {{ .Params.home.features.text }}
+      </p>
+    </div>
+    <div class="row padding-y-16">
+      {{ range .Params.home.features.cards }}
+      <div class="column-12 column-sm-6 column-lg-4">
+        <div class="padding-24">
+          <div class="square-container background-color-swamp">
+            <div class="square-content display-flex flex-direction-column justify-content-center padding-24">
+              {{ with .image }}
+              <div class="card-image flex-grow-1 margin-bottom-24"
+                     style="background-image: url('{{ . }}')"
+                >
+              </div>
+              {{ end }}
+              {{ with .title }}
+              <h2 class="card-title font-weight-bold text-align-center"> {{ . }} </h2>
+              {{ end }}
+              {{ with .text }}
+              <div class="text-align-center padding-y-8">
+                {{ . }}
+              </div>
+              {{ end }}
+              {{ with .button }}
+              <div class="card-link color-aqua text-align-center padding-y-8">
+                <a href="{{ .link }}">
+                  {{ .label }}
+                </a>
+              </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

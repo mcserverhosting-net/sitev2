@@ -3,7 +3,10 @@
     <div class="row">
       <div class="column-12 column-lg-8">
         <h1 class="section-hero-title font-size-50 font-weight-bold">
-          High Performance<br>Hosting for your
+          {{ $lenght := len .Params.home.hero.titles }}
+          {{ range $i, $e := .Params.home.hero.titles }}
+            {{ $e }}{{ if ( ne (add $i 1) $lenght )}}<br>{{ end }}
+          {{ end }}
           <p class="section-hero-text font-size-50 font-weight-bold color-aqua">
             Minecraft<br>
             Web<br>
@@ -15,7 +18,7 @@
       <div class="column-12 column-lg-4">
         <amp-img
           alt="Host Illustration"
-          src="/images/hero-image.png"
+          src="{{ .Params.home.hero.image }}"
           width="516"
           height="532"
           layout="responsive"

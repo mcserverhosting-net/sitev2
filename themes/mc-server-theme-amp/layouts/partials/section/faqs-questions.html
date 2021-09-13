@@ -2,70 +2,20 @@
   <div class="container">
     <div class="row padding-bottom-32">
       <h1 class="font-size-50 font-weight-bold text-align-center">
-        Powerful with a Pinch of Bleeding Edge
+        {{ .Params.content.questions.title }}
       </h1>
     </div>
     <div class="row padding-top-64 justify-content-space-around">
+      {{ range .Site.Taxonomies.faqs }}
       <div class="column-12 column-md-5 padding-y-32">
-        <h2 class="font-size-25 font-weight-bold">Lorem Ipsum Title Lorem Ipsum Title Lorem Ipsum Title Lorem Ipsum Titl Lorem Ipsum Titlee</h2>
+        <h2 class="font-size-25 font-weight-bold">{{ .Page.Title }}</h2>
         <ul class="padding-y-32">
-          <li class="padding-y-8 color-whisper"><a class="" href="#">Lorem Ipsum Link Lorem</a></li>
-          <li class="padding-y-8 color-whisper"><a class="" href="#">Lorem Ipsum Link Lorem</a></li>
-          <li class="padding-y-8 color-whisper"><a class="" href="#">Lorem Ipsum Link Lorem</a></li>
-          <li class="padding-y-8 color-whisper"><a class="" href="#">Lorem Ipsum Link Lorem</a></li>
-          <li class="padding-y-8 color-whisper"><a class="" href="#">Lorem Ipsum Link Lorem</a></li>
+          {{ range .Page.RegularPages }}
+            <li class="padding-y-8 color-whisper"><a class="" href="{{ .Permalink }}">{{ .Title }}</a></li>
+          {{ end }}
         </ul>
       </div>
-      <div class="column-12 column-md-5 padding-y-32">
-        <h2 class="font-size-25 font-weight-bold">Lorem Ipsum Title Lorem Ipsum Title Lorem Ipsum Title Lorem Ipsum Titl Lorem Ipsum Titlee</h2>
-        <ul class="padding-y-32">
-          <li class="padding-y-8 color-whisper"><a class="" href="#">Lorem Ipsum Link Lorem</a></li>
-          <li class="padding-y-8 color-whisper"><a class="" href="#">Lorem Ipsum Link Lorem</a></li>
-          <li class="padding-y-8 color-whisper"><a class="" href="#">Lorem Ipsum Link Lorem</a></li>
-          <li class="padding-y-8 color-whisper"><a class="" href="#">Lorem Ipsum Link Lorem</a></li>
-          <li class="padding-y-8 color-whisper"><a class="" href="#">Lorem Ipsum Link Lorem</a></li>
-        </ul>
-      </div>
-      <div class="column-12 column-md-5 padding-y-32">
-        <h2 class="font-size-25 font-weight-bold">Lorem Ipsum Title Lorem Ipsum Title Lorem Ipsum Title Lorem Ipsum Titl Lorem Ipsum Titlee</h2>
-        <ul class="padding-y-32">
-          <li class="padding-y-8 color-whisper"><a class="" href="#">Lorem Ipsum Link Lorem</a></li>
-          <li class="padding-y-8 color-whisper"><a class="" href="#">Lorem Ipsum Link Lorem</a></li>
-          <li class="padding-y-8 color-whisper"><a class="" href="#">Lorem Ipsum Link Lorem</a></li>
-          <li class="padding-y-8 color-whisper"><a class="" href="#">Lorem Ipsum Link Lorem</a></li>
-          <li class="padding-y-8 color-whisper"><a class="" href="#">Lorem Ipsum Link Lorem</a></li>
-        </ul>
-      </div>
-      <div class="column-12 column-md-5 padding-y-32">
-        <h2 class="font-size-25 font-weight-bold">Lorem Ipsum Title Lorem Ipsum Title Lorem Ipsum Title Lorem Ipsum Titl Lorem Ipsum Titlee</h2>
-        <ul class="padding-y-32">
-          <li class="padding-y-8 color-whisper"><a class="" href="#">Lorem Ipsum Link Lorem</a></li>
-          <li class="padding-y-8 color-whisper"><a class="" href="#">Lorem Ipsum Link Lorem</a></li>
-          <li class="padding-y-8 color-whisper"><a class="" href="#">Lorem Ipsum Link Lorem</a></li>
-          <li class="padding-y-8 color-whisper"><a class="" href="#">Lorem Ipsum Link Lorem</a></li>
-          <li class="padding-y-8 color-whisper"><a class="" href="#">Lorem Ipsum Link Lorem</a></li>
-        </ul>
-      </div>
-      <div class="column-12 column-md-5 padding-y-32">
-        <h2 class="font-size-25 font-weight-bold">Lorem Ipsum Title Lorem Ipsum Title Lorem Ipsum Title Lorem Ipsum Titl Lorem Ipsum Titlee</h2>
-        <ul class="padding-y-32">
-          <li class="padding-y-8 color-whisper"><a class="" href="#">Lorem Ipsum Link Lorem</a></li>
-          <li class="padding-y-8 color-whisper"><a class="" href="#">Lorem Ipsum Link Lorem</a></li>
-          <li class="padding-y-8 color-whisper"><a class="" href="#">Lorem Ipsum Link Lorem</a></li>
-          <li class="padding-y-8 color-whisper"><a class="" href="#">Lorem Ipsum Link Lorem</a></li>
-          <li class="padding-y-8 color-whisper"><a class="" href="#">Lorem Ipsum Link Lorem</a></li>
-        </ul>
-      </div>
-      <div class="column-12 column-md-5 padding-y-32">
-        <h2 class="font-size-25 font-weight-bold">Lorem Ipsum Title Lorem Ipsum Title Lorem Ipsum Title Lorem Ipsum Titl Lorem Ipsum Titlee</h2>
-        <ul class="padding-y-32">
-          <li class="padding-y-8 color-whisper"><a class="" href="#">Lorem Ipsum Link Lorem</a></li>
-          <li class="padding-y-8 color-whisper"><a class="" href="#">Lorem Ipsum Link Lorem</a></li>
-          <li class="padding-y-8 color-whisper"><a class="" href="#">Lorem Ipsum Link Lorem</a></li>
-          <li class="padding-y-8 color-whisper"><a class="" href="#">Lorem Ipsum Link Lorem</a></li>
-          <li class="padding-y-8 color-whisper"><a class="" href="#">Lorem Ipsum Link Lorem</a></li>
-        </ul>
-      </div>
+      {{ end }}
     </div>
   </div>
 </section>

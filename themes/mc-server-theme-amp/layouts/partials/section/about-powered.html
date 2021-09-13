@@ -1,0 +1,32 @@
+<section class="section-powerful padding-y-64">
+  <div class="container">
+    <div class="row">
+      <h1 class="font-size-32 font-weight-bold text-align-center">
+        {{ .Params.about.powered.title }}
+      </h1>
+    </div>
+    <div class="row padding-top-64">
+      {{ range .Params.about.powered.cards }}
+      <div class="column-12 column-md-6">
+        <div class="padding-24">
+          <amp-img
+            class="border-radius-8"
+            alt="{{ .image.alt }}"
+            src="{{ .image.src }}"
+            width="{{ .image.width }}"
+            height="{{ .image.height }}"
+            layout="responsive"
+          >
+          </amp-img>
+          <h2 class="font-size-25 font-weight-bold text-align-center padding-y-32">
+            {{ .title }}
+          </h2>
+          <p class="color-aqua text-align-center">
+            {{ .text }}
+          </p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

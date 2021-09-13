@@ -1,0 +1,16 @@
+<section class="section section-cta">
+    <amp-img
+      alt="{{ .Params.home.cta.image.alt }}"
+      src="{{ .Params.home.cta.image.src }}"
+      width="{{ .Params.home.cta.image.width }}"
+      height="{{ .Params.home.cta.image.height }}"
+      layout="responsive"
+    >
+    </amp-img>
+    <div class="overlay display-flex align-items-center">
+      <div class="container display-flex flex-direction-column align-items-center justify-content-center">
+        <h1 class="font-size-32 font-weight-bold padding-y-32 text-align-center">{{ .Params.home.cta.title }}</h1>
+        <a class="font-weight-semi-bold background-color-dodger-blue padding-x-32 padding-y-24 border-radius-16" href="{{ .Params.home.cta.button.link }}">{{ .Params.home.cta.button.label }}</a>
+      </div>
+    </div>
+</section>
