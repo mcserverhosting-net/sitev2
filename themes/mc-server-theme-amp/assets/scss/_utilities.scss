@@ -33,10 +33,13 @@
 
 .margin-bottom-24 { margin-bottom: 24px; }
 
+.margin-right-16 { margin-right: 16px; }
+
 .margin-x-8 { margin-left: 8px; margin-right: 8px; }
 .margin-x-16 { margin-left: 16px; margin-right: 16px; }
 
 .margin-y-8 { margin-top: 8px; margin-bottom: 8px; }
+.margin-y-32 { margin-top: 32px; margin-bottom: 32px; }
 
 .padding-16 { padding: 16px; }
 .padding-32 { padding: 32px; }
@@ -48,6 +51,7 @@
 .padding-top-32 { padding-top: 32px; }
 .padding-top-64 { padding-top: 64px; }
 
+.padding-bottom-16 { padding-bottom: 16px; }
 .padding-bottom-32 { padding-bottom: 32px; }
 .padding-bottom-64 { padding-bottom: 64px; }
 
@@ -64,6 +68,8 @@
 .padding-y-64 { padding-top: 64px; padding-bottom: 64px; }
 
 @media (min-width: 992px) { 
+  .padding-x-lg-16 { padding-left: 16px; padding-right: 16px; }
+  .padding-x-lg-32 { padding-left: 32px; padding-right: 32px; }
   .padding-x-lg-64 { padding-left: 64px; padding-right: 64px; }
 }
 
@@ -95,8 +101,10 @@
 .text-align-center { text-align: center; }
 .text-align-left { text-align: left; }
 
+.color-white { color: #FFFFFF; }
 .color-aqua { color: #00EAFF; }
 .color-whisper { color: #EDEDED; }
+.color-pastel-green { color: #66D677; }
 
 .background-color-swamp { background-color: #2A2B2B; }
 .background-color-dodger-blue { background-color: #0068FF; }

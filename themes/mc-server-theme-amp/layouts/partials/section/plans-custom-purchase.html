@@ -1,0 +1,255 @@
+<section class="section section-plans-custom-purchase padding-y-64">
+  <amp-selector class="tabs-with-flex" role="tablist" keyboard-select-mode="focus">
+    <div id="tab1" role="tab" aria-controls="tabpanel1" class="tab" option selected>
+      <span class="tab-number font-size-24 font-weight-bold margin-right-16">1</span>
+      <span class="tab-completed"></span>
+      <span class="tab-label">Select RAM</span>
+    </div>
+    <div id="tabpanel1" role="tabpanel" aria-labelledby="tab1" class="display-flex flex-direction-column align-items-center">
+      <h2 class="font-size-32 font-weight-bold text-align-center padding-y-16">Total</h1>
+      <p class="font-size-25 color-pastel-green text-align-center padding-y-16">$100.21</p>
+      <h3 class="font-size-20 font-weight-bold text-align-center padding-y-64">How much RAM will you need?</h3>
+      <div class="ram-selector display-flex justify-content-center row">
+        <div class="column-12 column-sm-10 column-md-8 column-lg-6 column-xl-4">
+          <div class="slider-container">
+            <input type="range" min="1" max="8" value="1" step='1' class="slider styled-slider slider-progress" list='ram-tickmarks'>
+            <div class="tickmarks" id="ram-tickmarks">
+              <p>1</p>
+              <p>2</p>
+              <p>3</p>
+              <p>4</p>
+              <p>5</p>
+              <p>6</p>
+              <p>7</p>
+              <p>8</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="display-flex justify-content-center padding-y-32">
+        <a class="margin-x-16 padding-x-32 padding-y-16 background-blue border-radius-8" href="#">Back</a>
+        <a class="margin-x-16 padding-x-32 padding-y-16 background-color-dodger-blue border-radius-8" href="#">Next</a>
+      </div>
+    </div>
+
+    <div id="tab2" role="tab" aria-controls="tabpanel2" class="tab" option>
+      <span class="tab-number font-size-24 font-weight-bold margin-right-16">2</span>
+      <span class="tab-completed"></span>
+      <span class="tab-label">Choose Dedicated Cores</span>
+    </div>
+    <div id="tabpanel2" role="tabpanel" aria-labelledby="tab2">
+      <h2 class="font-size-32 font-weight-bold text-align-center padding-y-16">Total</h1>
+      <p class="font-size-25 color-pastel-green text-align-center padding-y-16">$100.21</p>
+      <div class="display-flex align-items-center justify-content-center">
+        <h3 class="font-size-20 font-weight-bold text-align-center padding-y-64">Select your Dedicated Cores</h3>
+        <amp-img
+          class="margin-x-8"
+          alt="Information"
+          src="/images/question-mark.png"
+          width="20"
+          height="20"
+        >
+        </amp-img>
+      </div>
+      <div class="ram-selector display-flex justify-content-center row">
+        <div class="column-12 column-sm-10 column-md-8 column-lg-6 column-xl-5 column-xxl-4">
+          <div class="padding-x-lg-16">
+            <div class="slider-container">
+              <div class="display-flex align-items-center justify-content-center padding-bottom-16">
+                <p class="font-size-20 font-weight-bold text-align-center">AMD CPU</p>
+                <input type="checkbox" name="" id="">
+              </div>
+              <input type="range" min="1" max="8" value="1" step='1' class="slider styled-slider slider-progress" list='amd-tickmarks'>
+              <div class="tickmarks" id="amd-tickmarks">
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p>5</p>
+                <p>6</p>
+                <p>7</p>
+                <p>8</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column-12 column-sm-10 column-md-8 column-lg-6 column-xl-5 column-xxl-4">
+          <div class="padding-x-lg-16">
+            <div class="slider-container">
+              <div class="display-flex align-items-center justify-content-center padding-bottom-16">
+                <p class="font-size-20 font-weight-bold text-align-center">ARM CPU</p>
+                <input type="checkbox" name="" id="">
+              </div>
+              <input type="range" min="1" max="8" value="1" step='1' class="slider styled-slider slider-progress" list='arm-tickmarks'>
+              <div class="tickmarks" id="arm-tickmarks">
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p>5</p>
+                <p>6</p>
+                <p>7</p>
+                <p>8</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="display-flex justify-content-center padding-y-32">
+        <a class="margin-x-16 padding-x-32 padding-y-16 background-blue border-radius-8" href="#">Back</a>
+        <a class="margin-x-16 padding-x-32 padding-y-16 background-color-dodger-blue border-radius-8" href="#">Next</a>
+      </div>
+    </div>
+
+    <div id="tab3" role="tab" aria-controls="tabpanel3" class="tab" option>
+      <span class="tab-number font-size-24 font-weight-bold margin-right-16">3</span>
+      <span class="tab-completed"></span>
+      <span class="tab-label">Select Extras</span>
+    </div>
+    <div id="tabpanel3" role="tabpanel" aria-labelledby="tab3">
+      <h2 class="font-size-32 font-weight-bold text-align-center padding-y-16">Total</h1>
+      <p class="font-size-25 color-pastel-green text-align-center padding-y-16">$100.21</p>
+      <h3 class="font-size-20 font-weight-bold text-align-center padding-y-64">Select Extras</h3>
+
+      <div class="ram-selector display-flex justify-content-center row">
+        <div class="column-12 column-sm-10 column-md-8 column-lg-6 column-xl-5 column-xxl-4">
+          <div class="slider-container">
+            <div class="padding-x-lg-16">
+              <p class="font-size-20 font-weight-bold text-align-center padding-y-16">Minecraft Servers</p>
+              <input type="range" value="0" min="0" max="20" step="2" class="slider styled-slider slider-progress" list='minecraft-servers-tickmarks'>
+              <datalist class="tickmarks"id="minecraft-servers-tickmarks">
+                <p>0</p>
+                <p></p>
+                <p>4</p>
+                <p></p>
+                <p>8</p>
+                <p></p>
+                <p>12</p>
+                <p></p>
+                <p>16</p>
+                <p></p>
+                <p>20</p>
+              </datalist>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ram-selector display-flex justify-content-center row">
+        <div class="column-12 column-sm-10 column-md-8 column-lg-6 column-xl-5 column-xxl-4">
+          <div class="slider-container">
+            <div class="padding-x-lg-16">
+              <p class="font-size-20 font-weight-bold text-align-center padding-y-16">VPS Servers</p>
+              <input type="range" value="0" min="0" max="20" step="2" class="slider styled-slider slider-progress" list='vps-servers-tickmarks'>
+              <datalist class="tickmarks"id="vps-servers-tickmarks">
+                <p>0</p>
+                <p></p>
+                <p>4</p>
+                <p></p>
+                <p>8</p>
+                <p></p>
+                <p>12</p>
+                <p></p>
+                <p>16</p>
+                <p></p>
+                <p>20</p>
+              </datalist>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ram-selector display-flex justify-content-center row">
+        <div class="column-12 column-sm-10 column-md-8 column-lg-6 column-xl-5 column-xxl-4">
+          <div class="slider-container">
+            <div class="padding-x-lg-16">
+              <p class="font-size-20 font-weight-bold text-align-center padding-y-16">Web Hosting</p>
+              <input type="range" value="0" min="0" max="20" step="2" class="slider styled-slider slider-progress" list='web-hosting-tickmarks'>
+              <datalist class="tickmarks"id="web-hosting-tickmarks">
+                <p>0</p>
+                <p></p>
+                <p>4</p>
+                <p></p>
+                <p>8</p>
+                <p></p>
+                <p>12</p>
+                <p></p>
+                <p>16</p>
+                <p></p>
+                <p>20</p>
+              </datalist>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ram-selector display-flex justify-content-center row">
+        <div class="column-12 column-sm-10 column-md-8 column-lg-6 column-xl-5 column-xxl-4">
+          <div class="slider-container">
+            <div class="padding-x-lg-16">
+              <p class="font-size-20 font-weight-bold text-align-center padding-y-16">Database Servers</p>
+              <input type="range" value="0" min="0" max="20" step="2" class="slider styled-slider slider-progress" list='database-servers-tickmarks'>
+              <datalist class="tickmarks"id="database-servers-tickmarks">
+                <p>0</p>
+                <p></p>
+                <p>4</p>
+                <p></p>
+                <p>8</p>
+                <p></p>
+                <p>12</p>
+                <p></p>
+                <p>16</p>
+                <p></p>
+                <p>20</p>
+              </datalist>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+    <div id="tab4" role="tab" aria-controls="tabpanel4" class="tab" option>
+      <span class="tab-number font-size-24 font-weight-bold margin-right-16">4</span>
+      <span class="tab-completed"></span>
+      <span class="tab-label">Review & Purchase</span>
+    </div>
+    <div id="tabpanel4" role="tabpanel" aria-labelledby="tab4">
+    </div>
+  </amp-selector>
+
+  {{ $currentPage := . }}
+  {{ range .RegularPages }}
+    <button class="snipcart-add-item snipcart-add-item-button"
+      data-item-name="{{ .Params.product.name }}"
+      data-item-id="{{ .Params.product.id }}"
+      data-item-price="{{ .Params.product.price }}"
+      data-item-url="{{ $currentPage.Permalink }}"
+      {{ range $i, $e := .Params.product.customFields }}
+        data-item-custom{{ add $i 1 }}-name="{{ $e.name }}"
+        data-item-custom{{ add $i 1 }}-type="{{ $e.type }}"
+        data-item-custom{{ add $i 1 }}-value="{{ $e.value }}"
+        data-item-custom{{ add $i 1 }}-options="{{ $e.options }}"
+      {{ end }}
+
+      data-item-selected-plan="{{ .Params.product.selectedPlan }}"
+
+      {{ range $i, $e := .Params.product.availablePlans }}
+        data-plan{{ add $i 1 }}-id="{{ $e.id }}"
+        data-plan{{ add $i 1 }}-name="{{ $e.name }}"
+        data-plan{{ add $i 1 }}-frequency="{{ $e.frequency }}"
+        data-plan{{ add $i 1 }}-interval="{{ $e.interval }}"
+        data-item-plan{{ add $i 1 }}-price="{{ $e.itemPrice }}"
+      {{ end }}
+    >
+      <amp-img
+        alt="Add to Cart"
+        src="/images/shopping-cart-plus.png"
+        width="24"
+        height="24"
+      >
+      </amp-img>
+    </button>
+  {{ end }}
+</section>

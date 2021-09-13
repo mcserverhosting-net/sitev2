@@ -1,0 +1,69 @@
+<section class="section section-plans-custom-purchase padding-y-64">
+  <amp-selector class="tabs-with-flex" role="tablist" keyboard-select-mode="focus">
+
+  <div id="tab1" role="tab" aria-controls="tabpanel1" class="tab" option selected>
+    <span class="tab-number font-size-24 font-weight-bold margin-right-16">1</span>
+    <span class="tab-completed"></span>
+    <span class="tab-label">Select RAM</span>
+  </div>
+  <div id="tabpanel1" role="tabpanel" aria-labelledby="tab1" class="display-flex flex-direction-column align-items-center">
+    <h2 class="font-size-32 font-weight-bold text-align-center">Total</h1>
+    <p class="font-size-25 color-pastel-green">$100.21</p>
+  </div>
+
+  <div id="tab2" role="tab" aria-controls="tabpanel2" class="tab" option>
+    <span class="tab-number font-size-24 font-weight-bold margin-right-16">2</span>
+    <span class="tab-completed"></span>
+    <span class="tab-label">Choose Dedicated Cores</span>
+  </div>
+  <div id="tabpanel2" role="tabpanel" aria-labelledby="tab2"></div>
+
+  <div id="tab3" role="tab" aria-controls="tabpanel3" class="tab" option>
+    <span class="tab-number font-size-24 font-weight-bold margin-right-16">3</span>
+    <span class="tab-completed"></span>
+    <span class="tab-label">Select Extras</span>
+  </div>
+  <div id="tabpanel3" role="tabpanel" aria-labelledby="tab3"></div>
+
+  <div id="tab4" role="tab" aria-controls="tabpanel4" class="tab" option>
+    <span class="tab-number font-size-24 font-weight-bold margin-right-16">4</span>
+    <span class="tab-completed"></span>
+    <span class="tab-label">Review & Purchase</span>
+  </div>
+  <div id="tabpanel4" role="tabpanel" aria-labelledby="tab4"></div>
+  </amp-selector>
+
+  {{ $currentPage := . }}
+  {{ range .RegularPages }}
+    <button class="snipcart-add-item snipcart-add-item-button"
+      data-item-name="{{ .Params.product.name }}"
+      data-item-id="{{ .Params.product.id }}"
+      data-item-price="{{ .Params.product.price }}"
+      data-item-url="{{ $currentPage.Permalink }}"
+      {{ range $i, $e := .Params.product.customFields }}
+        data-item-custom{{ add $i 1 }}-name="{{ $e.name }}"
+        data-item-custom{{ add $i 1 }}-type="{{ $e.type }}"
+        data-item-custom{{ add $i 1 }}-value="{{ $e.value }}"
+        data-item-custom{{ add $i 1 }}-options="{{ $e.options }}"
+      {{ end }}
+
+      data-item-selected-plan="{{ .Params.product.selectedPlan }}"
+
+      {{ range $i, $e := .Params.product.availablePlans }}
+        data-plan{{ add $i 1 }}-id="{{ $e.id }}"
+        data-plan{{ add $i 1 }}-name="{{ $e.name }}"
+        data-plan{{ add $i 1 }}-frequency="{{ $e.frequency }}"
+        data-plan{{ add $i 1 }}-interval="{{ $e.interval }}"
+        data-item-plan{{ add $i 1 }}-price="{{ $e.itemPrice }}"
+      {{ end }}
+    >
+      <amp-img
+        alt="Add to Cart"
+        src="/images/shopping-cart-plus.png"
+        width="24"
+        height="24"
+      >
+      </amp-img>
+    </button>
+  {{ end }}
+</section>

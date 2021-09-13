@@ -1,6 +1,7 @@
 @import "reset";
 @import "grid";
 @import "utilities";
+@import "components";
 
 @import "sections/navbar";
 @import "sections/footer";
@@ -12,9 +13,9 @@
 @import "sections/about";
 @import "sections/faqs";
 @import "sections/plans-premade";
+@import "sections/plans-custom";
 
 @import "sections/table";
-@import "sections/tab-panels";
 
 @import "sections/snipcart";
 
@@ -29,3 +30,4 @@ html, body {
 button {
   cursor: pointer;
 }
+

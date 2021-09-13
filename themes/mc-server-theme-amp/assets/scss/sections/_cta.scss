@@ -33,3 +33,28 @@
     z-index: 2;
   }
 }
+
+.section-plans-custom-cta {
+  position: relative;
+
+  width: 100%;
+  height: calc(100vh - 67px);
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+
+  .overlay {
+    background-color: rgba(0,0,0,0.4);
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 2;
+  }
+}
