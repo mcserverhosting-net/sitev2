@@ -11,46 +11,61 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .tab-number {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
+    font-weight: bold;
+    color: #696969;
 
-    background-color: #0068FF;
-    border-radius: 50%;
+    .tab-number,
+    .tab-completed {
+      align-items: center;
+      justify-content: center;
 
-    width: 42px;
-    height: 42px;
-  }
+      background-color: #696969;
+      color: #000000;
+      border-radius: 50%;
 
-  /* Styles for the flex layout based tabs */
-  amp-selector[role=tablist].tabs-with-flex {
+      width: 42px;
+      max-width: 42px;
+      min-width: 42px;
+
+      height: 42px;
+      max-height: 42px;
+      min-height: 42px;
+    }
+
+    .tab-number {
       display: flex;
-      flex-wrap: wrap;
-  }
-  amp-selector[role=tablist].tabs-with-flex [role=tab] {
-      flex-grow: 1;
-      /* custom styling, feel free to change */
-      text-align: center;
-      padding: var(--space-1);
-  }
-  amp-selector[role=tablist].tabs-with-flex [role=tab][selected] {
-      outline: none;
-      /* custom styling, feel free to change */
-      // border-bottom: 2px solid var(--color-primary);
-  }
-  amp-selector[role=tablist].tabs-with-flex [role=tabpanel] {
+    }
+
+    .tab-completed {
       display: none;
-      width: 100%;
-      order: 1; /* must be greater than the order of the tab buttons to flex to the next line */
-      /* custom styling, feel free to change */
-      padding: var(--space-4);
+    }
+
+    &.done {
+      color: #FFFFFF;
+
+      .tab-number {
+        display: none;
+      }
+
+      .tab-completed {
+        display: flex;
+
+        background-color: #0068FF;
+        color: #FFFFFF;
+      }
+    }
+
+    &[selected] {
+      color: #FFFFFF;
+
+      .tab-number {
+        background-color: #0068FF;
+        color: #FFFFFF;
+      }
+    }
   }
-  amp-selector[role=tablist].tabs-with-flex [role=tab][selected] + [role=tabpanel] {
-      display: block;
-  }
+
 
   /* Styles for the selector based tabs */
   amp-selector[role=tablist].tabs-with-selector {
@@ -58,27 +73,24 @@
   }
   amp-selector[role=tablist].tabs-with-selector [role=tab][selected] {
       outline: none;
-      /* custom styling, feel free to change */
-      border-bottom: 2px solid var(--color-primary);
   }
   amp-selector[role=tablist].tabs-with-selector {
       display: flex;
   }
   amp-selector[role=tablist].tabs-with-selector [role=tab] {
-    /* custom styling, feel free to change */
     width: 100%;
     text-align: center;
     padding: var(--space-1);
   }
   amp-selector.tabpanels [role=tabpanel] {
     display: none;
-    /* custom styling, feel free to change */
     padding: var(--space-4);
   }
   amp-selector.tabpanels [role=tabpanel][selected] {
     outline: none;
     display: block;
   }
+
 
   // Slide
   input:focus {

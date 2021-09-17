@@ -3,50 +3,236 @@ title: "Custom Plan"
 draft: false
 
 product:
-  id: "general-hut"
+  id: "custom-plan"
   name: "Custom Plan"
   price: "10.00"
 
   customFields:
-    - name: "RAM"
+    ram:
+      name: "RAM"
       type: "dropdown"
       value: "2GB"
-      options: "1GB[+1.00]|2GB[+2.00]|3GB[+3.00]|4GB[+4.00]|5GB[+5.00]|6GB[+6.00]|7GB[+7.00]|8GB[+8.00]"
+      options: 
+        - value: "1GB"
+          price: "1.00"
 
-    - name: "AMD CPU Cores"
+        - value: "2GB"
+          price: "2.00"
+
+        - value: "3GB"
+          price: "3.00"
+
+        - value: "4GB"
+          price: "4.00"
+
+        - value: "5GB"
+          price: "5.00"
+
+        - value: "6GB"
+          price: "6.00"
+
+        - value: "7GB"
+          price: "7.00"
+
+        - value: "8GB"
+          price: "8.00"
+
+    amd:
+      name: "AMD CPU Cores"
       type: "dropdown"
       value: "0"
-      options: "0|1 CPU[+1.00]|2 CPUs[+2.00]|3 CPUs[+3.00]|4 CPUs[+4.00]|5 CPUs[+5.00]|6 CPUs[+6.00]|7 CPUs[+7.00]|8 CPUs[+8.00]"
+      options:
+        - value: "0"
+          price: "0.00"
 
-    - name: "ARM CPU Cores"
+        - value: "1CPU"
+          price: "1.00"
+
+        - value: "2CPU"
+          price: "2.00"
+
+        - value: "3CPU"
+          price: "3.00"
+
+        - value: "4CPU"
+          price: "4.00"
+
+        - value: "5CPU"
+          price: "5.00"
+
+        - value: "6CPU"
+          price: "6.00"
+
+        - value: "7CPU"
+          price: "7.00"
+
+        - value: "8CPU"
+          price: "8.00"
+
+    arm:
+      name: "ARM CPU Cores"
       type: "dropdown"
       value: "0"
-      options: "0|1 CPU[+1.00]|2 CPUs[+2.00]|3 CPUs[+3.00]|4 CPUs[+4.00]|5 CPUs[+5.00]|6 CPUs[+6.00]|7 CPUs[+7.00]|8 CPUs[+8.00]"
+      options:
+        - value: "0"
+          price: "0.00"
 
-    - name: "Extra: Minecraft Server"
+        - value: "1CPU"
+          price: "1.00"
+
+        - value: "2CPU"
+          price: "2.00"
+
+        - value: "3CPU"
+          price: "3.00"
+
+        - value: "4CPU"
+          price: "4.00"
+
+        - value: "5CPU"
+          price: "5.00"
+
+        - value: "6CPU"
+          price: "6.00"
+
+        - value: "7CPU"
+          price: "7.00"
+
+        - value: "8CPU"
+          price: "8.00"
+
+    ems:
+      name: "Extra: Minecraft Server"
       type: "dropdown"
       value: "0"
-      options: "0|1[+1.00]|4[+4.00]|8[+8.00]|12[+12.00]|16[+16.00]|18[+18.00]|22[+22.00]"
+      options:
+        - value: "0"
+          price: "0.00"
 
-    - name: "Extra: VPS Server"
+        - value: "4"
+          price: "4.00"
+
+        - value: "8"
+          price: "8.00"
+
+        - value: "12"
+          price: "12.00"
+
+        - value: "16"
+          price: "16.00"
+
+        - value: "18"
+          price: "18.00"
+
+        - value: "22"
+          price: "22.00"
+
+    evs:
+      name: "Extra: VPS Server"
       type: "dropdown"
       value: "0"
-      options: "0|1[+1.00]|4[+4.00]|8[+8.00]|12[+12.00]|16[+16.00]|18[+18.00]|22[+22.00]"
+      options:
+        - value: "0"
+          price: "0.00"
 
-    - name: "Extra: Web Hosting"
+        - value: "4"
+          price: "4.00"
+
+        - value: "8"
+          price: "8.00"
+
+        - value: "12"
+          price: "12.00"
+
+        - value: "16"
+          price: "16.00"
+
+        - value: "18"
+          price: "18.00"
+
+        - value: "22"
+          price: "22.00"
+
+
+    ewh:
+      name: "Extra: Web Hosting"
       type: "dropdown"
       value: "0"
-      options: "0|1[+1.00]|4[+4.00]|8[+8.00]|12[+12.00]|16[+16.00]|18[+18.00]|22[+22.00]"
+      options:
+        - value: "0"
+          price: "0.00"
 
-    - name: "Extra: Database Server"
+        - value: "4"
+          price: "4.00"
+
+        - value: "8"
+          price: "8.00"
+
+        - value: "12"
+          price: "12.00"
+
+        - value: "16"
+          price: "16.00"
+
+        - value: "18"
+          price: "18.00"
+
+        - value: "22"
+          price: "22.00"
+
+
+    eds:
+      name: "Extra: Database Server"
       type: "dropdown"
       value: "0"
-      options: "0|1[+1.00]|4[+4.00]|8[+8.00]|12[+12.00]|16[+16.00]|18[+18.00]|22[+22.00]"
+      options:
+        - value: "0"
+          price: "0.00"
 
-    - name: "Extra: Proxy Server"
+        - value: "4"
+          price: "4.00"
+
+        - value: "8"
+          price: "8.00"
+
+        - value: "12"
+          price: "12.00"
+
+        - value: "16"
+          price: "16.00"
+
+        - value: "18"
+          price: "18.00"
+
+        - value: "22"
+          price: "22.00"
+
+
+    eps:
+      name: "Extra: Proxy Server"
       type: "dropdown"
       value: "0"
-      options: "0|1[+1.00]|4[+4.00]|8[+8.00]|12[+12.00]|16[+16.00]|18[+18.00]|22[+22.00]"
+      options:
+        - value: "0"
+          price: "0.00"
+
+        - value: "4"
+          price: "4.00"
+
+        - value: "8"
+          price: "8.00"
+
+        - value: "12"
+          price: "12.00"
+
+        - value: "16"
+          price: "16.00"
+
+        - value: "18"
+          price: "18.00"
+
+        - value: "22"
+          price: "22.00"
 
   selectedPlan: "monthly-plan"
 

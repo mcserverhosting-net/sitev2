@@ -1,43 +1,68 @@
+{{ $data := site.GetPage "/plans-custom/custom-plan" }}
 <section class="section section-plans-custom-purchase padding-y-64">
-  <amp-selector class="tabs-with-flex" role="tablist" keyboard-select-mode="focus">
-    <div id="tab1" role="tab" aria-controls="tabpanel1" class="tab" option selected>
+
+  <amp-selector id="plans-custom-tabs" class="tabs-with-selector" role="tablist" on="select:plans-custom-panels.toggle(index=event.targetOption, value=true)" keyboard-select-mode="focus">
+
+    <div id="tab1" role="tab" aria-controls="tabpanel1" class="tab" option="0" selected>
       <span class="tab-number font-size-24 font-weight-bold margin-right-16">1</span>
-      <span class="tab-completed"></span>
+      <span class="tab-completed margin-right-16"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16"> <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/> </svg> </span>
       <span class="tab-label">Select RAM</span>
     </div>
-    <div id="tabpanel1" role="tabpanel" aria-labelledby="tab1" class="display-flex flex-direction-column align-items-center">
+
+    <div id="tab2" role="tab" aria-controls="tabpanel2" class="tab" option="1">
+      <span class="tab-number font-size-24 font-weight-bold margin-right-16">2</span>
+      <span class="tab-completed margin-right-16"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16"> <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/> </svg> </span>
+      <span class="tab-label">Choose Dedicated Cores</span>
+    </div>
+
+    <div id="tab3" role="tab" aria-controls="tabpanel3" class="tab" option="2">
+      <span class="tab-number font-size-24 font-weight-bold margin-right-16">3</span>
+      <span class="tab-completed margin-right-16"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16"> <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/> </svg> </span>
+      <span class="tab-label">Select Extras</span>
+    </div>
+
+    <div id="tab4" role="tab" aria-controls="tabpanel4" class="tab" option="3">
+      <span class="tab-number font-size-24 font-weight-bold margin-right-16">4</span>
+      <span class="tab-completed margin-right-16"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16"> <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/> </svg> </span>
+      <span class="tab-label">Review & Purchase</span>
+    </div>
+
+  </amp-selector>
+
+  <amp-selector id="plans-custom-panels" class="tabpanels">
+
+    <div id="tabpanel1" role="tabpanel" aria-labelledby="tab1" class="display-flex flex-direction-column align-items-center" option selected>
       <h2 class="font-size-32 font-weight-bold text-align-center padding-y-16">Total</h1>
       <p class="font-size-25 color-pastel-green text-align-center padding-y-16">$100.21</p>
       <h3 class="font-size-20 font-weight-bold text-align-center padding-y-64">How much RAM will you need?</h3>
       <div class="ram-selector display-flex justify-content-center row">
         <div class="column-12 column-sm-10 column-md-8 column-lg-6 column-xl-4">
+          {{ range where $data.Params.product.customFields ".name" "RAM" }}
           <div class="slider-container">
-            <input type="range" min="1" max="8" value="1" step='1' class="slider styled-slider slider-progress" list='ram-tickmarks'>
+            <input id="ramRange" type="range" min="0" max="{{ sub (len .options) 1 }}" value="0" step='1' class="slider styled-slider slider-progress" list='ram-tickmarks'>
             <div class="tickmarks" id="ram-tickmarks">
-              <p>1</p>
-              <p>2</p>
-              <p>3</p>
-              <p>4</p>
-              <p>5</p>
-              <p>6</p>
-              <p>7</p>
-              <p>8</p>
+              {{ range .options }}
+                <p>{{ .name }}</p>
+              {{ end }}
             </div>
           </div>
+          {{ end }}
         </div>
       </div>
       <div class="display-flex justify-content-center padding-y-32">
-        <a class="margin-x-16 padding-x-32 padding-y-16 background-blue border-radius-8" href="#">Back</a>
-        <a class="margin-x-16 padding-x-32 padding-y-16 background-color-dodger-blue border-radius-8" href="#">Next</a>
+        <a 
+          class="margin-x-16 padding-x-32 padding-y-16 background-color-dodger-blue border-radius-8"
+          id="tab1next" 
+          href="#"
+          on="tap:plans-custom-panels.toggle(index=1, value=true);tap:plans-custom-tabs.toggle(index=1, value=true)"
+        >
+          Next
+        </a>
       </div>
     </div>
 
-    <div id="tab2" role="tab" aria-controls="tabpanel2" class="tab" option>
-      <span class="tab-number font-size-24 font-weight-bold margin-right-16">2</span>
-      <span class="tab-completed"></span>
-      <span class="tab-label">Choose Dedicated Cores</span>
-    </div>
-    <div id="tabpanel2" role="tabpanel" aria-labelledby="tab2">
+
+    <div id="tabpanel2" role="tabpanel" aria-labelledby="tab2" option>
       <h2 class="font-size-32 font-weight-bold text-align-center padding-y-16">Total</h1>
       <p class="font-size-25 color-pastel-green text-align-center padding-y-16">$100.21</p>
       <div class="display-flex align-items-center justify-content-center">
@@ -57,19 +82,16 @@
             <div class="slider-container">
               <div class="display-flex align-items-center justify-content-center padding-bottom-16">
                 <p class="font-size-20 font-weight-bold text-align-center">AMD CPU</p>
-                <input type="checkbox" name="" id="">
+                <!-- <input type="checkbox" name="" id=""> -->
               </div>
-              <input type="range" min="1" max="8" value="1" step='1' class="slider styled-slider slider-progress" list='amd-tickmarks'>
-              <div class="tickmarks" id="amd-tickmarks">
-                <p>1</p>
-                <p>2</p>
-                <p>3</p>
-                <p>4</p>
-                <p>5</p>
-                <p>6</p>
-                <p>7</p>
-                <p>8</p>
-              </div>
+              {{ range where $data.Params.product.customFields ".name" "AMD CPU Cores" }}
+                <input id="amdRange" type="range" min="0" max="{{ sub (len .options) 1 }}" value="0" step='1' class="slider styled-slider slider-progress" list='amd-tickmarks'>
+                <div class="tickmarks" id="amd-tickmarks">
+                  {{ range .options }}
+                    <p>{{ .name }}</p>
+                  {{ end }}
+                </div>
+              {{ end }}
             </div>
           </div>
         </div>
@@ -78,35 +100,42 @@
             <div class="slider-container">
               <div class="display-flex align-items-center justify-content-center padding-bottom-16">
                 <p class="font-size-20 font-weight-bold text-align-center">ARM CPU</p>
-                <input type="checkbox" name="" id="">
+                <!-- <input type="checkbox" name="" id=""> -->
               </div>
-              <input type="range" min="1" max="8" value="1" step='1' class="slider styled-slider slider-progress" list='arm-tickmarks'>
-              <div class="tickmarks" id="arm-tickmarks">
-                <p>1</p>
-                <p>2</p>
-                <p>3</p>
-                <p>4</p>
-                <p>5</p>
-                <p>6</p>
-                <p>7</p>
-                <p>8</p>
-              </div>
+              {{ range where $data.Params.product.customFields ".name" "ARM CPU Cores" }}
+                <input id="armRange" type="range" min="0" max="{{ sub (len .options) 1 }}" value="0" step='1' class="slider styled-slider slider-progress" list='arm-tickmarks'>
+                <div class="tickmarks" id="arm-tickmarks">
+                  {{ range .options }}
+                    <p>{{ .name }}</p>
+                  {{ end }}
+                </div>
+              {{ end }}
             </div>
           </div>
         </div>
       </div>
       <div class="display-flex justify-content-center padding-y-32">
-        <a class="margin-x-16 padding-x-32 padding-y-16 background-blue border-radius-8" href="#">Back</a>
-        <a class="margin-x-16 padding-x-32 padding-y-16 background-color-dodger-blue border-radius-8" href="#">Next</a>
+        <a 
+          class="margin-x-16 padding-x-32 padding-y-16 background-blue border-radius-8"
+          href="#"
+          id="tab2back" 
+          on="tap:plans-custom-panels.toggle(index=0, value=true);tap:plans-custom-tabs.toggle(index=0, value=true)"
+        >
+          Back
+        </a>
+        <a 
+          class="margin-x-16 padding-x-32 padding-y-16 background-color-dodger-blue border-radius-8" 
+          href="#"
+          id="tab2next" 
+          on="tap:plans-custom-panels.toggle(index=2, value=true);tap:plans-custom-tabs.toggle(index=2, value=true)"
+        >
+          Next
+        </a>
       </div>
     </div>
 
-    <div id="tab3" role="tab" aria-controls="tabpanel3" class="tab" option>
-      <span class="tab-number font-size-24 font-weight-bold margin-right-16">3</span>
-      <span class="tab-completed"></span>
-      <span class="tab-label">Select Extras</span>
-    </div>
-    <div id="tabpanel3" role="tabpanel" aria-labelledby="tab3">
+
+    <div id="tabpanel3" role="tabpanel" aria-labelledby="tab3" option>
       <h2 class="font-size-32 font-weight-bold text-align-center padding-y-16">Total</h1>
       <p class="font-size-25 color-pastel-green text-align-center padding-y-16">$100.21</p>
       <h3 class="font-size-20 font-weight-bold text-align-center padding-y-64">Select Extras</h3>
@@ -140,7 +169,7 @@
           <div class="slider-container">
             <div class="padding-x-lg-16">
               <p class="font-size-20 font-weight-bold text-align-center padding-y-16">VPS Servers</p>
-              <input type="range" value="0" min="0" max="20" step="2" class="slider styled-slider slider-progress" list='vps-servers-tickmarks'>
+              <input type="range" value="0" min="0" max="20" step="1" class="slider styled-slider slider-progress" list='vps-servers-tickmarks'>
               <datalist class="tickmarks"id="vps-servers-tickmarks">
                 <p>0</p>
                 <p></p>
@@ -207,49 +236,210 @@
         </div>
       </div>
 
+      <div class="display-flex justify-content-center padding-y-32">
+        <a 
+          class="margin-x-16 padding-x-32 padding-y-16 background-blue border-radius-8"
+          href="#"
+          id="tab3back" 
+          on="tap:plans-custom-panels.toggle(index=1, value=true);tap:plans-custom-tabs.toggle(index=1, value=true)"
+        >
+          Back
+        </a>
+        <a 
+          class="margin-x-16 padding-x-32 padding-y-16 background-color-dodger-blue border-radius-8" 
+          href="#"
+          id="tab3next" 
+          on="tap:plans-custom-panels.toggle(index=3, value=true);tap:plans-custom-tabs.toggle(index=3, value=true)"
+        >
+          Next
+        </a>
       </div>
     </div>
 
-    <div id="tab4" role="tab" aria-controls="tabpanel4" class="tab" option>
-      <span class="tab-number font-size-24 font-weight-bold margin-right-16">4</span>
-      <span class="tab-completed"></span>
-      <span class="tab-label">Review & Purchase</span>
-    </div>
-    <div id="tabpanel4" role="tabpanel" aria-labelledby="tab4">
+    <div id="tabpanel4" role="tabpanel" aria-labelledby="tab4" option>
+      <div class="text-align-center">
+        <h2 class="font-size-32 font-weight-bold text-align-center padding-y-16">Total</h1>
+        <p class="font-size-25 color-pastel-green text-align-center padding-y-16">$100.21</p>
+        <h3 class="font-size-20 font-weight-bold text-align-center padding-y-64">Review & Purchase</h3>
+      </div>
+      <div class="display-flex justify-content-center padding-y-32">
+        <a 
+          class="margin-x-16 padding-x-32 padding-y-16 background-blue border-radius-8"
+          href="#"
+          id="tab4back" 
+          on="tap:plans-custom-panels.toggle(index=2, value=true);tap:plans-custom-tabs.toggle(index=2, value=true)"
+        >
+          Back
+        </a>
+        {{ $currentPage := . }}
+        {{ range .RegularPages }}
+          <button 
+            class="snipcart-add-item margin-x-16 padding-x-32 padding-y-16 background-color-dodger-blue font-weight-bold border-radius-8" 
+            data-item-name="{{ .Params.product.name }}"
+            data-item-id="{{ .Params.product.id }}"
+            data-item-price="{{ .Params.product.price }}"
+            data-item-url="{{ $currentPage.Permalink }}"
+            {{ range $i, $e := .Params.product.customFields }}
+              data-item-custom{{ add $i 1 }}-name="{{ $e.name }}"
+              data-item-custom{{ add $i 1 }}-type="{{ $e.type }}"
+              data-item-custom{{ add $i 1 }}-value="{{ $e.value }}"
+              data-item-custom{{ add $i 1 }}-options="{{ range $index, $element := $e.options }}{{ $element.name }}[+{{ $element.priceModifier }}]{{ if (ne (add $index 1) (len $e.options)) }}|{{ end }}{{ end }}"
+            {{ end }}
+
+            data-item-selected-plan="{{ .Params.product.selectedPlan }}"
+
+            {{ $i := 0 }}
+            {{ range $i, $e := .Params.product.availablePlans }}
+              data-plan{{ add $i 1 }}-id="{{ $e.id }}"
+              data-plan{{ add $i 1 }}-name="{{ $e.name }}"
+              data-plan{{ add $i 1 }}-frequency="{{ $e.frequency }}"
+              data-plan{{ add $i 1 }}-interval="{{ $e.interval }}"
+              data-item-plan{{ add $i 1 }}-price="{{ $e.itemPrice }}"
+              {{ $i = (add $i 1) }}
+            {{ end }}
+          >
+            Add to Cart
+          </button>
+        {{ end }}
+      </div>
     </div>
   </amp-selector>
 
-  {{ $currentPage := . }}
-  {{ range .RegularPages }}
-    <button class="snipcart-add-item snipcart-add-item-button"
-      data-item-name="{{ .Params.product.name }}"
-      data-item-id="{{ .Params.product.id }}"
-      data-item-price="{{ .Params.product.price }}"
-      data-item-url="{{ $currentPage.Permalink }}"
-      {{ range $i, $e := .Params.product.customFields }}
-        data-item-custom{{ add $i 1 }}-name="{{ $e.name }}"
-        data-item-custom{{ add $i 1 }}-type="{{ $e.type }}"
-        data-item-custom{{ add $i 1 }}-value="{{ $e.value }}"
-        data-item-custom{{ add $i 1 }}-options="{{ $e.options }}"
-      {{ end }}
 
-      data-item-selected-plan="{{ .Params.product.selectedPlan }}"
+  <!-- Style Sliders -->
+  <script>
+    for (let e of document.querySelectorAll('input[type="range"].slider-progress')) {
+    e.style.setProperty('--value', e.value);
+    e.style.setProperty('--min', e.min == '' ? '0' : e.min);
+    e.style.setProperty('--max', e.max == '' ? '100' : e.max);
+    e.addEventListener('input', () => e.style.setProperty('--value', e.value));
+  }
+  </script>
 
-      {{ range $i, $e := .Params.product.availablePlans }}
-        data-plan{{ add $i 1 }}-id="{{ $e.id }}"
-        data-plan{{ add $i 1 }}-name="{{ $e.name }}"
-        data-plan{{ add $i 1 }}-frequency="{{ $e.frequency }}"
-        data-plan{{ add $i 1 }}-interval="{{ $e.interval }}"
-        data-item-plan{{ add $i 1 }}-price="{{ $e.itemPrice }}"
-      {{ end }}
-    >
-      <amp-img
-        alt="Add to Cart"
-        src="/images/shopping-cart-plus.png"
-        width="24"
-        height="24"
-      >
-      </amp-img>
-    </button>
-  {{ end }}
+  <!-- Custom Plan Functionality -->
+  <script>
+    const tab1 = document.querySelector('#tab1');
+    tab1.addEventListener('click', selectTab1);
+
+    const tab1next = document.querySelector('#tab1next');
+    tab1next.addEventListener('click', selectTab2);
+
+
+    const tab2 = document.querySelector('#tab2');
+    tab2.addEventListener('click', selectTab2);
+
+    const tab2next = document.querySelector('#tab2next');
+    tab2next.addEventListener('click', selectTab3);
+
+    const tab2back = document.querySelector('#tab2back');
+    tab2back.addEventListener('click', selectTab1);
+
+
+    const tab3 = document.querySelector('#tab3');
+    tab3.addEventListener('click', selectTab3);
+
+    const tab3next = document.querySelector('#tab3next');
+    tab3next.addEventListener('click', selectTab4);
+
+    const tab3back = document.querySelector('#tab3back');
+    tab3back.addEventListener('click', selectTab2);
+
+
+    const tab4 = document.querySelector('#tab4');
+    tab4.addEventListener('click', selectTab4);
+
+    const tab4back = document.querySelector('#tab4back');
+    tab4back.addEventListener('click', selectTab3);
+
+    function selectTab1() {
+      const tab1 = document.querySelector('#tab1');
+      tab1.classList.remove('done');
+
+      const tab2 = document.querySelector('#tab2');
+      tab2.classList.remove('done');
+
+      const tab3 = document.querySelector('#tab3');
+      tab3.classList.remove('done');
+
+      const tab4 = document.querySelector('#tab4');
+      tab4.classList.remove('done');
+    }
+
+    function selectTab2() {
+      const tab1 = document.querySelector('#tab1');
+      tab1.classList.add('done');
+
+      const tab2 = document.querySelector('#tab2');
+      tab2.classList.remove('done');
+
+      const tab3 = document.querySelector('#tab3');
+      tab3.classList.remove('done');
+
+      const tab4 = document.querySelector('#tab4');
+      tab4.classList.remove('done');
+    }
+
+    function selectTab3() {
+      const tab1 = document.querySelector('#tab1');
+      tab1.classList.add('done');
+
+      const tab2 = document.querySelector('#tab2');
+      tab2.classList.add('done');
+
+      const tab3 = document.querySelector('#tab3');
+      tab3.classList.remove('done');
+
+      const tab4 = document.querySelector('#tab4');
+      tab4.classList.remove('done');
+    }
+
+    function selectTab4() {
+      const tab1 = document.querySelector('#tab1');
+      tab1.classList.add('done');
+
+      const tab2 = document.querySelector('#tab2');
+      tab2.classList.add('done');
+
+      const tab3 = document.querySelector('#tab3');
+      tab3.classList.add('done');
+
+      const tab4 = document.querySelector('#tab4');
+      tab4.classList.remove('done');
+    }
+  </script>
+
+  <script>
+    const snipcartButton = document.querySelector('.snipcart-add-item');
+    const itemData = {{ $data.Params.product }};
+
+    // RAM Options
+    const ramRange = document.querySelector('#ramRange');
+    ramRange.addEventListener('change', onRamChange);
+
+    function onRamChange(event) {
+      const ramData = itemData.customfields.find( e => e.name === "RAM" );
+      const newValue = ramData.options[event.target.value].name
+      snipcartButton.dataset.itemCustom1Value = newValue;
+    }
+
+    // AMD CPU Cores Options
+    const amdRange = document.querySelector('#amdRange');
+    amdRange.addEventListener('change', onAmdChange);
+
+    function onAmdChange(event) {
+      const amdData = itemData.customfields.find( e => e.name === "AMD CPU Cores" );
+      const newValue = amdData.options[event.target.value].name
+      snipcartButton.dataset.itemCustom2Value = newValue;
+    }
+
+    // ARM CPU Cores Options
+    const armRange = document.querySelector('#armRange');
+    armRange.addEventListener('change', onArmChange);
+
+    function onArmChange(event) {
+      const armData = itemData.customfields.find( e => e.name === "ARM CPU Cores" );
+      const newValue = armData.options[event.target.value].name
+      snipcartButton.dataset.itemCustom3Value = newValue;
+    }
+  </script>
 </section>
