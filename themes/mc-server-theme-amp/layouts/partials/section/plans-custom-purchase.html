@@ -1,45 +1,59 @@
 {{ $data := site.GetPage "/plans-custom/custom-plan" }}
 <section class="section section-plans-custom-purchase padding-y-64">
 
-  <amp-selector id="plans-custom-tabs" class="tabs-with-selector" role="tablist" on="select:plans-custom-panels.toggle(index=event.targetOption, value=true)" keyboard-select-mode="focus">
+  <amp-selector id="plans-custom-tabs" class="tabs-with-selector padding-32 overflow-x-scroll scrollbar-hidden justify-content-center" role="tablist" on="select:plans-custom-panels.toggle(index=event.targetOption, value=true)" keyboard-select-mode="focus">
 
-    <div id="tab1" role="tab" aria-controls="tabpanel1" class="tab" option="0" selected>
-      <span class="tab-number font-size-24 font-weight-bold margin-right-16">1</span>
-      <span class="tab-completed margin-right-16"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16"> <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/> </svg> </span>
-      <span class="tab-label">Select RAM</span>
+    <div id="tab1" role="tab" aria-controls="tabpanel1" class="tab tab-line" option="0" selected>
+      <div class="tab-body display-flex align-items-center justify-content-center background-color-licorice padding-x-16 margin-right-64">
+        <span class="tab-number font-size-24 font-weight-bold margin-right-16">1</span>
+        <span class="tab-completed margin-right-16"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16"> <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/> </svg> </span>
+        <span class="tab-label white-space-nowrap">Select RAM</span>
+      </div>
     </div>
 
-    <div id="tab2" role="tab" aria-controls="tabpanel2" class="tab" option="1">
-      <span class="tab-number font-size-24 font-weight-bold margin-right-16">2</span>
-      <span class="tab-completed margin-right-16"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16"> <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/> </svg> </span>
-      <span class="tab-label">Choose Dedicated Cores</span>
+    <div id="tab2" role="tab" aria-controls="tabpanel2" class="tab tab-line" option="1">
+      <div class="tab-body display-flex align-items-center justify-content-center background-color-licorice padding-x-16 margin-right-64">
+        <span class="tab-number font-size-24 font-weight-bold margin-right-16">2</span>
+        <span class="tab-completed margin-right-16"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16"> <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/> </svg> </span>
+        <span class="tab-label white-space-nowrap">Choose Dedicated Cores</span>
+      </div>
     </div>
 
-    <div id="tab3" role="tab" aria-controls="tabpanel3" class="tab" option="2">
-      <span class="tab-number font-size-24 font-weight-bold margin-right-16">3</span>
-      <span class="tab-completed margin-right-16"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16"> <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/> </svg> </span>
-      <span class="tab-label">Select Extras</span>
+    <div id="tab3" role="tab" aria-controls="tabpanel3" class="tab tab-line" option="2">
+      <div class="tab-body display-flex align-items-center justify-content-center background-color-licorice padding-x-16 margin-right-64">
+        <span class="tab-number font-size-24 font-weight-bold margin-right-16">3</span>
+        <span class="tab-completed margin-right-16"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16"> <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/> </svg> </span>
+        <span class="tab-label white-space-nowrap">Select Extras</span>
+      </div>
     </div>
 
     <div id="tab4" role="tab" aria-controls="tabpanel4" class="tab" option="3">
-      <span class="tab-number font-size-24 font-weight-bold margin-right-16">4</span>
-      <span class="tab-completed margin-right-16"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16"> <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/> </svg> </span>
-      <span class="tab-label">Review & Purchase</span>
+      <div class="tab-body display-flex align-items-center justify-content-center background-color-licorice padding-x-16">
+        <span class="tab-number font-size-24 font-weight-bold margin-right-16">4</span>
+        <span class="tab-completed margin-right-16"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16"> <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/> </svg> </span>
+        <span class="tab-label white-space-nowrap">Review & Purchase</span>
+      </div>
     </div>
 
   </amp-selector>
 
+  <div class="display-flex flex-direction-column align-items-center padding-top-64">
+    <h2 class="font-size-32 font-weight-bold text-align-center padding-y-16">Total</h1>
+    <p id="totalPrice" class="font-size-25 color-pastel-green text-align-center padding-y-16"></p>
+  </div>
+
   <amp-selector id="plans-custom-panels" class="tabpanels">
 
     <div id="tabpanel1" role="tabpanel" aria-labelledby="tab1" class="display-flex flex-direction-column align-items-center" option selected>
-      <h2 class="font-size-32 font-weight-bold text-align-center padding-y-16">Total</h1>
-      <p class="font-size-25 color-pastel-green text-align-center padding-y-16">$100.21</p>
       <h3 class="font-size-20 font-weight-bold text-align-center padding-y-64">How much RAM will you need?</h3>
       <div class="ram-selector display-flex justify-content-center row">
         <div class="column-12 column-sm-10 column-md-8 column-lg-6 column-xl-4">
           {{ range where $data.Params.product.customFields ".name" "RAM" }}
           <div class="slider-container">
-            <input id="ramRange" type="range" min="0" max="{{ sub (len .options) 1 }}" value="0" step='1' class="slider styled-slider slider-progress" list='ram-tickmarks'>
+            {{ $index := 0 }}
+            {{ $value := .value }}
+            {{ range $i, $e := .options }} {{ if (eq $e.name $value) }}{{ $index = $i }}{{ end }} {{ end }}
+            <input id="ramRange" type="range" min="0" max="{{ sub (len .options) 1 }}" value="{{ $index }}" step='1' class="slider styled-slider slider-progress" list='ram-tickmarks'>
             <div class="tickmarks" id="ram-tickmarks">
               {{ range .options }}
                 <p>{{ .name }}</p>
@@ -63,8 +77,6 @@
 
 
     <div id="tabpanel2" role="tabpanel" aria-labelledby="tab2" option>
-      <h2 class="font-size-32 font-weight-bold text-align-center padding-y-16">Total</h1>
-      <p class="font-size-25 color-pastel-green text-align-center padding-y-16">$100.21</p>
       <div class="display-flex align-items-center justify-content-center">
         <h3 class="font-size-20 font-weight-bold text-align-center padding-y-64">Select your Dedicated Cores</h3>
         <amp-img
@@ -85,7 +97,10 @@
                 <!-- <input type="checkbox" name="" id=""> -->
               </div>
               {{ range where $data.Params.product.customFields ".name" "AMD CPU Cores" }}
-                <input id="amdRange" type="range" min="0" max="{{ sub (len .options) 1 }}" value="0" step='1' class="slider styled-slider slider-progress" list='amd-tickmarks'>
+                {{ $index := 0 }}
+                {{ $value := .value }}
+                {{ range $i, $e := .options }} {{ if (eq $e.name $value) }}{{ $index = $i }}{{ end }} {{ end }}
+                <input id="amdRange" type="range" min="0" max="{{ sub (len .options) 1 }}" value="{{ $index }}" step='1' class="slider styled-slider slider-progress" list='amd-tickmarks'>
                 <div class="tickmarks" id="amd-tickmarks">
                   {{ range .options }}
                     <p>{{ .name }}</p>
@@ -103,7 +118,10 @@
                 <!-- <input type="checkbox" name="" id=""> -->
               </div>
               {{ range where $data.Params.product.customFields ".name" "ARM CPU Cores" }}
-                <input id="armRange" type="range" min="0" max="{{ sub (len .options) 1 }}" value="0" step='1' class="slider styled-slider slider-progress" list='arm-tickmarks'>
+                {{ $index := 0 }}
+                {{ $value := .value }}
+                {{ range $i, $e := .options }} {{ if (eq $e.name $value) }}{{ $index = $i }}{{ end }} {{ end }}
+                <input id="armRange" type="range" min="0" max="{{ sub (len .options) 1 }}" value="{{ $index }}" step='1' class="slider styled-slider slider-progress" list='arm-tickmarks'>
                 <div class="tickmarks" id="arm-tickmarks">
                   {{ range .options }}
                     <p>{{ .name }}</p>
@@ -136,8 +154,6 @@
 
 
     <div id="tabpanel3" role="tabpanel" aria-labelledby="tab3" option>
-      <h2 class="font-size-32 font-weight-bold text-align-center padding-y-16">Total</h1>
-      <p class="font-size-25 color-pastel-green text-align-center padding-y-16">$100.21</p>
       <h3 class="font-size-20 font-weight-bold text-align-center padding-y-64">Select Extras</h3>
 
       <div class="ram-selector display-flex justify-content-center row">
@@ -145,20 +161,17 @@
           <div class="slider-container">
             <div class="padding-x-lg-16">
               <p class="font-size-20 font-weight-bold text-align-center padding-y-16">Minecraft Servers</p>
-              <input type="range" value="0" min="0" max="20" step="2" class="slider styled-slider slider-progress" list='minecraft-servers-tickmarks'>
-              <datalist class="tickmarks"id="minecraft-servers-tickmarks">
-                <p>0</p>
-                <p></p>
-                <p>4</p>
-                <p></p>
-                <p>8</p>
-                <p></p>
-                <p>12</p>
-                <p></p>
-                <p>16</p>
-                <p></p>
-                <p>20</p>
-              </datalist>
+              {{ range where $data.Params.product.customFields ".name" "Extra: Minecraft Servers" }}
+                {{ $index := 0 }}
+                {{ $value := .value }}
+                {{ range $i, $e := .options }} {{ if (eq $e.name $value) }}{{ $index = $i }}{{ end }} {{ end }}
+                <input id="minecraftServersRange" type="range" min="0" max="{{ sub (len .options) 1 }}" value="{{ $index }}" step='1' class="slider styled-slider slider-progress" list='minecraft-servers-tickmarks'>
+                <div class="tickmarks" id="minecraft-servers-tickmarks">
+                  {{ range .options }}
+                    <p>{{ .name }}</p>
+                  {{ end }}
+                </div>
+              {{ end }}
             </div>
           </div>
         </div>
@@ -169,20 +182,17 @@
           <div class="slider-container">
             <div class="padding-x-lg-16">
               <p class="font-size-20 font-weight-bold text-align-center padding-y-16">VPS Servers</p>
-              <input type="range" value="0" min="0" max="20" step="1" class="slider styled-slider slider-progress" list='vps-servers-tickmarks'>
-              <datalist class="tickmarks"id="vps-servers-tickmarks">
-                <p>0</p>
-                <p></p>
-                <p>4</p>
-                <p></p>
-                <p>8</p>
-                <p></p>
-                <p>12</p>
-                <p></p>
-                <p>16</p>
-                <p></p>
-                <p>20</p>
-              </datalist>
+              {{ range where $data.Params.product.customFields ".name" "Extra: VPS Servers" }}
+                {{ $index := 0 }}
+                {{ $value := .value }}
+                {{ range $i, $e := .options }} {{ if (eq $e.name $value) }}{{ $index = $i }}{{ end }} {{ end }}
+                <input id="vpsServersRange" type="range" min="0" max="{{ sub (len .options) 1 }}" value="{{ $index }}" step='1' class="slider styled-slider slider-progress" list='vps-servers-tickmarks'>
+                <div class="tickmarks" id="vps-servers-tickmarks">
+                  {{ range .options }}
+                    <p>{{ .name }}</p>
+                  {{ end }}
+                </div>
+              {{ end }}
             </div>
           </div>
         </div>
@@ -193,20 +203,17 @@
           <div class="slider-container">
             <div class="padding-x-lg-16">
               <p class="font-size-20 font-weight-bold text-align-center padding-y-16">Web Hosting</p>
-              <input type="range" value="0" min="0" max="20" step="2" class="slider styled-slider slider-progress" list='web-hosting-tickmarks'>
-              <datalist class="tickmarks"id="web-hosting-tickmarks">
-                <p>0</p>
-                <p></p>
-                <p>4</p>
-                <p></p>
-                <p>8</p>
-                <p></p>
-                <p>12</p>
-                <p></p>
-                <p>16</p>
-                <p></p>
-                <p>20</p>
-              </datalist>
+              {{ range where $data.Params.product.customFields ".name" "Extra: Web Hosting" }}
+                {{ $index := 0 }}
+                {{ $value := .value }}
+                {{ range $i, $e := .options }} {{ if (eq $e.name $value) }}{{ $index = $i }}{{ end }} {{ end }}
+                <input id="webHostingRange" type="range" min="0" max="{{ sub (len .options) 1 }}" value="{{ $index }}" step='1' class="slider styled-slider slider-progress" list='web-hosting-tickmarks'>
+                <div class="tickmarks" id="web-hosting-tickmarks">
+                  {{ range .options }}
+                    <p>{{ .name }}</p>
+                  {{ end }}
+                </div>
+              {{ end }}
             </div>
           </div>
         </div>
@@ -217,20 +224,38 @@
           <div class="slider-container">
             <div class="padding-x-lg-16">
               <p class="font-size-20 font-weight-bold text-align-center padding-y-16">Database Servers</p>
-              <input type="range" value="0" min="0" max="20" step="2" class="slider styled-slider slider-progress" list='database-servers-tickmarks'>
-              <datalist class="tickmarks"id="database-servers-tickmarks">
-                <p>0</p>
-                <p></p>
-                <p>4</p>
-                <p></p>
-                <p>8</p>
-                <p></p>
-                <p>12</p>
-                <p></p>
-                <p>16</p>
-                <p></p>
-                <p>20</p>
-              </datalist>
+              {{ range where $data.Params.product.customFields ".name" "Extra: Database Servers" }}
+                {{ $index := 0 }}
+                {{ $value := .value }}
+                {{ range $i, $e := .options }} {{ if (eq $e.name $value) }}{{ $index = $i }}{{ end }} {{ end }}
+                <input id="databaseServersRange" type="range" min="0" max="{{ sub (len .options) 1 }}" value="{{ $index }}" step='1' class="slider styled-slider slider-progress" list='database-servers-tickmarks'>
+                <div class="tickmarks" id="database-servers-tickmarks">
+                  {{ range .options }}
+                    <p>{{ .name }}</p>
+                  {{ end }}
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ram-selector display-flex justify-content-center row">
+        <div class="column-12 column-sm-10 column-md-8 column-lg-6 column-xl-5 column-xxl-4">
+          <div class="slider-container">
+            <div class="padding-x-lg-16">
+              <p class="font-size-20 font-weight-bold text-align-center padding-y-16">Proxy Servers</p>
+              {{ range where $data.Params.product.customFields ".name" "Extra: Proxy Servers" }}
+                {{ $index := 0 }}
+                {{ $value := .value }}
+                {{ range $i, $e := .options }} {{ if (eq $e.name $value) }}{{ $index = $i }}{{ end }} {{ end }}
+                <input id="proxyServersRange" type="range" min="0" max="{{ sub (len .options) 1 }}" value="{{ $index }}" step='1' class="slider styled-slider slider-progress" list='proxy-servers-tickmarks'>
+                <div class="tickmarks" id="proxy-servers-tickmarks">
+                  {{ range .options }}
+                    <p>{{ .name }}</p>
+                  {{ end }}
+                </div>
+              {{ end }}
             </div>
           </div>
         </div>
@@ -258,9 +283,41 @@
 
     <div id="tabpanel4" role="tabpanel" aria-labelledby="tab4" option>
       <div class="text-align-center">
-        <h2 class="font-size-32 font-weight-bold text-align-center padding-y-16">Total</h1>
-        <p class="font-size-25 color-pastel-green text-align-center padding-y-16">$100.21</p>
         <h3 class="font-size-20 font-weight-bold text-align-center padding-y-64">Review & Purchase</h3>
+        <div class="container max-width-500 max-height-300 overflow-y-scroll">
+          <div class="row padding-y-16">
+            <div class="column-6 text-align-right"> <span id="ramTotalAmount"></span> <span>of RAM...</span> </div>
+            <div class="column-6 text-align-left"> <span id="ramTotalPrice"></span> </div>
+          </div>
+          <div class="row padding-y-16">
+            <div class="column-6 text-align-right"> <span id="amdTotalAmount"></span> <span>AMD CPUs...</span> </div>
+            <div class="column-6 text-align-left"> <span id="amdTotalPrice"></span> </div>
+          </div>
+          <div class="row padding-y-16">
+            <div class="column-6 text-align-right"> <span id="armTotalAmount"></span> <span>ARM CPUs...</span> </div>
+            <div class="column-6 text-align-left"> <span id="armTotalPrice"></span> </div>
+          </div>
+          <div class="row padding-y-16">
+            <div class="column-6 text-align-right"> <span id="minecraftTotalAmount"></span> <span>Minecraft Servers...</span> </div>
+            <div class="column-6 text-align-left"> <span id="minecraftTotalPrice"></span> </div>
+          </div>
+          <div class="row padding-y-16">
+            <div class="column-6 text-align-right"> <span id="vpsTotalAmount"></span> <span>VPS Servers...</span> </div>
+            <div class="column-6 text-align-left"> <span id="vpsTotalPrice"></span> </div>
+          </div>
+          <div class="row padding-y-16">
+            <div class="column-6 text-align-right"> <span id="webTotalAmount"></span> <span>Web Hosting...</span> </div>
+            <div class="column-6 text-align-left"> <span id="webTotalPrice"></span> </div>
+          </div>
+          <div class="row padding-y-16">
+            <div class="column-6 text-align-right"> <span id="databaseTotalAmount"></span> <span>Databse Servers...</span> </div>
+            <div class="column-6 text-align-left"> <span id="databaseTotalPrice"></span> </div>
+          </div>
+          <div class="row padding-y-16">
+            <div class="column-6 text-align-right"> <span id="proxyTotalAmount"></span> <span>Proxy Servers...</span> </div>
+            <div class="column-6 text-align-left"> <span id="proxyTotalPrice"></span> </div>
+          </div>
+        </div>
       </div>
       <div class="display-flex justify-content-center padding-y-32">
         <a 
@@ -273,8 +330,9 @@
         </a>
         {{ $currentPage := . }}
         {{ range .RegularPages }}
+        <div class="button-border-wrapper">
           <button 
-            class="snipcart-add-item margin-x-16 padding-x-32 padding-y-16 background-color-dodger-blue font-weight-bold border-radius-8" 
+            class="snipcart-add-item snipcart-custom-add-item-button color-white display-flex align-items-center font-size-16 font-weight-semi-bold border-radius-4 padding-x-32 padding-y-16"
             data-item-name="{{ .Params.product.name }}"
             data-item-id="{{ .Params.product.id }}"
             data-item-price="{{ .Params.product.price }}"
@@ -300,6 +358,7 @@
           >
             Add to Cart
           </button>
+        </div>
         {{ end }}
       </div>
     </div>
@@ -363,6 +422,9 @@
 
       const tab4 = document.querySelector('#tab4');
       tab4.classList.remove('done');
+
+      tab1.parentElement.scrollLeft = tab1.offsetLeft;
+      tab1.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
     }
 
     function selectTab2() {
@@ -377,6 +439,9 @@
 
       const tab4 = document.querySelector('#tab4');
       tab4.classList.remove('done');
+
+      tab2.parentElement.scrollLeft = tab2.offsetLeft;
+      tab2.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
     }
 
     function selectTab3() {
@@ -391,6 +456,9 @@
 
       const tab4 = document.querySelector('#tab4');
       tab4.classList.remove('done');
+
+      tab3.parentElement.scrollLeft = tab3.offsetLeft;
+      tab3.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
     }
 
     function selectTab4() {
@@ -405,6 +473,9 @@
 
       const tab4 = document.querySelector('#tab4');
       tab4.classList.remove('done');
+
+      tab4.parentElement.scrollLeft = tab4.offsetLeft;
+      tab4.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
     }
   </script>
 
@@ -412,34 +483,192 @@
     const snipcartButton = document.querySelector('.snipcart-add-item');
     const itemData = {{ $data.Params.product }};
 
+     
     // RAM Options
     const ramRange = document.querySelector('#ramRange');
     ramRange.addEventListener('change', onRamChange);
 
+    const ramTotalAmount = document.querySelector('#ramTotalAmount');
+    const ramTotalPrice = document.querySelector('#ramTotalPrice');
+
     function onRamChange(event) {
       const ramData = itemData.customfields.find( e => e.name === "RAM" );
       const newValue = ramData.options[event.target.value].name
+      const newPrice = ramData.options[event.target.value].priceModifier
+
       snipcartButton.dataset.itemCustom1Value = newValue;
+
+      ramTotalAmount.innerText = newValue;
+      ramTotalPrice.innerText = `\$${newPrice.toFixed(2)}/mo USD`;
+
+      updateTotal();
     }
 
     // AMD CPU Cores Options
     const amdRange = document.querySelector('#amdRange');
     amdRange.addEventListener('change', onAmdChange);
 
+    const amdTotalAmount = document.querySelector('#amdTotalAmount');
+    const amdTotalPrice = document.querySelector('#amdTotalPrice');
+
     function onAmdChange(event) {
       const amdData = itemData.customfields.find( e => e.name === "AMD CPU Cores" );
       const newValue = amdData.options[event.target.value].name
+      const newPrice = amdData.options[event.target.value].priceModifier
+
       snipcartButton.dataset.itemCustom2Value = newValue;
+
+      amdTotalAmount.innerText = newValue;
+      amdTotalPrice.innerText = `\$${newPrice.toFixed(2)}/mo USD`;
+
+      updateTotal();
     }
 
     // ARM CPU Cores Options
     const armRange = document.querySelector('#armRange');
     armRange.addEventListener('change', onArmChange);
 
+    const armTotalAmount = document.querySelector('#armTotalAmount');
+    const armTotalPrice = document.querySelector('#armTotalPrice');
+
     function onArmChange(event) {
       const armData = itemData.customfields.find( e => e.name === "ARM CPU Cores" );
       const newValue = armData.options[event.target.value].name
+      const newPrice = armData.options[event.target.value].priceModifier
+
       snipcartButton.dataset.itemCustom3Value = newValue;
+
+      armTotalAmount.innerText = newValue;
+      armTotalPrice.innerText = `\$${newPrice.toFixed(2)}/mo USD`;
+
+      updateTotal();
     }
+
+    // Minecraft Servers Options
+    const minecraftServersRange = document.querySelector('#minecraftServersRange');
+    minecraftServersRange.addEventListener('change', onMinecraftServersChange);
+
+    const minecraftTotalAmount = document.querySelector('#minecraftTotalAmount');
+    const minecraftTotalPrice = document.querySelector('#minecraftTotalPrice');
+
+    function onMinecraftServersChange(event) {
+      const minecraftServersData = itemData.customfields.find( e => e.name === "Extra: Minecraft Servers" );
+      const newValue = minecraftServersData.options[event.target.value].name
+      const newPrice = minecraftServersData.options[event.target.value].priceModifier
+
+      snipcartButton.dataset.itemCustom4Value = newValue;
+
+      minecraftTotalAmount.innerText = newValue;
+      minecraftTotalPrice.innerText = `\$${newPrice.toFixed(2)}/mo USD`;
+
+      updateTotal();
+    }
+
+    // VPS Servers Options
+    const vpsServersRange = document.querySelector('#vpsServersRange');
+    vpsServersRange.addEventListener('change', onVpsServersChange);
+
+    const vpsTotalAmount = document.querySelector('#vpsTotalAmount');
+    const vpsTotalPrice = document.querySelector('#vpsTotalPrice');
+
+    function onVpsServersChange(event) {
+      const vpsServersData = itemData.customfields.find( e => e.name === "Extra: VPS Servers" );
+      const newValue = vpsServersData.options[event.target.value].name
+      const newPrice = vpsServersData.options[event.target.value].priceModifier
+
+      snipcartButton.dataset.itemCustom5Value = newValue;
+
+      vpsTotalAmount.innerText = newValue;
+      vpsTotalPrice.innerText = `\$${newPrice.toFixed(2)}/mo USD`;
+
+      updateTotal();
+    }
+
+    // Web Hosting Options
+    const webHostingRange = document.querySelector('#webHostingRange');
+    webHostingRange.addEventListener('change', onWebHostingChange);
+
+    const webTotalAmount = document.querySelector('#webTotalAmount');
+    const webTotalPrice = document.querySelector('#webTotalPrice');
+
+    function onWebHostingChange(event) {
+      const webHostingData = itemData.customfields.find( e => e.name === "Extra: Web Hosting" );
+      const newValue = webHostingData.options[event.target.value].name
+      const newPrice = webHostingData.options[event.target.value].priceModifier
+
+      snipcartButton.dataset.itemCustom6Value = newValue;
+
+      webTotalAmount.innerText = newValue;
+      webTotalPrice.innerText = `\$${newPrice.toFixed(2)}/mo USD`;
+
+      updateTotal();
+    }
+
+    // Database Servers Options
+    const databaseServersRange = document.querySelector('#databaseServersRange');
+    databaseServersRange.addEventListener('change', onDatabaseServersChange);
+
+    const databaseTotalAmount = document.querySelector('#databaseTotalAmount');
+    const databaseTotalPrice = document.querySelector('#databaseTotalPrice');
+
+    function onDatabaseServersChange(event) {
+      const databaseServersData = itemData.customfields.find( e => e.name === "Extra: Database Servers" );
+      const newValue = databaseServersData.options[event.target.value].name
+      const newPrice = databaseServersData.options[event.target.value].priceModifier
+
+      snipcartButton.dataset.itemCustom7Value = newValue;
+
+      databaseTotalAmount.innerText = newValue;
+      databaseTotalPrice.innerText = `\$${newPrice.toFixed(2)}/mo USD`;
+
+      updateTotal();
+    }
+
+    // Proxy Servers Options
+    const proxyServersRange = document.querySelector('#proxyServersRange');
+    proxyServersRange.addEventListener('change', onProxyServersChange);
+
+    const proxyTotalAmount = document.querySelector('#proxyTotalAmount');
+    const proxyTotalPrice = document.querySelector('#proxyTotalPrice');
+
+    function onProxyServersChange(event) {
+      const proxyServersData = itemData.customfields.find( e => e.name === "Extra: Proxy Servers" );
+      const newValue = proxyServersData.options[event.target.value].name
+      const newPrice = proxyServersData.options[event.target.value].priceModifier
+
+      snipcartButton.dataset.itemCustom8Value = newValue;
+
+      proxyTotalAmount.innerText = newValue;
+      proxyTotalPrice.innerText = `\$${newPrice.toFixed(2)}/mo USD`;
+
+      updateTotal();
+    }
+
+    // Utilities
+    function updateTotal() {
+      let totalPrice = itemData.price;
+
+      itemData.customfields.forEach( (e, i) => {
+        const valueSelected = snipcartButton.dataset[`itemCustom${i + 1}Value`]
+        const optionSelected = e.options.find( e => String(e.name) === String(valueSelected) );
+        const priceSelected = optionSelected.priceModifier;
+
+        totalPrice += priceSelected;
+      } );
+
+      const totalPriceElement = document.querySelector('#totalPrice');
+      totalPriceElement.innerText = `\$${totalPrice.toFixed(2)}`;
+    }
+
+    // Trigger all events at least once:
+    ramRange.dispatchEvent(new Event('change'));
+    amdRange.dispatchEvent(new Event('change'));
+    armRange.dispatchEvent(new Event('change'));
+    minecraftServersRange.dispatchEvent(new Event('change'));
+    vpsServersRange.dispatchEvent(new Event('change'));
+    webHostingRange.dispatchEvent(new Event('change'));
+    databaseServersRange.dispatchEvent(new Event('change'));
+    proxyServersRange.dispatchEvent(new Event('change'));
+
   </script>
 </section>

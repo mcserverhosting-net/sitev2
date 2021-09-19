@@ -5,7 +5,7 @@ draft: false
 product:
   id: "general-hut"
   name: "Custom Plan"
-  price: "10.00"
+  price: 10.00
 
   customFields:
     - name: "RAM"
@@ -13,128 +13,149 @@ product:
       value: "2GB"
       options:
         - name: "1GB"
-          priceModifier: "1.00"
+          priceModifier: 1.00
 
         - name: "2GB"
-          priceModifier: "2.00"
+          priceModifier: 2.00
 
         - name: "3GB"
-          priceModifier: "3.00"
+          priceModifier: 3.00
 
         - name: "4GB"
-          priceModifier: "4.00"
+          priceModifier: 4.00
 
     - name: "AMD CPU Cores"
       type: "dropdown"
       value: "0"
       options:
+        - name: "0"
+          priceModifier: 0.00
+
         - name: "1"
-          priceModifier: "1.00"
+          priceModifier: 1.00
 
         - name: "2"
-          priceModifier: "2.00"
+          priceModifier: 2.00
 
         - name: "3"
-          priceModifier: "3.00"
+          priceModifier: 3.00
 
         - name: "4"
-          priceModifier: "4.00"
+          priceModifier: 4.00
 
     - name: "ARM CPU Cores"
       type: "dropdown"
       value: "0"
       options:
+        - name: "0"
+          priceModifier: 0.00
+
         - name: "1"
-          priceModifier: "1.00"
+          priceModifier: 1.00
 
         - name: "2"
-          priceModifier: "2.00"
+          priceModifier: 2.00
 
         - name: "3"
-          priceModifier: "3.00"
+          priceModifier: 3.00
 
         - name: "4"
-          priceModifier: "4.00"
+          priceModifier: 4.00
 
-    - name: "Extra: Minecraft Server"
+    - name: "Extra: Minecraft Servers"
       type: "dropdown"
       value: "0"
       options:
+        - name: "0"
+          priceModifier: 0.00
+
         - name: "1"
-          priceModifier: "1.00"
+          priceModifier: 1.00
 
         - name: "2"
-          priceModifier: "2.00"
+          priceModifier: 2.00
 
         - name: "3"
-          priceModifier: "3.00"
+          priceModifier: 3.00
 
         - name: "4"
-          priceModifier: "4.00"
+          priceModifier: 4.00
 
-    - name: "Extra: VPS Server"
+    - name: "Extra: VPS Servers"
       type: "dropdown"
       value: "0"
       options:
+        - name: "0"
+          priceModifier: 0.00
+
         - name: "1"
-          priceModifier: "1.00"
+          priceModifier: 1.00
 
         - name: "2"
-          priceModifier: "2.00"
+          priceModifier: 2.00
 
         - name: "3"
-          priceModifier: "3.00"
+          priceModifier: 3.00
 
         - name: "4"
-          priceModifier: "4.00"
+          priceModifier: 4.00
 
     - name: "Extra: Web Hosting"
       type: "dropdown"
       value: "0"
       options:
+        - name: "0"
+          priceModifier: 0.00
+
         - name: "1"
-          priceModifier: "1.00"
+          priceModifier: 1.00
 
         - name: "2"
-          priceModifier: "2.00"
+          priceModifier: 2.00
 
         - name: "3"
-          priceModifier: "3.00"
+          priceModifier: 3.00
 
         - name: "4"
-          priceModifier: "4.00"
+          priceModifier: 4.00
 
-    - name: "Extra: Database Server"
+    - name: "Extra: Database Servers"
       type: "dropdown"
       value: "0"
       options:
+        - name: "0"
+          priceModifier: 0.00
+
         - name: "1"
-          priceModifier: "1.00"
+          priceModifier: 1.00
 
         - name: "2"
-          priceModifier: "2.00"
+          priceModifier: 2.00
 
         - name: "3"
-          priceModifier: "3.00"
+          priceModifier: 3.00
 
         - name: "4"
-          priceModifier: "4.00"
+          priceModifier: 4.00
 
-    - name: "Extra: Proxy Server"
+    - name: "Extra: Proxy Servers"
       type: "dropdown"
       value: "0"
       options:
+        - name: "0"
+          priceModifier: 0.00
+
         - name: "1"
-          priceModifier: "1.00"
+          priceModifier: 1.00
 
         - name: "2"
-          priceModifier: "2.00"
+          priceModifier: 2.00
 
         - name: "3"
-          priceModifier: "3.00"
+          priceModifier: 3.00
 
         - name: "4"
-          priceModifier: "4.00"
+          priceModifier: 4.00
 
   selectedPlan: "monthly-plan"
 

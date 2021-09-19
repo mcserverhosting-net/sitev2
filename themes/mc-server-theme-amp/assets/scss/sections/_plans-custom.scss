@@ -7,7 +7,16 @@
 .section-plans-custom-purchase {
   min-height: 100vh;
 
+  .tabs-with-selector {
+    background-color: #2D3A4A;
+      border: 1px gray solid;
+      border-radius: 8px;
+      margin: 0px 8px;
+  }
+
   .tab {
+    position: relative;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,13 +24,18 @@
     font-weight: bold;
     color: #696969;
 
+
+    .tab-body {
+      z-index: 1;
+    }
+
     .tab-number,
     .tab-completed {
       align-items: center;
       justify-content: center;
 
       background-color: #696969;
-      color: #000000;
+      color: #2D3A4A;
       border-radius: 50%;
 
       width: 42px;
@@ -39,6 +53,9 @@
 
     .tab-completed {
       display: none;
+    }
+
+    .tab-label {
     }
 
     &.done {
@@ -64,6 +81,18 @@
         color: #FFFFFF;
       }
     }
+
+  }
+
+  .tab-line {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      right: -50%;
+      border-bottom: 1px gray solid;
+    }
   }
 
 
@@ -78,7 +107,6 @@
       display: flex;
   }
   amp-selector[role=tablist].tabs-with-selector [role=tab] {
-    width: 100%;
     text-align: center;
     padding: var(--space-1);
   }
