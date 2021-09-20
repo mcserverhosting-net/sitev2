@@ -1,7 +1,7 @@
 {{ $data := site.GetPage "/plans-custom/custom-plan" }}
 <section class="section section-plans-custom-purchase padding-y-64">
 
-  <amp-selector id="plans-custom-tabs" class="tabs-with-selector padding-32 overflow-x-scroll scrollbar-hidden justify-content-center" role="tablist" on="select:plans-custom-panels.toggle(index=event.targetOption, value=true)" keyboard-select-mode="focus">
+  <amp-selector id="plans-custom-tabs" class="tabs-with-selector padding-32 overflow-x-scroll scrollbar-hidden justify-content-xl-center" role="tablist" on="select:plans-custom-panels.toggle(index=event.targetOption, value=true)" keyboard-select-mode="focus">
 
     <div id="tab1" role="tab" aria-controls="tabpanel1" class="tab tab-line" option="0" selected>
       <div class="tab-body display-flex align-items-center justify-content-center background-color-licorice padding-x-16 margin-right-64">
@@ -49,7 +49,7 @@
       <div class="ram-selector display-flex justify-content-center row">
         <div class="column-12 column-sm-10 column-md-8 column-lg-6 column-xl-4">
           {{ range where $data.Params.product.customFields ".name" "RAM" }}
-          <div class="slider-container">
+          <div class="slider-container padding-32">
             {{ $index := 0 }}
             {{ $value := .value }}
             {{ range $i, $e := .options }} {{ if (eq $e.name $value) }}{{ $index = $i }}{{ end }} {{ end }}
@@ -91,7 +91,7 @@
       <div class="ram-selector display-flex justify-content-center row">
         <div class="column-12 column-sm-10 column-md-8 column-lg-6 column-xl-5 column-xxl-4">
           <div class="padding-x-lg-16">
-            <div class="slider-container">
+            <div class="slider-container padding-32">
               <div class="display-flex align-items-center justify-content-center padding-bottom-16">
                 <p class="font-size-20 font-weight-bold text-align-center">AMD CPU</p>
                 <!-- <input type="checkbox" name="" id=""> -->
@@ -112,7 +112,7 @@
         </div>
         <div class="column-12 column-sm-10 column-md-8 column-lg-6 column-xl-5 column-xxl-4">
           <div class="padding-x-lg-16">
-            <div class="slider-container">
+            <div class="slider-container padding-32">
               <div class="display-flex align-items-center justify-content-center padding-bottom-16">
                 <p class="font-size-20 font-weight-bold text-align-center">ARM CPU</p>
                 <!-- <input type="checkbox" name="" id=""> -->
@@ -156,109 +156,232 @@
     <div id="tabpanel3" role="tabpanel" aria-labelledby="tab3" option>
       <h3 class="font-size-20 font-weight-bold text-align-center padding-y-64">Select Extras</h3>
 
-      <div class="ram-selector display-flex justify-content-center row">
-        <div class="column-12 column-sm-10 column-md-8 column-lg-6 column-xl-5 column-xxl-4">
-          <div class="slider-container">
-            <div class="padding-x-lg-16">
-              <p class="font-size-20 font-weight-bold text-align-center padding-y-16">Minecraft Servers</p>
-              {{ range where $data.Params.product.customFields ".name" "Extra: Minecraft Servers" }}
-                {{ $index := 0 }}
-                {{ $value := .value }}
-                {{ range $i, $e := .options }} {{ if (eq $e.name $value) }}{{ $index = $i }}{{ end }} {{ end }}
-                <input id="minecraftServersRange" type="range" min="0" max="{{ sub (len .options) 1 }}" value="{{ $index }}" step='1' class="slider styled-slider slider-progress" list='minecraft-servers-tickmarks'>
-                <div class="tickmarks" id="minecraft-servers-tickmarks">
-                  {{ range .options }}
-                    <p>{{ .name }}</p>
-                  {{ end }}
-                </div>
-              {{ end }}
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="display-flex flex-direction-column flex-direction-lg-row align-items-center justify-content-center">
+        
+        <label class="extra-block cursor-pointer margin-16">
+          <input class="display-none" type="radio" name="extra-block">
 
-      <div class="ram-selector display-flex justify-content-center row">
-        <div class="column-12 column-sm-10 column-md-8 column-lg-6 column-xl-5 column-xxl-4">
-          <div class="slider-container">
-            <div class="padding-x-lg-16">
-              <p class="font-size-20 font-weight-bold text-align-center padding-y-16">VPS Servers</p>
-              {{ range where $data.Params.product.customFields ".name" "Extra: VPS Servers" }}
-                {{ $index := 0 }}
-                {{ $value := .value }}
-                {{ range $i, $e := .options }} {{ if (eq $e.name $value) }}{{ $index = $i }}{{ end }} {{ end }}
-                <input id="vpsServersRange" type="range" min="0" max="{{ sub (len .options) 1 }}" value="{{ $index }}" step='1' class="slider styled-slider slider-progress" list='vps-servers-tickmarks'>
-                <div class="tickmarks" id="vps-servers-tickmarks">
-                  {{ range .options }}
-                    <p>{{ .name }}</p>
-                  {{ end }}
+          <div class="unfocused-block display-flex flex-direction-column align-items-center justify-content-center padding-16 border-radius-4">
+            <amp-img
+              class="margin-8"
+              alt="Minecraft Servers"
+              src="/images/plans-custom-minecraft-server.png"
+              width="110"
+              height="110"
+            >
+            </amp-img>
+            <p class="padding-top-16 font-weight-semi-bold text-align-center white-space-nowrap">Minecraft Servers</p>
+          </div>
+          
+          <div class="ram-selector focused-block display-flex justify-content-center">
+            <div class="slider-container padding-32 padding-top-16 width-100">
+              <div class="padding-x-lg-16">
+                <div class="display-flex align-items-center justify-content-center margin-bottom-16">
+                  <amp-img
+                    class="margin-8"
+                    alt="Minecraft Servers"
+                    src="/images/plans-custom-minecraft-server.png"
+                    width="50"
+                    height="50"
+                  >
+                  </amp-img>
+                  <span class="font-size-20 font-weight-bold text-align-center padding-y-16 margin-left-16">Minecraft Servers</span>
                 </div>
-              {{ end }}
+                {{ range where $data.Params.product.customFields ".name" "Extra: Minecraft Servers" }}
+                  {{ $index := 0 }}
+                  {{ $value := .value }}
+                  {{ range $i, $e := .options }} {{ if (eq $e.name $value) }}{{ $index = $i }}{{ end }} {{ end }}
+                  <input id="minecraftServersRange" type="range" min="0" max="{{ sub (len .options) 1 }}" value="{{ $index }}" step='1' class="slider styled-slider slider-progress" list='minecraft-servers-tickmarks'>
+                  <div class="tickmarks" id="minecraft-servers-tickmarks">
+                    {{ range .options }}
+                      <p>{{ .name }}</p>
+                    {{ end }}
+                  </div>
+                {{ end }}
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+        </label>
 
-      <div class="ram-selector display-flex justify-content-center row">
-        <div class="column-12 column-sm-10 column-md-8 column-lg-6 column-xl-5 column-xxl-4">
-          <div class="slider-container">
-            <div class="padding-x-lg-16">
-              <p class="font-size-20 font-weight-bold text-align-center padding-y-16">Web Hosting</p>
-              {{ range where $data.Params.product.customFields ".name" "Extra: Web Hosting" }}
-                {{ $index := 0 }}
-                {{ $value := .value }}
-                {{ range $i, $e := .options }} {{ if (eq $e.name $value) }}{{ $index = $i }}{{ end }} {{ end }}
-                <input id="webHostingRange" type="range" min="0" max="{{ sub (len .options) 1 }}" value="{{ $index }}" step='1' class="slider styled-slider slider-progress" list='web-hosting-tickmarks'>
-                <div class="tickmarks" id="web-hosting-tickmarks">
-                  {{ range .options }}
-                    <p>{{ .name }}</p>
-                  {{ end }}
-                </div>
-              {{ end }}
-            </div>
-          </div>
-        </div>
-      </div>
+        <label class="extra-block cursor-pointer margin-16">
+          <input class="display-none" type="radio" name="extra-block">
 
-      <div class="ram-selector display-flex justify-content-center row">
-        <div class="column-12 column-sm-10 column-md-8 column-lg-6 column-xl-5 column-xxl-4">
-          <div class="slider-container">
-            <div class="padding-x-lg-16">
-              <p class="font-size-20 font-weight-bold text-align-center padding-y-16">Database Servers</p>
-              {{ range where $data.Params.product.customFields ".name" "Extra: Database Servers" }}
-                {{ $index := 0 }}
-                {{ $value := .value }}
-                {{ range $i, $e := .options }} {{ if (eq $e.name $value) }}{{ $index = $i }}{{ end }} {{ end }}
-                <input id="databaseServersRange" type="range" min="0" max="{{ sub (len .options) 1 }}" value="{{ $index }}" step='1' class="slider styled-slider slider-progress" list='database-servers-tickmarks'>
-                <div class="tickmarks" id="database-servers-tickmarks">
-                  {{ range .options }}
-                    <p>{{ .name }}</p>
-                  {{ end }}
-                </div>
-              {{ end }}
-            </div>
+          <div class="unfocused-block display-flex flex-direction-column align-items-center justify-content-center padding-16 border-radius-4">
+            <amp-img
+              class="margin-8"
+              alt="Minecraft Servers"
+              src="/images/plans-custom-vps-server.png"
+              width="54"
+              height="95"
+            >
+            </amp-img>
+            <p class="padding-top-16 font-weight-semi-bold text-align-center white-space-nowrap">VPS Servers</p>
           </div>
-        </div>
-      </div>
 
-      <div class="ram-selector display-flex justify-content-center row">
-        <div class="column-12 column-sm-10 column-md-8 column-lg-6 column-xl-5 column-xxl-4">
-          <div class="slider-container">
-            <div class="padding-x-lg-16">
-              <p class="font-size-20 font-weight-bold text-align-center padding-y-16">Proxy Servers</p>
-              {{ range where $data.Params.product.customFields ".name" "Extra: Proxy Servers" }}
-                {{ $index := 0 }}
-                {{ $value := .value }}
-                {{ range $i, $e := .options }} {{ if (eq $e.name $value) }}{{ $index = $i }}{{ end }} {{ end }}
-                <input id="proxyServersRange" type="range" min="0" max="{{ sub (len .options) 1 }}" value="{{ $index }}" step='1' class="slider styled-slider slider-progress" list='proxy-servers-tickmarks'>
-                <div class="tickmarks" id="proxy-servers-tickmarks">
-                  {{ range .options }}
-                    <p>{{ .name }}</p>
-                  {{ end }}
+          <div class="ram-selector focused-block display-flex justify-content-center">
+            <div class="slider-container padding-32 padding-top-16 width-100">
+              <div class="padding-x-lg-16">
+                <div class="display-flex align-items-center justify-content-center margin-bottom-16">
+                  <amp-img
+                    class="margin-8"
+                    alt="Minecraft Servers"
+                    src="/images/plans-custom-vps-server.png"
+                    width="27"
+                    height="47"
+                  >
+                  </amp-img>
+                  <span class="font-size-20 font-weight-bold text-align-center padding-y-16 margin-left-16">VPS Servers</span>
                 </div>
-              {{ end }}
+                {{ range where $data.Params.product.customFields ".name" "Extra: VPS Servers" }}
+                  {{ $index := 0 }}
+                  {{ $value := .value }}
+                  {{ range $i, $e := .options }} {{ if (eq $e.name $value) }}{{ $index = $i }}{{ end }} {{ end }}
+                  <input id="vpsServersRange" type="range" min="0" max="{{ sub (len .options) 1 }}" value="{{ $index }}" step='1' class="slider styled-slider slider-progress" list='vps-servers-tickmarks'>
+                  <div class="tickmarks" id="vps-servers-tickmarks">
+                    {{ range .options }}
+                      <p>{{ .name }}</p>
+                    {{ end }}
+                  </div>
+                {{ end }}
+              </div>
             </div>
           </div>
-        </div>
+        </label>
+
+        <label class="extra-block cursor-pointer margin-16">
+          <input class="display-none" type="radio" name="extra-block">
+
+          <div class="unfocused-block display-flex flex-direction-column align-items-center justify-content-center padding-16 border-radius-4">
+            <amp-img
+              class="margin-8"
+              alt="Minecraft Servers"
+              src="/images/plans-custom-web-hosting.png"
+              width="64"
+              height="87"
+            >
+            </amp-img>
+            <p class="padding-top-16 font-weight-semi-bold text-align-center white-space-nowrap">Web Hosting</p>
+          </div>
+
+          <div class="ram-selector focused-block display-flex justify-content-center">
+            <div class="slider-container padding-32 padding-top-16 width-100">
+              <div class="padding-x-lg-16">
+                <div class="display-flex align-items-center justify-content-center margin-bottom-16">
+                  <amp-img
+                    class="margin-8"
+                    alt="Minecraft Servers"
+                    src="/images/plans-custom-web-hosting.png"
+                    width="32"
+                    height="43"
+                  >
+                  </amp-img>
+                  <span class="font-size-20 font-weight-bold text-align-center padding-y-16 margin-left-16">Web Hosting</span>
+                </div>
+                {{ range where $data.Params.product.customFields ".name" "Extra: Web Hosting" }}
+                  {{ $index := 0 }}
+                  {{ $value := .value }}
+                  {{ range $i, $e := .options }} {{ if (eq $e.name $value) }}{{ $index = $i }}{{ end }} {{ end }}
+                  <input id="webHostingRange" type="range" min="0" max="{{ sub (len .options) 1 }}" value="{{ $index }}" step='1' class="slider styled-slider slider-progress" list='web-hosting-tickmarks'>
+                  <div class="tickmarks" id="web-hosting-tickmarks">
+                    {{ range .options }}
+                      <p>{{ .name }}</p>
+                    {{ end }}
+                  </div>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </label>
+
+        <label class="extra-block cursor-pointer margin-16">
+          <input class="display-none" type="radio" name="extra-block">
+
+          <div class="unfocused-block display-flex flex-direction-column align-items-center justify-content-center padding-16 border-radius-4">
+            <amp-img
+              class="margin-8"
+              alt="Minecraft Servers"
+              src="/images/plans-custom-database-server.png"
+              width="55"
+              height="94"
+            >
+            </amp-img>
+            <p class="padding-top-16 font-weight-semi-bold text-align-center white-space-nowrap">Database Servers</p>
+          </div>
+
+          <div class="ram-selector focused-block display-flex justify-content-center">
+            <div class="slider-container padding-32 padding-top-16 width-100">
+              <div class="padding-x-lg-16">
+                <div class="display-flex align-items-center justify-content-center margin-bottom-16">
+                  <amp-img
+                    class="margin-8"
+                    alt="Minecraft Servers"
+                    src="/images/plans-custom-database-server.png"
+                    width="27"
+                    height="47"
+                  >
+                  </amp-img>
+                  <span class="font-size-20 font-weight-bold text-align-center padding-y-16 margin-left-16">Database Servers</span>
+                </div>
+                {{ range where $data.Params.product.customFields ".name" "Extra: Database Servers" }}
+                  {{ $index := 0 }}
+                  {{ $value := .value }}
+                  {{ range $i, $e := .options }} {{ if (eq $e.name $value) }}{{ $index = $i }}{{ end }} {{ end }}
+                  <input id="databaseServersRange" type="range" min="0" max="{{ sub (len .options) 1 }}" value="{{ $index }}" step='1' class="slider styled-slider slider-progress" list='database-servers-tickmarks'>
+                  <div class="tickmarks" id="database-servers-tickmarks">
+                    {{ range .options }}
+                      <p>{{ .name }}</p>
+                    {{ end }}
+                  </div>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </label>
+
+        <label class="extra-block cursor-pointer margin-16">
+          <input class="display-none" type="radio" name="extra-block">
+          <div class="unfocused-block display-flex flex-direction-column align-items-center justify-content-center padding-16 border-radius-4">
+            <amp-img
+              class="margin-8"
+              alt="Minecraft Servers"
+              src="/images/plans-custom-proxy-server.png"
+              width="63"
+              height="88"
+            >
+            </amp-img>
+            <p class="padding-top-16 font-weight-semi-bold text-align-center white-space-nowrap">Proxy Servers</p>
+          </div>
+
+          <div class="ram-selector focused-block display-flex justify-content-center">
+            <div class="slider-container padding-32 padding-top-16 width-100">
+              <div class="padding-x-lg-16">
+                <div class="display-flex align-items-center justify-content-center margin-bottom-16">
+                  <amp-img
+                    class="margin-8"
+                    alt="Minecraft Servers"
+                    src="/images/plans-custom-proxy-server.png"
+                    width="31"
+                    height="44"
+                  >
+                  </amp-img>
+                  <span class="font-size-20 font-weight-bold text-align-center padding-y-16 margin-left-16">Proxy Servers</span>
+                </div>
+                {{ range where $data.Params.product.customFields ".name" "Extra: Proxy Servers" }}
+                  {{ $index := 0 }}
+                  {{ $value := .value }}
+                  {{ range $i, $e := .options }} {{ if (eq $e.name $value) }}{{ $index = $i }}{{ end }} {{ end }}
+                  <input id="proxyServersRange" type="range" min="0" max="{{ sub (len .options) 1 }}" value="{{ $index }}" step='1' class="slider styled-slider slider-progress" list='proxy-servers-tickmarks'>
+                  <div class="tickmarks" id="proxy-servers-tickmarks">
+                    {{ range .options }}
+                      <p>{{ .name }}</p>
+                    {{ end }}
+                  </div>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </label>
+
       </div>
 
       <div class="display-flex justify-content-center padding-y-32">

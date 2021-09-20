@@ -18,9 +18,11 @@
             layout="responsive"
           >
           </amp-img>
-          <h2 class="font-size-25 font-weight-bold text-align-center padding-y-32">Custom builds for Powerful Solutions</h2>
+          <h2 class="font-size-25 font-weight-bold text-align-center padding-y-32">{{ .title }}</h2>
           <div class="color-aqua text-align-center">
-            <a href="#">Read More ></a>
+            {{ with .button }}
+              <a href="{{ .link }}">{{ .label }}</a>
+            {{ end }}
           </div>
         </div>
       </div>

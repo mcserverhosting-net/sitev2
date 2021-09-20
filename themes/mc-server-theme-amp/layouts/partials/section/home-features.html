@@ -30,9 +30,12 @@
               {{ end }}
               {{ with .button }}
               <div class="card-link color-aqua text-align-center padding-y-8">
-                <a href="{{ .link }}">
+                <a {{ with .link }}href="{{ . }}"{{ end }}>
                   {{ .label }}
                 </a>
+                <div class="card-popup font-size-14 color-white text-align-left margin-y-8 padding-32">
+                  {{ .hoverText }}
+                </div>
               </div>
               {{ end }}
             </div>

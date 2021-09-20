@@ -20,9 +20,9 @@ about:
       - title: "Custom builds for Powerful Solutions"
         image:
           alt: "Minecraft Screenshot"
-          src: "/images/cta-background.png"
-          width: "2049"
-          height: "1086"
+          src: "/images/about-custom-builds-for-powerful-solutions.png"
+          width: "1110"
+          height: "650"
 
         button:
           label: "Read More >"
@@ -31,9 +31,9 @@ about:
       - title: "Powered by a Modern Stack"
         image:
           alt: "Minecraft Screenshot"
-          src: "/images/cta-background.png"
-          width: "2049"
-          height: "1086"
+          src: "/images/about-powered-by-a-modern-stack.png"
+          width: "555"
+          height: "325"
 
         button:
           label: "Read More >"
@@ -53,9 +53,9 @@ about:
       - title: "United Federation of AFK players"
         image:
           alt: "Minecraft Screenshot"
-          src: "/images/cta-background.png"
-          width: "2049"
-          height: "1086"
+          src: "/images/about-united-federation-of-afk-players.png"
+          width: "555"
+          height: "325"
 
         text: >
           "Needless to say, we're proud of our work we've done so far on the
@@ -65,9 +65,9 @@ about:
       - title: "Lorem Ipsum Placeholder"
         image:
           alt: "Minecraft Screenshot"
-          src: "/images/cta-background.png"
-          width: "2049"
-          height: "1086"
+          src: "/images/about-lorem-ipsum.png"
+          width: "555"
+          height: "325"
 
         text: >
           "Needless to say, we're proud of our work we've done so far on the
@@ -76,15 +76,24 @@ about:
   team:
     title: "Our Team"
     members:
-      - image: "/images/cta-background.png"
+      - image: "/images/about-logan.png"
         name: "Logan H"
         position: "Datacenter Admin"
+        github: ""
+        linkedin: ""
+        email: ""
+
+      - image: "/images/about-samuel.png"
+        name: "Samuel W"
+        position: "Cluster Admin & Owner"
+        github: ""
+        linkedin: ""
+        email: ""
 
       - image: "/images/cta-background.png"
         name: "Logan H"
-        position: "Datacenter Admin"
-
-      - image: "/images/cta-background.png"
-        name: "Logan H"
-        position: "Datacenter Admin"
+        position: "Support Administrator"
+        github: ""
+        linkedin: ""
+        email: ""
 ---

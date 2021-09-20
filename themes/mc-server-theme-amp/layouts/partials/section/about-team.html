@@ -13,13 +13,47 @@
                style="background-image: url('{{ .image }}');"
           >
           </div>
-          <h2 class="font-size-20 font-weight-bold padding-y-8">
+          <h2 class="font-size-20 font-weight-bold padding-y-8 white-space-nowrap">
             {{ .name }}
           </h2>
-          <p class="">
+          <p class="white-space-nowrap">
             {{ .position }}
           </p>
-          <div class=""></div>
+          <div class="display-flex align-items-center justify-content-center margin-y-16">
+            <a class="display-block margin-x-8" href="{{ .github | safeURL }}">
+              <amp-img
+                class=""
+                alt="GitHub"
+                src="/images/github-icon.png"
+                width="21"
+                height="21"
+                layout=""
+              >
+              </amp-img>
+            </a>
+            <a class="display-block margin-x-8" href="{{ .linkedin | safeURL }}">
+              <amp-img
+                class="display-block"
+                alt="Linkedin"
+                src="/images/linkedin-icon.png"
+                width="21"
+                height="21"
+                layout=""
+              >
+              </amp-img>
+            </a>
+            <a class="display-block margin-x-8" href="{{ .email | safeURL }}">
+              <amp-img
+                class="display-block"
+                alt="Email"
+                src="/images/email-icon.png"
+                width="20"
+                height="21"
+                layout=""
+              >
+              </amp-img>
+            </a>
+          </div>
         </div>
       </div>
       {{ end }}

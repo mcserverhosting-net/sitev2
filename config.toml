@@ -34,6 +34,8 @@ enableRobotsTXT = true
   stylesheetRegular = ["/base-styling.css"] # these styles are used when amp is disabled for a specific page
   javascriptRegular = ["/script.js"] # these scripts are used when amp is disabled for a specific page
 
+  snipcartApiKey = "MzE1NDc0ZDktZGRkMC00MmQ1LTkzOGQtYmI1OTExOGVhZTdjNjM3NjY2OTQwNTM1NTYxNjYy"
+
 [taxonomies]
   category = 'categories'
   tag = 'tags'

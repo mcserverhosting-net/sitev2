@@ -1,0 +1,25 @@
+{{ partial "structure/head" . }}
+
+{{ partial "navigation/navbar.html" . }}
+
+<main>
+<section class="section-faqs padding-y-64">
+  <div class="container">
+    <div class="row padding-top-64 justify-content-space-around">
+      <div class="column-12 padding-y-32">
+        <h2 class="font-size-25 font-weight-bold">{{ .Title }}</h2>
+        <div class="padding-y-32">
+          {{ .Content }}
+        </div>
+        <div class="color-aqua">
+          <a href="{{ .Parent.Permalink }}">Back to {{ .Parent.Title }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+{{ partial "navigation/footer.html" . }}
+
+{{ partial "structure/foot" . }}

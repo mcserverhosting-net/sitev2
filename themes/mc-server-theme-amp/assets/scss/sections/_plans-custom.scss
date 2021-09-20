@@ -95,6 +95,44 @@
     }
   }
 
+  .extra-block {
+    input {
+      // opacity: 0;
+    }
+
+    .focused-block {
+      display: none;
+
+      width: 0;
+      height: 175px;
+
+      max-width: 0;
+    }
+    .unfocused-block {
+      display: flex;
+
+      width: 175px;
+      height: 175px;
+
+      background-color: #2D3A4A;
+    }
+
+    input:checked ~ .focused-block {
+      display: flex;
+
+      width: 440px;
+      height: 175px;
+
+      min-width: 440px;
+      max-width: 440px;
+
+      transition: all 500ms;
+    }
+    input:checked ~ .unfocused-block {
+      display: none;
+    }
+  }
+
 
   /* Styles for the selector based tabs */
   amp-selector[role=tablist].tabs-with-selector {

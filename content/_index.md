@@ -29,7 +29,7 @@ home:
   ryzen:
     image:
       alt: "Host Illustration"
-      src: "/images/ryzen-image.png"
+      src: "/images/ryzen-image-home.png"
       width: "1110"
       height: "960"
 
@@ -44,6 +44,12 @@ home:
         button:
           label: "Hover for more details >"
           link: ""
+          hoverText: >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            dictum maximus elit, vel finibus magna sodales efficitur. In
+            hendrerit volutpat nulla eu sagittis. Maecenas odio mi, mollis quis
+            venenatis ut, mollis at tortor. Suspendisse potenti. Pellentesque
+            dui massa, auctor at purus sed, interdum tempor eros.
 
       - image: ""
         title: "Secure Authentication"
@@ -51,6 +57,12 @@ home:
         button:
           label: ""
           link: ""
+          hoverText: >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            dictum maximus elit, vel finibus magna sodales efficitur. In
+            hendrerit volutpat nulla eu sagittis. Maecenas odio mi, mollis quis
+            venenatis ut, mollis at tortor. Suspendisse potenti. Pellentesque
+            dui massa, auctor at purus sed, interdum tempor eros.
 
       - image: "/images/protection.png"
         title: "DDOS Protection"
@@ -58,6 +70,12 @@ home:
         button:
           label: "Hover for more details >"
           link: ""
+          hoverText: >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            dictum maximus elit, vel finibus magna sodales efficitur. In
+            hendrerit volutpat nulla eu sagittis. Maecenas odio mi, mollis quis
+            venenatis ut, mollis at tortor. Suspendisse potenti. Pellentesque
+            dui massa, auctor at purus sed, interdum tempor eros.
 
       - image: "/images/backup.png"
         title: "60 Days Backup"
@@ -65,6 +83,12 @@ home:
         button:
           label: "Hover for more details >"
           link: ""
+          hoverText: >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            dictum maximus elit, vel finibus magna sodales efficitur. In
+            hendrerit volutpat nulla eu sagittis. Maecenas odio mi, mollis quis
+            venenatis ut, mollis at tortor. Suspendisse potenti. Pellentesque
+            dui massa, auctor at purus sed, interdum tempor eros.
 
       - image: "/images/quickstart.png"
         title: "Quickstart"
@@ -72,6 +96,12 @@ home:
         button:
           label: "Hover for more details >"
           link: ""
+          hoverText: >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            dictum maximus elit, vel finibus magna sodales efficitur. In
+            hendrerit volutpat nulla eu sagittis. Maecenas odio mi, mollis quis
+            venenatis ut, mollis at tortor. Suspendisse potenti. Pellentesque
+            dui massa, auctor at purus sed, interdum tempor eros.
 
       - image: "/images/online-support.png"
         title: "Community Support"
@@ -79,6 +109,12 @@ home:
         button:
           label: "Hover for more details >"
           link: ""
+          hoverText: >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            dictum maximus elit, vel finibus magna sodales efficitur. In
+            hendrerit volutpat nulla eu sagittis. Maecenas odio mi, mollis quis
+            venenatis ut, mollis at tortor. Suspendisse potenti. Pellentesque
+            dui massa, auctor at purus sed, interdum tempor eros.
 
   accessible:
     title: "Accessible"

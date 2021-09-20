@@ -15,10 +15,10 @@ menu:
 
 content:
   questions:
-    title: "Powerful with a Pinch of Bleeding Edge"
+    title: "Frequently Asked Questions"
 
   community:
-    title: "Powerful with a Pinch of Bleeding Edge"
+    title: "Can't find what you're looking for?"
     text: "Find us on Discord or Discourse. Or send us a messenger pigeon, if that works for you."
     discord: "#"
     discourse: "#"
