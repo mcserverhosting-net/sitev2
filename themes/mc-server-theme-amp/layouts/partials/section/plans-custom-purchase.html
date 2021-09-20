@@ -793,5 +793,10 @@
     databaseServersRange.dispatchEvent(new Event('change'));
     proxyServersRange.dispatchEvent(new Event('change'));
 
+    document.addEventListener('snipcart.ready', () => {
+      Snipcart.events.on('item.added', (cartItem) => {
+      });
+    });
+
   </script>
 </section>
