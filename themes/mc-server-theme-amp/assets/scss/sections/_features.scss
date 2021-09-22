@@ -1,30 +1,30 @@
 .features-card {
   position: relative;
   width: 100%;
-  padding-top: 100%;
-
 }
 
-.card-link {
-  position: relative;
-  cursor: pointer;
+.square-container {
+  .square-content {
+    opacity: 1;
+  }
 
-  .card-popup {
-    position: absolute;
-
-    background-color: #121212;
-    border: 1px solid #707070;
-    border-radius: 8px;
-    z-index: 1;
-
-    opacity: 0;
+  .square-content-hover {
     visibility: hidden;
+    position: absolute;
+    top: -100vh;
+    opacity: 0;
   }
 
   &:hover {
-    .card-popup {
-      opacity: 1;
+    .square-content {
+      display: none;
+      opacity: 0;
+    }
+
+    .square-content-hover {
       visibility: visible;
+      position: static;
+      opacity: 1;
       transition: opacity 500ms;
     }
   }
@@ -34,4 +34,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+
+  width: 100%;
+  padding-bottom: 100%;
 }

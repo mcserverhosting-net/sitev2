@@ -8,10 +8,13 @@ enableRobotsTXT = true
   title = 'MC Server'
   description = "High performance hosting for your Minecraft, Web, VPS and Database."
 
+  footer = "Copyright<br>All Rights Reserved"
+
 
   amp = true
   ampElements = [
     "amp-sidebar",
+    "amp-script",
     "amp-selector",
   ]
 
@@ -36,7 +39,12 @@ enableRobotsTXT = true
 
   snipcartApiKey = "MzE1NDc0ZDktZGRkMC00MmQ1LTkzOGQtYmI1OTExOGVhZTdjNjM3NjY2OTQwNTM1NTYxNjYy"
 
+  exitPopupTitle = "Before you go..."
+  exitPopupText = "Save up to 50% Off your first month when you use your code today."
+  exitPopupCode = "AUTO GEN"
+
 [taxonomies]
   category = 'categories'
   tag = 'tags'
   faq = 'faqs'
+

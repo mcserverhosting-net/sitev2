@@ -1,11 +1,32 @@
 ---
-title: "Custom Plan"
+title: "Custom Plans"
 draft: false
 
+index: true
+
+outputs:
+  - "html"
+
+sitemap:
+  changefreq: "daily"
+  priority: 1.0
+  filename: "sitemap.xml"
+  
+cascade:
+  outputs:
+    - "json"
+
+dedicatedCoresPopupText: >
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non
+  gravida leo, vel blandit diam. Sed vehicula enim vel arcu laoreet rhoncus.
+  Phasellus a dignissim est, eget mollis mi. Curabitur iaculis eget magna a
+  luctus. Aenean non interdum libero. Vestibulum et velit et sapien luctus
+  bibendum a aliquam magna.
+
 product:
-  id: "general-hut"
+  id: "custom-plan"
   name: "Custom Plan"
-  price: 10.00
+  price: 0.00
 
   customFields:
     - name: "RAM"
@@ -64,7 +85,7 @@ product:
 
     - name: "Extra: Minecraft Servers"
       type: "dropdown"
-      value: "0"
+      value: "2"
       options:
         - name: "0"
           priceModifier: 0.00
@@ -164,5 +185,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 10.00
+      itemPrice: 0.00
 ---

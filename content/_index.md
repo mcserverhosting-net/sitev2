@@ -40,81 +40,64 @@ home:
     cards:
       - image: "/images/bandwidth.png"
         title: "Unlimited Bandwidth"
-        text: ""
+        text: >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+          dictum maximus elit, vel finibus magna sodales efficitur. In
+          hendrerit volutpat nulla eu sagittis.
         button:
           label: "Hover for more details >"
           link: ""
-          hoverText: >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            dictum maximus elit, vel finibus magna sodales efficitur. In
-            hendrerit volutpat nulla eu sagittis. Maecenas odio mi, mollis quis
-            venenatis ut, mollis at tortor. Suspendisse potenti. Pellentesque
-            dui massa, auctor at purus sed, interdum tempor eros.
 
-      - image: ""
+      - image: "/images/quickstart.png"
         title: "Secure Authentication"
-        text: "We hook your console access directly into our OCID login system. You can say goodbye to brute force account hacks."
+        text: >
+          We hook your console access directly into our OCID login system. You
+          can say goodbye to brute force account hacks."
         button:
-          label: ""
+          label: "Hover for more details >"
           link: ""
-          hoverText: >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            dictum maximus elit, vel finibus magna sodales efficitur. In
-            hendrerit volutpat nulla eu sagittis. Maecenas odio mi, mollis quis
-            venenatis ut, mollis at tortor. Suspendisse potenti. Pellentesque
-            dui massa, auctor at purus sed, interdum tempor eros.
 
       - image: "/images/protection.png"
         title: "DDOS Protection"
-        text: ""
+        text: >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+          dictum maximus elit, vel finibus magna sodales efficitur. In
+          hendrerit volutpat nulla eu sagittis.
         button:
           label: "Hover for more details >"
           link: ""
-          hoverText: >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            dictum maximus elit, vel finibus magna sodales efficitur. In
-            hendrerit volutpat nulla eu sagittis. Maecenas odio mi, mollis quis
-            venenatis ut, mollis at tortor. Suspendisse potenti. Pellentesque
-            dui massa, auctor at purus sed, interdum tempor eros.
 
       - image: "/images/backup.png"
         title: "60 Days Backup"
         text: ""
+        text: >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+          dictum maximus elit, vel finibus magna sodales efficitur. In
+          hendrerit volutpat nulla eu sagittis.
         button:
           label: "Hover for more details >"
           link: ""
-          hoverText: >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            dictum maximus elit, vel finibus magna sodales efficitur. In
-            hendrerit volutpat nulla eu sagittis. Maecenas odio mi, mollis quis
-            venenatis ut, mollis at tortor. Suspendisse potenti. Pellentesque
-            dui massa, auctor at purus sed, interdum tempor eros.
 
       - image: "/images/quickstart.png"
         title: "Quickstart"
         text: ""
+        text: >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+          dictum maximus elit, vel finibus magna sodales efficitur. In
+          hendrerit volutpat nulla eu sagittis.
         button:
           label: "Hover for more details >"
           link: ""
-          hoverText: >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            dictum maximus elit, vel finibus magna sodales efficitur. In
-            hendrerit volutpat nulla eu sagittis. Maecenas odio mi, mollis quis
-            venenatis ut, mollis at tortor. Suspendisse potenti. Pellentesque
-            dui massa, auctor at purus sed, interdum tempor eros.
 
       - image: "/images/online-support.png"
         title: "Community Support"
-        text: ""
+        text: >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+          dictum maximus elit, vel finibus magna sodales efficitur. In
+          hendrerit volutpat nulla eu sagittis.
         button:
           label: "Hover for more details >"
           link: ""
-          hoverText: >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            dictum maximus elit, vel finibus magna sodales efficitur. In
-            hendrerit volutpat nulla eu sagittis. Maecenas odio mi, mollis quis
-            venenatis ut, mollis at tortor. Suspendisse potenti. Pellentesque
-            dui massa, auctor at purus sed, interdum tempor eros.
 
   accessible:
     title: "Accessible"
@@ -138,6 +121,16 @@ home:
       src: "/images/map.png"
       width: "1755"
       height: "747"
+
+    location:
+      america1: "30"
+      america2: "40"
+      america3: "50"
+      america4: "60"
+      euroasia1: "30"
+      euroasia2: "40"
+      euroasia3: "50"
+      euroasia4: "60"
   
   cta:
     title: "Accelerate Your Game With Us Today."

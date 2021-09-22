@@ -1,4 +1,4 @@
-{{ $data := site.GetPage "/plans-custom/custom-plan" }}
+{{ $data := . }}
 <section class="section section-plans-custom-purchase padding-y-64">
 
   <amp-selector id="plans-custom-tabs" class="tabs-with-selector padding-32 overflow-x-scroll scrollbar-hidden justify-content-xl-center" role="tablist" on="select:plans-custom-panels.toggle(index=event.targetOption, value=true)" keyboard-select-mode="focus">
@@ -79,14 +79,19 @@
     <div id="tabpanel2" role="tabpanel" aria-labelledby="tab2" option>
       <div class="display-flex align-items-center justify-content-center">
         <h3 class="font-size-20 font-weight-bold text-align-center padding-y-64">Select your Dedicated Cores</h3>
-        <amp-img
-          class="margin-x-8"
-          alt="Information"
-          src="/images/question-mark.png"
-          width="20"
-          height="20"
-        >
-        </amp-img>
+        <div class="popup-container">
+          <amp-img
+            class="margin-x-8"
+            alt="Information"
+            src="/images/question-mark.png"
+            width="20"
+            height="20"
+          >
+          </amp-img>
+          <div class="popup-content">
+            {{ .Params.dedicatedCoresPopupText }}
+          </div>
+        </div>
       </div>
       <div class="ram-selector display-flex justify-content-center row">
         <div class="column-12 column-sm-10 column-md-8 column-lg-6 column-xl-5 column-xxl-4">
@@ -452,7 +457,7 @@
           Back
         </a>
         {{ $currentPage := . }}
-        {{ range .RegularPages }}
+        {{ with $data }}
         <div class="button-border-wrapper">
           <button 
             class="snipcart-add-item snipcart-custom-add-item-button color-white display-flex align-items-center font-size-16 font-weight-semi-bold border-radius-4 padding-x-32 padding-y-16"

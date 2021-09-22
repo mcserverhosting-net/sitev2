@@ -1,5 +1,6 @@
 {{ if ne .Params.amp.enable false }}
 {{ partial "amp/google-analytics" . }}
+{{ partial "section/exit-modal.html" . }}
 <script async src="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js"></script>
 <div hidden id="snipcart" data-api-key="{{ site.Params.snipcartApiKey }}" data-config-modal-style="side"></div>
 </body>

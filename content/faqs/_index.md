@@ -11,7 +11,7 @@ sitemap:
   
 menu:
   main:
-    weight: 200
+    weight: 300
 
 content:
   questions:

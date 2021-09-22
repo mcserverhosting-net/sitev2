@@ -1,5 +1,5 @@
 ---
-title: "VPS"
+title: "Minecraft Plans"
 draft: false
 
 index: true
@@ -14,7 +14,7 @@ sitemap:
   
 menu:
   main:
-    weight: 500
+    weight: 400
 
 cascade:
   outputs:

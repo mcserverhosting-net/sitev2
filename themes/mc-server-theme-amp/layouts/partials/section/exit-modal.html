@@ -1,0 +1,52 @@
+<div class="exit-popup-overlay display-none align-items-center">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="exit-popup column-12 column-md-10 column-lg-8 column-xl-6">
+        <div class="exit-inner">
+          <div class="text-align-right">
+            <a class="exit-popup-close cursor-pointer"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16"> <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/></svg> </a>
+          </div>
+          <h1 class="popup-title font-weight-bold font-size-25 margin-x-32 margin-bottom-16">{{ .Site.Params.exitPopupTitle }}</h1>
+          <p class="popup-text margin-bottom-32 margin-x-32">{{ .Site.Params.exitPopupText }}</p>
+          <div class="display-flex align-items-center justify-content-center margin-x-32 margin-bottom-32">
+            <span class="popup-code display-inline-block font-weight-bold font-size-40">{{ .Site.Params.exitPopupCode }}</span>
+          </div>
+          <div class="display-flex align-items-center justify-content-flex-end">
+            <div class="margin-x-8"> <a class="exit-popup-close-button display-block font-size-14 cursor-pointer padding-x-32 padding-y-16">Close</a> </div>
+            <div class="margin-x-8 border-wrapper"> <a class="exit-popup-accept-button display-block font-size-14 accept-button padding-x-32 padding-y-16">Accept</a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function onMouseOut(event) {
+    if ( event.target === document.documentElement ) {
+      document.removeEventListener("mouseout", onMouseOut);
+
+      const exitPopupOverlay = document.querySelector('.exit-popup-overlay');
+      exitPopupOverlay.classList.remove("display-none");
+      exitPopupOverlay.classList.add("display-flex");
+    }
+  }
+
+  function onClosePopup(event) {
+    const exitPopupOverlay = document.querySelector('.exit-popup-overlay');
+    exitPopupOverlay.classList.remove("display-flex");
+    exitPopupOverlay.classList.add("display-none");
+  }
+
+  window.addEventListener('DOMContentLoaded', (event) => {
+    document.addEventListener("mouseout", onMouseOut);
+
+    const exitPopupClose = document.querySelector('.exit-popup-close');
+    exitPopupClose.addEventListener("click", onClosePopup);
+
+    const exitPopupCloseButton = document.querySelector('.exit-popup-close-button');
+    exitPopupCloseButton.addEventListener("click", onClosePopup);
+
+    const exitPopupAcceptButton = document.querySelector('.exit-popup-accept-button');
+    exitPopupAcceptButton.addEventListener("click", onClosePopup);
+  });
+</script>

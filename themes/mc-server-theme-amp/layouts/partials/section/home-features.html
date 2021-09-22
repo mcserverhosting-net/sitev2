@@ -8,36 +8,28 @@
         {{ .Params.home.features.text }}
       </p>
     </div>
-    <div class="row padding-y-16">
+    <div class="row padding-y-16 align-items-stretch">
       {{ range .Params.home.features.cards }}
       <div class="column-12 column-sm-6 column-lg-4">
-        <div class="padding-24">
-          <div class="square-container background-color-swamp">
+        <div class="padding-24 height-100">
+          <div class="square-container display-flex flex-direction-column justify-content-center background-color-swamp height-100">
             <div class="square-content display-flex flex-direction-column justify-content-center padding-24">
               {{ with .image }}
-              <div class="card-image flex-grow-1 margin-bottom-24"
-                     style="background-image: url('{{ . }}')"
-                >
+              <div class="card-image flex-grow-1 margin-bottom-24" style="background-image: url('{{ . }}')" >
               </div>
               {{ end }}
-              {{ with .title }}
-              <h2 class="card-title font-weight-bold text-align-center"> {{ . }} </h2>
-              {{ end }}
-              {{ with .text }}
-              <div class="text-align-center padding-y-8">
-                {{ . }}
-              </div>
-              {{ end }}
+              {{ with .title }} <h2 class="card-title font-weight-bold text-align-center"> {{ . }} </h2> {{ end }}
               {{ with .button }}
               <div class="card-link color-aqua text-align-center padding-y-8">
                 <a {{ with .link }}href="{{ . }}"{{ end }}>
                   {{ .label }}
                 </a>
-                <div class="card-popup font-size-14 color-white text-align-left margin-y-8 padding-32">
-                  {{ .hoverText }}
-                </div>
               </div>
               {{ end }}
+            </div>
+            <div class="square-content-hover display-flex flex-direction-column justify-content-center padding-24">
+              {{ with .title }} <h2 class="card-title font-weight-bold text-align-center"> {{ . }} </h2> {{ end }}
+              {{ with .text }} <div class="text-align-center padding-y-8"> {{ . }} </div> {{ end }}
             </div>
           </div>
         </div>

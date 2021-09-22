@@ -7,12 +7,9 @@
           {{ range $i, $e := .Params.home.hero.titles }}
             {{ $e }}{{ if ( ne (add $i 1) $lenght )}}<br>{{ end }}
           {{ end }}
-          <p class="section-hero-text font-size-50 font-weight-bold color-aqua">
-            Minecraft<br>
-            Web<br>
-            VPS<br>
-            Database
-          </p>
+          <div class="typing-slider section-hero-text font-size-50 font-weight-bold color-aqua">
+            <amp-script script="typewriter-effect" width="540" height="140"><span class="typed-text"></span> <span class="cursor"></span></amp-script>
+          </div>
         </h1>
       </div>
       <div class="column-12 column-lg-4">
@@ -27,4 +24,46 @@
       </div>
     </div>
   </div>
+  <script id="typewriter-effect" type="text/plain" target="amp-script">
+    const typedTextSpan = document.querySelector(".typed-text");
+    const cursorSpan = document.querySelector(".cursor");
+
+    const textArray = [{{ range .Params.home.hero.subtitles }}"{{ . }}",{{ end }}];
+    const typingDelay = 200;
+    const erasingDelay = 100;
+    const newTextDelay = 2000;
+    let textArrayIndex = 0;
+    let charIndex = 0;
+
+
+    function type() {
+      if ( textArray[textArrayIndex].length > charIndex) {
+        if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+        typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, typingDelay);
+      } 
+      else {
+        cursorSpan.classList.remove("typing");
+        setTimeout(erase, newTextDelay);
+      }
+    }
+
+    function erase() {
+      if (charIndex > 0) {
+        if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+        typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+        charIndex--;
+        setTimeout(erase, erasingDelay);
+      } 
+      else {
+        cursorSpan.classList.remove("typing");
+        textArrayIndex++;
+        if(textArrayIndex>=textArray.length) textArrayIndex=0;
+        setTimeout(type, typingDelay + 1100);
+      }
+    }
+
+    if(textArray.length) setTimeout(type, newTextDelay + 250);
+  </script>
 </section>
