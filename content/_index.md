@@ -4,7 +4,7 @@ draft: false
 
 index: true
 
-disableSnipcart: true
+disableSnipcart: false
 
 sitemap:
   changefreq: "daily"
