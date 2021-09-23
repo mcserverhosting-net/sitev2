@@ -18,6 +18,7 @@
           </a>
         </li>
       {{ end }}
+      {{ if ( ne .Params.disableSnipcart true ) }}
       <li class="display-flex align-items-center padding-x-8">
         <div class="button-border-wrapper">
           <button class="snipcart-checkout snipcart-checkout-button display-flex align-items-center font-size-16 font-weight-semi-bold border-radius-4 padding-x-16 padding-y-16">
@@ -35,8 +36,10 @@
           </button>
         </div>
       </li> 
+      {{ end }}
     </ul>
     <div class="display-flex display-lg-none align-items-center">
+      {{ if ( ne .Params.disableSnipcart true ) }}
       <div class="display-flex align-items-center justify-content-center padding-x-8">
         <div class="button-border-wrapper">
           <button class="snipcart-checkout snipcart-checkout-button display-flex align-items-center font-size-16 font-weight-semi-bold border-radius-4 padding-x-16 padding-y-16">
@@ -51,6 +54,7 @@
           </button>
         </div>
       </div> 
+      {{ end }}
       <div role="button" on="tap:sidebar.toggle" tabindex="0" class="hamburger cursor-pointer font-size-24 display-flex  align-items-center justify-content-center padding-x-8">
         <span>☰</span>
       </div>
