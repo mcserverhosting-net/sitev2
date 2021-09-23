@@ -1,5 +1,6 @@
 .section-table {
   th {
+    white-space: nowrap;
     background-color: #2D3A4A;
     padding: 26px 8px;
   }
@@ -11,7 +12,10 @@
   th:last-child {
     border-radius: 0 4px 4px 0;
     overflow: hidden;
-    padding: 26px 56px 26px 0;
+    padding: 26px 26px;
+
+    position: sticky;
+    right: 0;
   }
 
   td {
@@ -27,7 +31,10 @@
   td:last-child {
     border-radius: 0 4px 4px 0;
     overflow: hidden;
-    padding: 26px 56px 26px 0;
+    padding: 18px 8px;
+
+    position: sticky;
+    right: 0;
   }
   tr:hover td {
     background-color: #474746;

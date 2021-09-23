@@ -1,8 +1,12 @@
 {{ if ne .Params.amp.enable false }}
 {{ partial "amp/google-analytics" . }}
-{{ partial "section/exit-modal.html" . }}
-<script async src="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js"></script>
-<div hidden id="snipcart" data-api-key="{{ site.Params.snipcartApiKey }}" data-config-modal-style="side"></div>
+{{ if ( ne .Params.disableSnipcart true ) }}
+  <script async src="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js"></script>
+  <div hidden id="snipcart" data-api-key="{{ site.Params.snipcartApiKey }}" data-config-modal-style="side"></div>
+{{ end }}
+{{ if ( ne .Site.Params.disableExitModal true ) }}
+  {{ partial "section/exit-modal.html" . }}
+{{ end }}
 </body>
 </html>
 {{ else }}

@@ -1,6 +1,6 @@
 <section class="section-table padding-y-64">
   <div class="container">
-    <div class="row padding-bottom-32">
+    <div class="row padding-bottom-32 overflow-x-auto">
       <table>
         <thead class="font-weight-semi-bold background-color-licorice border-radius-8">
           <tr class="">
@@ -22,7 +22,7 @@
                 <td>{{ .value }}</td>
               {{ end }}
               <td>{{ .Params.product.price }}</td>
-              <td>
+              <td class="text-align-center">
                 <button class="snipcart-add-item snipcart-add-item-button"
                   data-item-name="{{ .Params.product.name }}"
                   data-item-id="{{ .Params.product.id }}"

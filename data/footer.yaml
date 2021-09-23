@@ -1,0 +1,40 @@
+facebook: "https://www.facebook.com"
+instagram: "https://www.instagram.com"
+twitter: "https://www.twitter.com"
+discord: "https://www.discord.com"
+
+columns:
+  - title: "Company"
+    items:
+      - label: "About"
+        link: "#"
+
+      - label: "Terms of Service"
+        link: "#"
+
+      - label: "Privacy Policy"
+        link: "#"
+
+  - title: "Services"
+    items:
+      - label: "Minecraft"
+        link: "#"
+
+      - label: "VPS"
+        link: "#"
+
+      - label: "Database"
+        link: "#"
+
+      - label: "Domains"
+        link: "#"
+
+  - title: "Support"
+    items:
+      - label: "FAQs"
+        link: "#"
+
+      - label: "Help"
+        link: "#"
+
+copyright: "(R) 2021 MC Server Hosting. All Rights Reserved."

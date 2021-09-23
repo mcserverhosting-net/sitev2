@@ -24,10 +24,18 @@
 .align-items-center { align-items: center; }
 .align-items-stretch { align-items: stretch; }
 
+@media (min-width: 992px) { 
+.align-items-lg-flex-start { align-items: flex-start; }
+}
+
 .justify-content-center { justify-content: center; }
 .justify-content-space-between { justify-content: space-between; }
 .justify-content-space-around { justify-content: space-around; }
 .justify-content-flex-end { justify-content: flex-end; }
+
+@media (min-width: 992px) { 
+  .justify-content-flex-lg-end { justify-content: flex-end; }
+}
 
 @media (min-width: 1200px) { 
   .justify-content-xl-center { justify-content: center; }
@@ -38,15 +46,25 @@
 
 .flex-grow-1 { flex-grow: 1; }
 
+.position-absolute { position: absolute; }
+.right-0 { right: 0; }
+
+
 .margin-16 { margin: 16px; }
 
+.margin-top-8 { margin-top: 8px; }
+.margin-top-32 { margin-top: 32px; }
+
+.margin-bottom-8 { margin-bottom: 8px; }
 .margin-bottom-16 { margin-bottom: 16px; }
 .margin-bottom-24 { margin-bottom: 24px; }
 .margin-bottom-32 { margin-bottom: 32px; }
 
 .margin-left-16 { margin-left: 16px; }
+.margin-left-32 { margin-left: 32px; }
 
 .margin-right-16 { margin-right: 16px; }
+.margin-right-32 { margin-right: 32px; }
 .margin-right-64 { margin-right: 64px; }
 
 .margin-x-8 { margin-left: 8px; margin-right: 8px; }
@@ -123,6 +141,10 @@
 .text-align-left { text-align: left; }
 .text-align-right { text-align: right; }
 
+@media (min-width: 992px) { 
+  .text-align-lg-left { text-align: left; }
+}
+
 .color-white { color: #FFFFFF; }
 .color-aqua { color: #00EAFF; }
 .color-whisper { color: #EDEDED; }
@@ -134,6 +156,8 @@
 
 .overflow-y-scroll { overflow-y: scroll; }
 .overflow-x-scroll { overflow-x: scroll; }
+
+.overflow-x-auto { overflow-x: auto; }
 
 .scrollbar-hidden {
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
