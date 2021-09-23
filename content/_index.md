@@ -4,6 +4,8 @@ draft: false
 
 index: true
 
+disableSnipcart: true
+
 sitemap:
   changefreq: "daily"
   priority: 1.0
