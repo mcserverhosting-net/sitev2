@@ -5,15 +5,17 @@
         {{ .Params.content.questions.title }}
       </h1>
     </div>
-    <div class="row padding-top-64 justify-content-space-around">
+    <div class="row padding-top-64">
       {{ range .Site.Taxonomies.faqs }}
-      <div class="column-12 column-md-5 padding-y-32">
-        <h2 class="font-size-25 font-weight-bold">{{ .Page.Title }}</h2>
-        <ul class="padding-y-32">
-          {{ range .Page.RegularPages }}
-            <li class="padding-y-8 color-whisper"><a class="" href="{{ .Permalink }}">{{ .Title }}</a></li>
-          {{ end }}
-        </ul>
+      <div class="column-12 column-md-6 padding-y-32">
+        <div class="padding-x-64">
+          <h2 class="font-size-25 font-weight-bold">{{ .Page.Title }}</h2>
+          <ul class="padding-y-32">
+            {{ range .Page.RegularPages }}
+              <li class="padding-y-8 color-whisper"><a class="" href="{{ .Permalink }}">{{ .Title }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
       </div>
       {{ end }}
     </div>

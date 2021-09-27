@@ -169,4 +169,4 @@
 }
 
 .white-space-nowrap { white-space: nowrap; }
-
+.grid-after::after { content: ""; flex: auto; }
