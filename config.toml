@@ -46,3 +46,6 @@ enableRobotsTXT = true
   tag = 'tags'
   faq = 'faqs'
 
+[markup]
+  [markup.highlight]
+    style = 'dracula'

@@ -22,7 +22,8 @@ Setting up a server is as simple as running `mcsh apply -f the-server-config-fil
 
 
 ## The Configuration File
-```
+
+```yaml
 apiVersion: mcserverhosting.net/v2
 kind: MinecraftServer
 ```
