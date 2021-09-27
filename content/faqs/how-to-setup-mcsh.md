@@ -8,7 +8,6 @@ date: 2020-07-06T05:38:44-04:00
 draft: false
 ---
 
-{{< amp-img width="520" height="402" layout="responsive" src="https://www.pngitem.com/pimgs/m/20-209457_transparent-minecraft-icon-minecraft-diamond-shovel-png-png.png" alt="This isn't me, but it is a very cool picture." >}}
 
 
 
@@ -26,7 +25,6 @@ Before we continue, please ensure you register [here at our authentication serve
 
 ### Preparation
 
-{{< amp-img width="842" height="241" layout="responsive" src="/support/img/powershell-set-execution.PNG" alt="Setting execution policy for POSH." >}}
 
 First, open up, PowerShell.
 
@@ -37,14 +35,13 @@ We will run `Set-ExecutionPolicy RemoteSigned -scope CurrentUser` and then type 
 
 Scoop contains programs in what is known as "buckets". Buckets are a list of programs and their installation instructions. For the MCSH CLI, we will need a bucket called "extras" and our bucket named "MCSH".
 
-{{< amp-img width="860" height="148" layout="responsive" src="/support/img/scoop-add-bucket.PNG" alt="Installing MCSH via POSH." >}}
 
 3. Run `scoop bucket add extras` to add the extra directory listing
 4. Run `scoop bucket add mcsh https://github.com/mcserverhosting-net/scoop.git` to add our directory listing and keep in sync with updates.
 
 ## Installing MCSH
 
-{{< amp-img width="859" height="384" layout="responsive" src="/support/img/install-mcsh.PNG" alt="Installing MCSH via POSH." >}}
+
 
 Now that we have everything we need, we are ready to install the mcsh CLI! It will install with one command!
 

@@ -1,40 +1,37 @@
-facebook: "https://www.facebook.com"
-instagram: "https://www.instagram.com"
-twitter: "https://www.twitter.com"
-discord: "https://www.discord.com"
+facebook: "https://www.facebook.com/mcserverhosting"
+instagram: "https://www.instagram.com/mcsh"
+twitter: "https://www.twitter.com/mcsh-net"
+discord: "https://mcserverhosting.net/discord"
 
 columns:
   - title: "Company"
     items:
       - label: "About"
-        link: "#"
+        link: "/about"
 
       - label: "Terms of Service"
-        link: "#"
+        link: "https://mcserverhosting.net/tou"
 
       - label: "Privacy Policy"
-        link: "#"
+        link: "https://mcserverhosting.net/privacy"
 
   - title: "Services"
     items:
       - label: "Minecraft"
-        link: "#"
+        link: "/plans"
 
       - label: "VPS"
-        link: "#"
+        link: "/plans"
 
       - label: "Database"
-        link: "#"
-
-      - label: "Domains"
-        link: "#"
+        link: "/plans"
 
   - title: "Support"
     items:
       - label: "FAQs"
-        link: "#"
+        link: "/faq"
 
       - label: "Help"
-        link: "#"
+        link: "/support"
 
 copyright: "(R) 2021 MC Server Hosting. All Rights Reserved."

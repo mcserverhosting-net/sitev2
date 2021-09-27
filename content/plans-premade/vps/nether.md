@@ -1,30 +1,30 @@
 ---
-title: "Hut"
+title: "Nether"
 draft: false
-category: "General"
-weight: 1
+category: "VPS"
+weight: 2
 
 product:
-  id: "general-hut"
-  name: "Hut"
-  price: "5.00"
+  id: "vps-nether"
+  name: "Nether"
+  price: "50.00"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "2 GB"
+      value: "8 GB"
 
     - name: "Storage"
       type: "readonly"
-      value: "10GB"
+      value: "100GB"
 
-    - name: "Server Quota"
+    - name: "Processor"
       type: "readonly"
       value: "1"
 
-    - name: "Bungee Quota"
+    - name: "Thread Count"
       type: "readonly"
-      value: "0"
+      value: "2"
 
   selectedPlan: "monthly-plan"
 
@@ -33,5 +33,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 5.00
+      itemPrice: 50.00 
 ---

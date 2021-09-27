@@ -1,22 +1,22 @@
 ---
-title: "Hut"
+title: "Country"
 draft: false
 category: "General"
-weight: 1
+weight: 6
 
 product:
-  id: "general-hut"
+  id: "general-country"
   name: "Hut"
-  price: "5.00"
+  price: "40.00"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "2 GB"
+      value: "16 GB"
 
     - name: "Storage"
       type: "readonly"
-      value: "10GB"
+      value: "100GB"
 
     - name: "Server Quota"
       type: "readonly"
@@ -24,7 +24,7 @@ product:
 
     - name: "Bungee Quota"
       type: "readonly"
-      value: "0"
+      value: "3"
 
   selectedPlan: "monthly-plan"
 
@@ -33,5 +33,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 5.00
+      itemPrice: 40.00
 ---

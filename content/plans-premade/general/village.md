@@ -2,28 +2,29 @@
 title: "Village"
 draft: false
 category: "General"
+weight: 2
 
 product:
   id: "general-village"
   name: "Village"
-  price: "3.00"
+  price: "10.00"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "2 GB"
+      value: "4 GB"
 
     - name: "Storage"
       type: "readonly"
-      value: "10GB"
+      value: "20GB"
 
     - name: "Server Quota"
       type: "readonly"
-      value: "1"
+      value: "2"
 
     - name: "Bungee Quota"
       type: "readonly"
-      value: "0"
+      value: "1"
 
   selectedPlan: "monthly-plan"
 
@@ -32,5 +33,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 3.00
+      itemPrice: 10.00
 ---

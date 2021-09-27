@@ -1,29 +1,30 @@
 ---
-title: "Hut"
+title: "Region"
 draft: false
-category: "VPS"
+category: "General"
+weight: 5
 
 product:
-  id: "vps-hut"
-  name: "Hut"
-  price: "3.00"
+  id: "region-town"
+  name: "Region"
+  price: "30.00"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "2 GB"
+      value: "12 GB"
 
     - name: "Storage"
       type: "readonly"
-      value: "10GB"
+      value: "75GB"
 
-    - name: "Processor"
+    - name: "Server Quota"
       type: "readonly"
-      value: "1"
+      value: "4"
 
-    - name: "Thread Count"
+    - name: "Bungee Quota"
       type: "readonly"
-      value: "0"
+      value: "2"
 
   selectedPlan: "monthly-plan"
 
@@ -32,5 +33,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 3.00
+      itemPrice: 30.00
 ---

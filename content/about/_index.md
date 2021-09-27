@@ -90,10 +90,10 @@ about:
         linkedin: ""
         email: ""
 
-      - image: "/images/cta-background.png"
-        name: "Logan H"
+      - image: "/images/about-jeremy.jpg"
+        name: "Jeremy K"
         position: "Support Administrator"
         github: ""
         linkedin: ""
-        email: ""
+        email: "https://github.com/jeremykalar"
 ---
