@@ -15,19 +15,37 @@
     opacity: 0;
   }
 
-  &:hover {
-    .square-content {
+  input:checked {
+    background-color: red;
+
+    & ~ .square-content {
       display: none;
       opacity: 0;
     }
 
-    .square-content-hover {
+    & ~ .square-content-hover {
       visibility: visible;
       position: static;
       opacity: 1;
       transition: opacity 500ms;
     }
   }
+
+  @media (min-width: 576px) {
+    &:hover {
+      .square-content {
+        display: none;
+        opacity: 0;
+      }
+
+      .square-content-hover {
+        visibility: visible;
+        position: static;
+        opacity: 1;
+        transition: opacity 500ms;
+      }
+    }
+  } 
 }
 
 .card-image {

@@ -12,7 +12,8 @@
       {{ range .Params.home.features.cards }}
       <div class="column-12 column-sm-6 column-lg-4">
         <div class="padding-24 height-100">
-          <div class="square-container display-flex flex-direction-column justify-content-center background-color-swamp height-100">
+          <label class="square-container display-flex flex-direction-column justify-content-center background-color-swamp height-100 position-relative">
+            <input type="radio" class="position-absolute opacity-0" name="features">
             <div class="square-content display-flex flex-direction-column justify-content-center padding-24">
               {{ with .image }}
               <div class="card-image flex-grow-1 margin-bottom-24" style="background-image: url('{{ . }}')" >
@@ -31,7 +32,7 @@
               {{ with .title }} <h2 class="card-title font-weight-bold text-align-center"> {{ . }} </h2> {{ end }}
               {{ with .text }} <div class="text-align-center padding-y-8"> {{ . }} </div> {{ end }}
             </div>
-          </div>
+          </label>
         </div>
       </div>
       {{ end }}
