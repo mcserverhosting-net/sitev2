@@ -1,30 +1,30 @@
 ---
-title: "Hut"
+title: "End"
 draft: false
-category: "General"
-weight: 1
+category: "VPS"
+weight: 3
 
 product:
-  id: "general-hut"
-  name: "Hut"
-  price: "5.00"
+  id: "vps-end"
+  name: "End"
+  price: "90.00"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "2 GB"
+      value: "12 GB"
 
     - name: "Storage"
       type: "readonly"
-      value: "10GB"
+      value: "200GB"
 
-    - name: "Server Quota"
+    - name: "Processor"
       type: "readonly"
-      value: "1"
+      value: "2"
 
-    - name: "Bungee Quota"
+    - name: "Thread Count"
       type: "readonly"
-      value: "0"
+      value: "4"
 
   selectedPlan: "monthly-plan"
 
@@ -33,5 +33,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 5.00
+      itemPrice: 90.00 
 ---

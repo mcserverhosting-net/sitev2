@@ -20,7 +20,7 @@ content:
   community:
     title: "Can't find what you're looking for?"
     text: "Find us on Discord or Discourse. Or send us a messenger pigeon, if that works for you."
-    discord: "#"
+    discord: "https://mcserverhosting.net/discord"
     discourse: "#"
   
 ---

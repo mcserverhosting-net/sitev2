@@ -36,16 +36,14 @@ home:
       height: "960"
 
   features:
-    title: "Features"
+    title: "Key Features"
     text: "Upgrade your game with awesome features in every purchase."
 
     cards:
       - image: "/images/bandwidth.png"
         title: "Unlimited Bandwidth"
         text: >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          dictum maximus elit, vel finibus magna sodales efficitur. In
-          hendrerit volutpat nulla eu sagittis.
+          You get the full power of our ISP with no throttling. Up to 1Gbps up and down straight to your players and admins for fast uploads.
         button:
           label: "Hover for more details >"
           link: ""
@@ -62,20 +60,16 @@ home:
       - image: "/images/protection.png"
         title: "DDOS Protection"
         text: >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          dictum maximus elit, vel finibus magna sodales efficitur. In
-          hendrerit volutpat nulla eu sagittis.
+          With our high-performance networking stack and powerful hardware we can handle the most severe attacks placed against us.
         button:
           label: "Hover for more details >"
           link: ""
 
       - image: "/images/backup.png"
-        title: "60 Days Backup"
+        title: "Instant Snapshotting"
         text: ""
         text: >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          dictum maximus elit, vel finibus magna sodales efficitur. In
-          hendrerit volutpat nulla eu sagittis.
+          Take backups with our instant snapshot system without needing to stop or pause your server saves. Restore them and test them out at any time with a volume clone without interrupting connected players.
         button:
           label: "Hover for more details >"
           link: ""
@@ -84,9 +78,7 @@ home:
         title: "Quickstart"
         text: ""
         text: >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          dictum maximus elit, vel finibus magna sodales efficitur. In
-          hendrerit volutpat nulla eu sagittis.
+          We have the most well-known server cores ready to go! This gives you an easy and streamlined deployment experience.
         button:
           label: "Hover for more details >"
           link: ""
@@ -94,25 +86,23 @@ home:
       - image: "/images/online-support.png"
         title: "Community Support"
         text: >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          dictum maximus elit, vel finibus magna sodales efficitur. In
-          hendrerit volutpat nulla eu sagittis.
+          With dedicated support staff and knowledgable server admins, you can reach out to a knowledgable community with any question.
         button:
           label: "Hover for more details >"
           link: ""
 
   accessible:
     title: "Accessible"
-    text: "With 3 data center regions, get the global reach and the local presence you need."
+    text: "With 2 data center regions, get the global reach and the local presence you need."
 
     cards:
-      - title: "1M"
-        text: "Customers"
+      - title: "1Gbps"
+        text: "Network"
 
       - title: "99.99%"
         text: "Uptime SLA"
 
-      - title: "3"
+      - title: "2"
         text: "Global Regions"
   
       - title: "100%"
@@ -125,14 +115,14 @@ home:
       height: "747"
 
     location:
-      america1: "30"
-      america2: "40"
-      america3: "50"
-      america4: "60"
-      euroasia1: "30"
-      euroasia2: "40"
-      euroasia3: "50"
-      euroasia4: "60"
+      america1: "20"
+      america2: "30"
+      america3: "40"
+      america4: "50"
+      euroasia1: "20"
+      euroasia2: "30"
+      euroasia3: "40"
+      euroasia4: "50"
   
   cta:
     title: "Accelerate Your Game With Us Today."

@@ -1,29 +1,30 @@
 ---
-title: "Village"
+title: "Town"
 draft: false
-category: "VPS"
+category: "General"
+weight: 3
 
 product:
-  id: "vps-village"
-  name: "Village"
-  price: "3.00"
+  id: "general-town"
+  name: "Town"
+  price: "15.00"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "2 GB"
+      value: "6 GB"
 
     - name: "Storage"
       type: "readonly"
-      value: "10GB"
+      value: "30GB"
 
-    - name: "Processor"
+    - name: "Server Quota"
+      type: "readonly"
+      value: "4"
+
+    - name: "Bungee Quota"
       type: "readonly"
       value: "1"
-
-    - name: "Thread Count"
-      type: "readonly"
-      value: "0"
 
   selectedPlan: "monthly-plan"
 
@@ -32,5 +33,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 3.00
+      itemPrice: 15.00
 ---

@@ -17,11 +17,8 @@ cascade:
     - "json"
 
 dedicatedCoresPopupText: >
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non
-  gravida leo, vel blandit diam. Sed vehicula enim vel arcu laoreet rhoncus.
-  Phasellus a dignissim est, eget mollis mi. Curabitur iaculis eget magna a
-  luctus. Aenean non interdum libero. Vestibulum et velit et sapien luctus
-  bibendum a aliquam magna.
+  Dedicated cores aren't neccessary, as you'll use a share of a thread with zero selected. This means we will only reserve a faction of a cpu for your server and allow your server to "burst" up to 4 cores, though this will be shared with other servers on the same physical server. 
+  Selecting a dedicated core reserves that entire thread for you, so you won't be subject to a "Noisy Neigbor" problem.
 
 product:
   id: "custom-plan"
@@ -33,17 +30,30 @@ product:
       type: "dropdown"
       value: "2GB"
       options:
-        - name: "1GB"
-          priceModifier: 1.00
-
         - name: "2GB"
-          priceModifier: 2.00
-
-        - name: "3GB"
-          priceModifier: 3.00
-
-        - name: "4GB"
           priceModifier: 4.00
+        - name: "4GB"
+          priceModifier: 8.00
+        - name: "6GB"
+          priceModifier: 12.00
+        - name: "8GB"
+          priceModifier: 16.00
+        - name: "10GB"
+          priceModifier: 20.00
+        - name: "12GB"
+          priceModifier: 24.00
+        - name: "14GB"
+          priceModifier: 28.00
+        - name: "16GB"
+          priceModifier: 32.00
+        - name: "18GB"
+          priceModifier: 36.00
+        - name: "20GB"
+          priceModifier: 40.00
+        - name: "22GB"
+          priceModifier: 44.00
+        - name: "24GB"
+          priceModifier: 48.00
 
     - name: "AMD CPU Cores"
       type: "dropdown"
@@ -53,16 +63,16 @@ product:
           priceModifier: 0.00
 
         - name: "1"
-          priceModifier: 1.00
+          priceModifier: 15.00
 
         - name: "2"
-          priceModifier: 2.00
+          priceModifier: 30.00
 
         - name: "3"
-          priceModifier: 3.00
+          priceModifier: 45.00
 
         - name: "4"
-          priceModifier: 4.00
+          priceModifier: 60.00
 
     - name: "ARM CPU Cores"
       type: "dropdown"
@@ -72,16 +82,10 @@ product:
           priceModifier: 0.00
 
         - name: "1"
-          priceModifier: 1.00
+          priceModifier: 5.00
 
         - name: "2"
-          priceModifier: 2.00
-
-        - name: "3"
-          priceModifier: 3.00
-
-        - name: "4"
-          priceModifier: 4.00
+          priceModifier: 10.00
 
     - name: "Extra: Minecraft Servers"
       type: "dropdown"
