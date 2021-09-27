@@ -1,7 +1,7 @@
 <section class="section section-hero padding-y-64">
   <div class="container">
     <div class="row">
-      <div class="column-12 column-lg-8">
+      <div class="column-12 column-lg-8 display-flex align-items-center">
         <h1 class="section-hero-title font-size-50 font-weight-bold">
           {{ $lenght := len .Params.home.hero.titles }}
           {{ range $i, $e := .Params.home.hero.titles }}
@@ -9,7 +9,7 @@
           {{ end }}
           <div class="typing-slider section-hero-text font-size-50 font-weight-bold color-aqua">
             {{ $typewriterEffect := resources.Get "js/typewriterEffect.js" }}
-            <amp-script src="{{ $typewriterEffect.Permalink }}" width="540" height="140">
+            <amp-script src="{{ $typewriterEffect.Permalink }}" width="540" height="70">
               <span class="typed-text"></span> <span class="cursor"></span>
               <ul class="typewriter-data display-none">
                 {{ range .Params.home.hero.subtitles }}
