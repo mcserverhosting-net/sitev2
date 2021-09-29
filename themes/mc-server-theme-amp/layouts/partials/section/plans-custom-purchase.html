@@ -46,7 +46,7 @@
 
     <div id="tabpanel1" role="tabpanel" aria-labelledby="tab1" class="display-flex flex-direction-column align-items-center" option selected>
       <h3 class="font-size-20 font-weight-bold text-align-center padding-y-64">How much RAM will you need?</h3>
-      <div class="ram-selector display-flex justify-content-center row">
+      <div class="slider-selector display-flex justify-content-center row">
         <div class="column-12 column-sm-10 column-md-8 column-lg-6 column-xl-4">
           {{ range where $data.Params.product.customFields ".name" "RAM" }}
           <div class="slider-container padding-32">
@@ -55,8 +55,9 @@
             {{ range $i, $e := .options }} {{ if (eq $e.name $value) }}{{ $index = $i }}{{ end }} {{ end }}
             <input id="ramRange" type="range" min="0" max="{{ sub (len .options) 1 }}" value="{{ $index }}" step='1' class="slider styled-slider slider-progress" list='ram-tickmarks'>
             <div class="tickmarks" id="ram-tickmarks">
-              {{ range .options }}
-                <p>{{ .name }}</p>
+              {{ $last := sub (len .options) 1 }}
+              {{ range $i, $e := .options }}
+                <p>{{ if (or (eq $i 0) (eq $i $last)) }}{{ .name }}{{ end }}</p>
               {{ end }}
             </div>
           </div>
@@ -93,7 +94,7 @@
           </div>
         </div>
       </div>
-      <div class="ram-selector display-flex justify-content-center row">
+      <div class="slider-selector display-flex justify-content-center row">
         <div class="column-12 column-sm-10 column-md-8 column-lg-6 column-xl-5 column-xxl-4">
           <div class="padding-x-lg-16">
             <div class="slider-container padding-32">
@@ -178,7 +179,7 @@
             <p class="padding-top-16 font-weight-semi-bold text-align-center white-space-nowrap">Minecraft Servers</p>
           </div>
           
-          <div class="ram-selector focused-block display-flex justify-content-center">
+          <div class="slider-selector focused-block display-flex justify-content-center">
             <div class="slider-container padding-32 padding-top-16 width-100">
               <div class="padding-x-lg-16">
                 <div class="display-flex align-items-center justify-content-center margin-bottom-16">
@@ -223,7 +224,7 @@
             <p class="padding-top-16 font-weight-semi-bold text-align-center white-space-nowrap">VPS Servers</p>
           </div>
 
-          <div class="ram-selector focused-block display-flex justify-content-center">
+          <div class="slider-selector focused-block display-flex justify-content-center">
             <div class="slider-container padding-32 padding-top-16 width-100">
               <div class="padding-x-lg-16">
                 <div class="display-flex align-items-center justify-content-center margin-bottom-16">
@@ -268,7 +269,7 @@
             <p class="padding-top-16 font-weight-semi-bold text-align-center white-space-nowrap">Web Hosting</p>
           </div>
 
-          <div class="ram-selector focused-block display-flex justify-content-center">
+          <div class="slider-selector focused-block display-flex justify-content-center">
             <div class="slider-container padding-32 padding-top-16 width-100">
               <div class="padding-x-lg-16">
                 <div class="display-flex align-items-center justify-content-center margin-bottom-16">
@@ -313,7 +314,7 @@
             <p class="padding-top-16 font-weight-semi-bold text-align-center white-space-nowrap">Database Servers</p>
           </div>
 
-          <div class="ram-selector focused-block display-flex justify-content-center">
+          <div class="slider-selector focused-block display-flex justify-content-center">
             <div class="slider-container padding-32 padding-top-16 width-100">
               <div class="padding-x-lg-16">
                 <div class="display-flex align-items-center justify-content-center margin-bottom-16">
@@ -357,7 +358,7 @@
             <p class="padding-top-16 font-weight-semi-bold text-align-center white-space-nowrap">Proxy Servers</p>
           </div>
 
-          <div class="ram-selector focused-block display-flex justify-content-center">
+          <div class="slider-selector focused-block display-flex justify-content-center">
             <div class="slider-container padding-32 padding-top-16 width-100">
               <div class="padding-x-lg-16">
                 <div class="display-flex align-items-center justify-content-center margin-bottom-16">

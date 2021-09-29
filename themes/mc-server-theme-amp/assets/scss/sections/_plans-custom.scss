@@ -164,26 +164,39 @@
   }
 
 
-  .slider {
-    width: 100%;
-  }
+  .slider-selector {
+    .slider {
+      width: 100%;
+    }
 
-  .tickmarks {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    padding-left: 4px;
-  }
-  .tickmarks p {
-    position: relative;
-    padding: 8px 0;
+    .tickmarks {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      padding-left: 6px;
+      padding-right: 4px;
+    }
+    .tickmarks p {
+      position: relative;
+      padding: 8px 0;
 
-    display: flex;
-    justify-content: center;
-    text-align: center;
+      display: flex;
+      justify-content: center;
+      text-align: center;
 
-    min-width: 16px;
-    max-width: 16px;
+      min-width: 16px;
+      max-width: 16px;
+
+      &::before {
+        content: " ";
+        position: absolute;
+        top: -6px;
+        left: 50%;
+        width: 2px;
+        height: 6px;
+        background-color: lightgray;
+      }
+    }
   }
 }
 
