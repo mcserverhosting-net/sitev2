@@ -100,18 +100,23 @@
             <div class="slider-container padding-32">
               <div class="display-flex align-items-center justify-content-center padding-bottom-16">
                 <p class="font-size-20 font-weight-bold text-align-center">AMD CPU</p>
-                <!-- <input type="checkbox" name="" id=""> -->
               </div>
               {{ range where $data.Params.product.customFields ".name" "AMD CPU Cores" }}
                 {{ $index := 0 }}
                 {{ $value := .value }}
                 {{ range $i, $e := .options }} {{ if (eq $e.name $value) }}{{ $index = $i }}{{ end }} {{ end }}
+                {{ if .disabled }}
+                  <div class="text-align-center color-amaranth">
+                    {{ .disabledText }}
+                  </div>
+                {{ else }}
                 <input id="amdRange" type="range" min="0" max="{{ sub (len .options) 1 }}" value="{{ $index }}" step='1' class="slider styled-slider slider-progress" list='amd-tickmarks'>
                 <div class="tickmarks" id="amd-tickmarks">
                   {{ range .options }}
                     <p>{{ .name }}</p>
                   {{ end }}
                 </div>
+                {{ end }}
               {{ end }}
             </div>
           </div>
@@ -121,18 +126,23 @@
             <div class="slider-container padding-32">
               <div class="display-flex align-items-center justify-content-center padding-bottom-16">
                 <p class="font-size-20 font-weight-bold text-align-center">ARM CPU</p>
-                <!-- <input type="checkbox" name="" id=""> -->
               </div>
               {{ range where $data.Params.product.customFields ".name" "ARM CPU Cores" }}
                 {{ $index := 0 }}
                 {{ $value := .value }}
                 {{ range $i, $e := .options }} {{ if (eq $e.name $value) }}{{ $index = $i }}{{ end }} {{ end }}
-                <input id="armRange" type="range" min="0" max="{{ sub (len .options) 1 }}" value="{{ $index }}" step='1' class="slider styled-slider slider-progress" list='arm-tickmarks'>
-                <div class="tickmarks" id="arm-tickmarks">
-                  {{ range .options }}
-                    <p>{{ .name }}</p>
-                  {{ end }}
-                </div>
+                {{ if .disabled }}
+                  <div class="text-align-center color-amaranth">
+                    {{ .disabledText }}
+                  </div>
+                {{ else }}
+                  <input id="armRange" type="range" min="0" max="{{ sub (len .options) 1 }}" value="{{ $index }}" step='1' class="slider styled-slider slider-progress" list='arm-tickmarks'>
+                  <div class="tickmarks" id="arm-tickmarks">
+                    {{ range .options }}
+                      <p>{{ .name }}</p>
+                    {{ end }}
+                  </div>
+                {{ end }}
               {{ end }}
             </div>
           </div>

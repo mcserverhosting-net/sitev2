@@ -74,6 +74,9 @@ product:
         - name: "4"
           priceModifier: 60.00
 
+      disabled: false
+      disabledText: "AMD CPUs aren't currently available, but they will be back in stock soon!"
+
     - name: "ARM CPU Cores"
       type: "dropdown"
       value: "0"
@@ -81,11 +84,14 @@ product:
         - name: "0"
           priceModifier: 0.00
 
-        - name: "1"
-          priceModifier: 5.00
+        #- name: "1"
+        #  priceModifier: 5.00
 
-        - name: "2"
-          priceModifier: 10.00
+        #- name: "2"
+        #  priceModifier: 10.00
+
+      disabled: true
+      disabledText: "ARM CPUs aren't currently available, but they will be back in stock soon!"
 
     - name: "Extra: Minecraft Servers"
       type: "dropdown"
