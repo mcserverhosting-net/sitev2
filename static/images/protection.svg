@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="134" viewBox="0 0 150 134">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Image" width="150" height="134" transform="translate(221 1153)" fill="#fff"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00e6ff"/>
+      <stop offset="1" stop-color="#0068ff"/>
+    </linearGradient>
+  </defs>
+  <g id="Mask_Group_3" data-name="Mask Group 3" transform="translate(-221 -1153)" clip-path="url(#clip-path)">
+    <g id="verified" transform="translate(229 1153)">
+      <path id="Path_1626" data-name="Path 1626" d="M120.3,21.7,69.007.4a5.234,5.234,0,0,0-4.014,0L13.7,21.7a5.235,5.235,0,0,0-3.227,4.834V52.423a87.658,87.658,0,0,0,54.553,81.189,5.235,5.235,0,0,0,3.956,0,87.659,87.659,0,0,0,54.553-81.189V26.532A5.234,5.234,0,0,0,120.3,21.7Zm-7.242,30.725A77.207,77.207,0,0,1,67,123.08,77.21,77.21,0,0,1,20.938,52.423v-22.4L67,10.9l46.063,19.125ZM61.214,70.066l22.5-22.5a5.234,5.234,0,1,1,7.4,7.4l-26.2,26.2a5.234,5.234,0,0,1-7.4,0L42.885,66.542a5.234,5.234,0,0,1,7.4-7.4Z" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>
