@@ -100,7 +100,7 @@ about:
     members:
       - image: "/images/about-logan.png"
         name: "Logan H"
-        position: "Datacenter Engineer"
+        position: "Datacenter Admin"
         github: ""
         linkedin: ""
         email: ""
