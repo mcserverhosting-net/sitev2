@@ -3,14 +3,23 @@
     <div class="row">
       <div class="column-12">
         <div class="padding-x-lg-64">
-          <amp-img
-            alt="{{ .Params.home.ryzen.image.alt }}"
-            src="{{ .Params.home.ryzen.image.src }}"
-            width="{{ .Params.home.ryzen.image.width }}"
-            height="{{ .Params.home.ryzen.image.height }}"
-            layout="responsive"
+          <amp-bodymovin-animation
+          layout="responsive"
+          width="{{ .Params.home.ryzen.image.width }}"
+          height="{{ .Params.home.ryzen.image.height }}"
+          src="{{ .Params.home.ryzen.animation.src }}"
+          alt="{{ .Params.home.ryzen.animation.alt }}"
+          loop="true"
           >
-          </amp-img>
+            <amp-img placeholder
+                alt="{{ .Params.home.ryzen.image.alt }}"
+                src="{{ .Params.home.ryzen.image.src }}"
+                width="{{ .Params.home.ryzen.image.width }}"
+                height="{{ .Params.home.ryzen.image.height }}"
+                layout="responsive"
+              >
+            </amp-img>
+          </amp-bodymovin-animation>
         </div>
       </div>
     </div>

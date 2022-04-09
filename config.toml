@@ -13,6 +13,7 @@ enableRobotsTXT = true
     "amp-sidebar",
     "amp-script",
     "amp-selector",
+    "amp-bodymovin-animation",
   ]
 
   themeColor = "#ff1d55"

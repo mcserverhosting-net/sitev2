@@ -21,14 +21,24 @@
         </h1>
       </div>
       <div class="column-12 column-lg-4">
-        <amp-img
-          alt="Host Illustration"
-          src="{{ .Params.home.hero.image }}"
+        <amp-bodymovin-animation
+          layout="responsive"
           width="516"
           height="532"
-          layout="responsive"
+          src="{{ .Params.home.hero.animation }}"
+          loop="true"
         >
-        </amp-img>
+          <amp-img placeholder
+            alt="Host Illustration"
+            src="{{ .Params.home.hero.image }}"
+            width="516"
+            height="532"
+            layout="responsive"
+          >
+          </amp-img>
+        </amp-bodymovin-animation>
+
+        
       </div>
     </div>
   </div>

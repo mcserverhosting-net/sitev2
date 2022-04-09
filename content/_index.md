@@ -27,11 +27,17 @@ home:
       - "Database"
 
     image: "/images/hero-image.svg"
+    animation: "/animation/hero.json"
 
   ryzen:
     image:
       alt: "Host Illustration"
       src: "/images/ryzen-image-home.svg"
+      width: "1110"
+      height: "960"
+    animation:
+      alt: "Host Illustration"
+      src: "/animation/ryzen.json"
       width: "1110"
       height: "960"
 
@@ -41,6 +47,7 @@ home:
 
     cards:
       - image: "/images/bandwidth.svg"
+        animation: "/animation/bandwidth.json"
         title: "Unlimited Bandwidth"
         text: >
           You get the full power of our ISP with no throttling. Up to 1Gbps up and down straight to your players and admins for fast uploads.
@@ -49,6 +56,7 @@ home:
           link: ""
 
       - image: "/images/secure-auth.svg"
+        animation: "/animation/secureAuth.json"
         title: "Secure Authentication"
         text: >
           We hook your console access directly into our OCID login system. You
@@ -58,6 +66,7 @@ home:
           link: ""
 
       - image: "/images/protection.svg"
+        animation: "/animation/protection.json"
         title: "DDOS Protection"
         text: >
           With our high-performance networking stack and powerful hardware we can handle the most severe attacks placed against us.
@@ -67,6 +76,7 @@ home:
 
       - image: "/images/backup.svg"
         title: "Instant Snapshotting"
+        animation: "/animation/backup.json"
         text: ""
         text: >
           Take backups with our instant snapshot system without needing to stop or pause your server saves. Restore them and test them out at any time with a volume clone without interrupting connected players.
@@ -75,6 +85,7 @@ home:
           link: ""
 
       - image: "/images/quickstart.svg"
+        animation: "/animation/quickstart.json"
         title: "Quickstart"
         text: ""
         text: >
@@ -84,6 +95,7 @@ home:
           link: ""
 
       - image: "/images/online-support.svg"
+        animation: "/animation/onlineSupport.json"
         title: "Community Support"
         text: >
           With dedicated support staff and knowledgable server admins, you can reach out to a knowledgable community with any question.
@@ -111,6 +123,13 @@ home:
     image: 
       alt: "Map Illustration"
       src: "/images/map.svg"
+      animation: "/animation/map.json"
+      width: "1755"
+      height: "747"
+    animation:
+      alt: "Map Illustration"
+      src: "/animation/map.json"
+      animation: "/animation/map.json"
       width: "1755"
       height: "747"
 

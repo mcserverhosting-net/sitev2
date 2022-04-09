@@ -15,10 +15,27 @@
           <label class="square-container display-flex flex-direction-column justify-content-center background-color-swamp height-100 position-relative">
             <input type="radio" class="position-absolute opacity-0" name="features">
             <div class="square-content display-flex flex-direction-column justify-content-center padding-24">
-              {{ with .image }}
-              <div class="card-image flex-grow-1 margin-bottom-24" style="background-image: url('{{ . }}')" >
-              </div>
+              <div class="flex-grow-1 margin-bottom-24" >
+              {{ with .animation }} 
+                <amp-bodymovin-animation
+                layout="responsive"
+                width="150"
+                height="150"
+                src="{{ . }}"
+                loop="true"
+                >
               {{ end }}
+              {{ with .image }} 
+                <amp-img placeholder
+                src="{{ . }}"
+                width="150"
+                height="150"
+                layout="responsive"
+                >
+              {{ end }}
+                </amp-img>  
+                </amp-bodymovin-animation>
+              </div>
               {{ with .title }} <h2 class="card-title font-weight-bold text-align-center"> {{ . }} </h2> {{ end }}
               {{ with .button }}
               <div class="card-link color-aqua text-align-center padding-y-8">
