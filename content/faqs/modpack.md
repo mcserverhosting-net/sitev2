@@ -1,6 +1,6 @@
 ---
 title: "How to set up server for mods"
-author: "Jeremy"
+author: "jeremy"
 tags: ["server"]
 categories: ["Getting Started"]
 servertypes: ["all"]

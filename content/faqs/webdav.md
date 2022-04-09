@@ -1,6 +1,6 @@
 ---
 title: "Connect to webdav"
-author: "Jeremy"
+author: "jeremy"
 tags: ["server"]
 categories: ["Getting Started"]
 servertypes: ["all"]

@@ -1,6 +1,6 @@
 ---
 title: "How to find logs and crash reports"
-author: "Jeremy"
+author: "jeremy"
 tags: ["server"]
 categories: ["Getting Started"]
 servertypes: ["all"]

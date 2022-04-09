@@ -1,6 +1,6 @@
 ---
 title: "Server set up"
-author: "Jeremy"
+author: "jeremy"
 tags: ["server"]
 categories: ["Getting Started"]
 servertypes: ["all"]
