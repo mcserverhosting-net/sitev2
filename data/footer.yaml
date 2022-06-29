@@ -29,9 +29,9 @@ columns:
   - title: "Support"
     items:
       - label: "FAQs"
-        link: "/faq"
+        link: "/faqs"
 
       - label: "Help"
         link: "/support"
 
-copyright: "(R) 2021 MC Server Hosting. All Rights Reserved."
+copyright: "(R) 2022 MC Server Hosting. All Rights Reserved."

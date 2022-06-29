@@ -17,15 +17,15 @@ about:
   powerful:
     title: "Powerful with a Pinch of Bleeding Edge"
     cards:
-      - title: "Custom builds for Powerful Solutions"
+      - title: "Custom Builds for Powerful Solutions"
         image:
-          alt: "Custom chassis with 4x mitx"
+          alt: "Custom Chassis with 4x mitx"
           src: "/images/about/custom-servers.jpg"
           width: "3024"
           height: "4032"
 
         button:
-          label: "All our game servers as well as some of our core infrastructure is selected and composed before deployment. We are dedicated to providing the best hardware possible."
+          label: "All custom servers here. We do our best to put the knowledge and knowhow to optimize everything from the ground up. That's why we chose AMD and the Pine64 community. Great leaders in innovation to power you."
           link: "#"
 
       - title: "Powered by a Modern Stack"
@@ -36,7 +36,7 @@ about:
           height: "2208"
 
         button:
-          label: "Our stack is unmatched in optimizaton, composition and scalability. We are constantly improving and we made sure we had the room to grow as to not succum to technical debt or pricy software subscriptions that we would have to pass to the end user."
+          label: "We do our best to focus on optimizaton, composition and scalability. No third party subscriptions to pay behind the scenes. Build on open-source software, we handle the hard work so you can enjoy the benefits."
           link: "#"
 
       - title: "Innovating with the ARM Pine64 Community"
@@ -53,7 +53,7 @@ about:
       - title: "Located at Virginia Beach"
         image:
           alt: "Office Space"
-          src: "/images/about/office-space.jpg"
+          src: "/images/about/PXL_20220629_041617713.jpg"
           width: "4032"
           height: "3024"
 
@@ -101,21 +101,21 @@ about:
       - image: "/images/about-logan.png"
         name: "Logan H"
         position: "Datacenter Admin"
-        github: ""
-        linkedin: ""
-        email: ""
+        github: "#"
+        linkedin: "#"
+        email: "#"
 
       - image: "/images/about-samuel.png"
         name: "Samuel W"
         position: "Cluster Admin & Owner"
-        github: ""
-        linkedin: ""
-        email: ""
+        github: "https://github.com/sfxworks"
+        linkedin: "#"
+        email: "mailto:services@sfxworks.net"
 
       - image: "/images/about-jeremy.jpg"
         name: "Jeremy K"
         position: "Support Administrator"
-        github: ""
-        linkedin: ""
-        email: "https://github.com/jeremykalar"
+        github: "https://github.com/jeremykalar"
+        linkedin: "#"
+        email: "#"
 ---

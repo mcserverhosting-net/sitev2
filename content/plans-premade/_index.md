@@ -39,7 +39,14 @@ content:
       All servers are routed through our public IP proxy.  Bungee servers
       receive their own public IPv4 address.  Bungee servers live on our edge
       routers for ultra-fast latency.  VPS servers receive their own public
-      IPv4 address.
+      IPv4 address. Note: VPS servers begin with Debian 10 running the 
+      Cockpit Dashboard. Please reach out to us if you would like an alternative OS.
+      <br><br>
+      
+      <br>
+      IMPORTANT NOTE: This site is currently in it's final stages before Q3. As such, new orders are
+      expected to take up to 48h until July 1st.
+      <br><br> Use code PREAUTOMATION at checkout to recieve 50% off your order.
 
     featuredImage:
       alt: "Featured Image"

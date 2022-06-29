@@ -1,11 +1,12 @@
 ---
-title: "Connect to webdav"
+title: "Gaining Global File Access"
 author: "jeremy"
 tags: ["server"]
 categories: ["Getting Started"]
 servertypes: ["all"]
 date: 2020-07-06T05:38:44-04:00
 draft: false
+faqs: "Server Management"
 ---
 ### How to set up webdav: <br><br>
 ---

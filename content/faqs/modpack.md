@@ -6,6 +6,7 @@ categories: ["Getting Started"]
 servertypes: ["all"]
 date: 2020-07-06T05:38:44-04:00
 draft: false
+faqs: "Server Management"
 ---
 ### To change to having mods:
 1. use the yaml file to change the server type for the server that would would like to use for mods

@@ -4,7 +4,7 @@ author: "quantomworks"
 tags: ["cli", "server", "minecraft", "create"]
 date: 2020-07-06T05:38:44-04:00
 draft: false
-faqs: "cat3"
+faqs: "Server Deployment"
 ---
 
 {{< amp-image width="650" height="361" layout="responsive" src="https://www.howtogeek.com/wp-content/uploads/2015/08/xUntitled2-650x361.jpg.pagespeed.gp+jp+jw+pj+ws+js+rj+rp+rw+ri+cp+md.ic.A2aSZyqNHU.jpg" alt="The command block can do a lot to servers." >}}
