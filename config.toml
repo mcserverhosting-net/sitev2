@@ -1,11 +1,11 @@
-baseurl = "https://mystifying-shirley-058da0.netlify.app/"
+baseurl = "https://mcserverhosting.net/"
 languageCode = "en-us"
 title = "MC Server"
 theme = "mc-server-theme-amp"
 enableRobotsTXT = true
 
 [params]
-  title = 'MC Server'
+  title = 'MC Server Hosting LLC'
   description = "High performance hosting for your Minecraft, Web, VPS and Database."
 
   amp = true
