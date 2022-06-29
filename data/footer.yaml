@@ -25,13 +25,6 @@ columns:
       - label: "Database"
         link: "/plans"
 
-  - title: "Support"
-    items:
-      - label: "FAQs"
-        link: "/faqs"
-
-      - label: "Help"
-        link: "/support"
   - title: "Partners"
     items:
       - label: "Spongepowered"
