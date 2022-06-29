@@ -9,12 +9,11 @@ columns:
       - label: "About"
         link: "/about"
 
-      - label: "Terms of Service"
-        link: "https://mcserverhosting.net/tou"
-
       - label: "Privacy Policy"
-        link: "https://mcserverhosting.net/privacy"
+        link: "/faqs/privacy/"
 
+      - label: "Terms of Use"
+        link: "/faqs/terms/"
   - title: "Services"
     items:
       - label: "Minecraft"
@@ -33,5 +32,11 @@ columns:
 
       - label: "Help"
         link: "/support"
+  - title: "Partners"
+    items:
+      - label: "Spongepowered"
+        link: "https://www.spongepowered.org?ref=mcserverhosting"
+      - label: "Better Business Bureau"
+        link: "https://www.bbb.org/us/va/virginia-beach/profile/web-hosting/mc-server-hosting-llc-0583-90409326"
 
 copyright: "(R) 2022 MC Server Hosting. All Rights Reserved."
