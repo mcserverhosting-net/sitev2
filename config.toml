@@ -23,10 +23,10 @@ enableRobotsTXT = true
   #appleItunesApp = "app-id=123456789, app-argument=app-name://link/to/app-content"
   ampManifest = "/amp-manifest.json"
 
-  alternatePageName = "MC Server"
-  organizationLogo = "https://gohugo-amp.gohugohq.com/logo.png"
-  organizationName = "gohugohq.com"
-  organizationAddress = "Some Street 123, 12345 City"
+  alternatePageName = "MC Server Hosting LLC"
+  organizationLogo = "https://mcserverhosting.net/icon.igo"
+  organizationName = "MC Server Hosting LLC"
+  organizationAddress = "249 Central Park Ave #300-69, Virginia Beach, VA 23462"
   publisherName = "gohugohq.com"
   publisherLogo = "https://gohugo-amp.gohugohq.com/logo-publisher.png" # https://developers.google.com/search/docs/data-types/articles#logo-guidelines
   publisherLogoWidth = 600
