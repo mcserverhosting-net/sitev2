@@ -45,7 +45,7 @@ content:
       
       <br>
       IMPORTANT NOTE: This site is currently in it's final stages before Q3. As such, new orders are
-      expected to take up to 48h until July 1st.
+      expected to take up to 48h until July 17th.
       <br><br> Use code PREAUTOMATION at checkout to recieve 50% off your order.
 
     featuredImage:
