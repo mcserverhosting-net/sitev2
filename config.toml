@@ -35,7 +35,7 @@ enableRobotsTXT = true
   stylesheetRegular = ["/base-styling.css"] # these styles are used when amp is disabled for a specific page
   javascriptRegular = ["/script.js"] # these scripts are used when amp is disabled for a specific page
 
-  snipcartApiKey = "MDZiMGU5YTAtM2FlZS00ZDk5LTg0MTUtZDEwOWZkZWYwMWVkNjM3NTk2MTg2MzcwMTAxODE5"
+  snipcartApiKey = "YzQ3ZWJlZWMtMjFmZi00NWYyLTg0YjUtYWFkYzNlMzQ3YjdlNjM3OTI5MzgwNjE5Nzk5MDU5"
 
   disableExitModal = true
   exitPopupTitle = "Before you go..."
