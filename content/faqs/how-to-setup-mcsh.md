@@ -18,7 +18,7 @@ faqs: "Getting Started"
 
 The MCSH command-line interface will give you console access, the ability to set up and modify your servers, create snapshots, and much more! This article will go over setting up your server. 
 
-Before we continue, please ensure you register [here at our authentication server](https://keycloak.sfxworks.net/auth/realms/mcsh/account "Registration"). **Make sure to use the same email you purchased your namespace with!**
+Before we continue, please ensure you register [here at our authentication server](https://auth.service.mcserverhosting.net/realms/mcsh/account/#/personal-info "Registration"). **Make sure to use the same email you purchased your namespace with!**
 
 ## Installing scoop
 

@@ -13,8 +13,8 @@ faqs: "Server Management"
 ### How to find logs/crash reports
 
 Minecraft client:
-<br> 1. Open the windows start menu and type in "%appdata%" and press enter.
-<br> 2. open the .minecraft folder.
-<br> 3. open either the logs or crash-reports folder
+<br> 1. 1: Open the windows start menu and type in "%appdata%" and press enter.
+<br> 2. 2: Open the .minecraft folder.
+<br> 3. 3: Open either the logs or crash-reports folder
 <br>    crash reports are files that get logged when minecraft crashs
-<br> 4. open the latest.log for the latest log, and open the crash text file with the latest date and time on it.
+<br> 4. 4:Open the latest.log for the latest log, and open the crash text file with the latest date and time on it.

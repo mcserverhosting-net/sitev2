@@ -10,10 +10,10 @@ faqs: "Server Deployment"
 ---
 
 ### How to set up a server:
-1. Grab the yaml from [here](https://github.com/mcserverhosting-net/mc-operator/blob/master/deploy/examples/server.yaml)
-2. edit the fields to match your plan and interest 
-3. use powershell to use the command: cd (drive and folders of  where the file is)
-4. apply the yaml via mcsh apply -f the-server-config-file.yaml
+1. 1: Grab the yaml from [here](https://github.com/mcserverhosting-net/mc-operator/blob/master/deploy/examples/server.yaml)
+2. 2: Edit the fields to match your plan and interest 
+3. 3: use powershell to use the command: cd (drive and folders of  where the file is)
+4. 4 : Apply the yaml via mcsh apply -f the-server-config-file.yaml
 
 
 ---

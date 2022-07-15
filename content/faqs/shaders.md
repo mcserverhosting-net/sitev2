@@ -10,8 +10,8 @@ faqs: "Client Management"
 ---
 
 ### How to install shaders
-<br>1: Download & Install Optifine
-<br>2: Download A Shaders Pack
-<br>3: Open Your Shaders Folder
-<br>4: Install The Shaders Pack
+1. 1: Download & Install Optifine
+2. 2: Download A Shaders Pack
+3. 3: Open Your Shaders Folder
+4. 4: Install The Shaders Pack
 
