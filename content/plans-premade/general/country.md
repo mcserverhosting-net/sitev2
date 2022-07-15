@@ -20,7 +20,7 @@ product:
 
     - name: "Server Quota"
       type: "readonly"
-      value: "1"
+      value: "6"
 
     - name: "Bungee Quota"
       type: "readonly"
