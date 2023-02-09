@@ -112,7 +112,7 @@ about:
         linkedin: "#"
         email: "mailto:services@sfxworks.net"
 
-      - image: "/images/about-jeremy.jpg"
+      - image: "/images/about-jeremy.png"
         name: "Jeremy K"
         position: "Support Administrator"
         github: "https://github.com/jeremykalar"
