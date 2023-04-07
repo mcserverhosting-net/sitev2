@@ -48,9 +48,8 @@ We now enter the specifications section of the server file. Universal values suc
     memory:
       initial: 1G
       max: 4G
-      hugePages: 125M
 ```
-Here, we set some general minecraft properties under spec.  These include the memory, version type, and the EULA. If the eula is false, your server will go in a crash loop.
+Here, we set some general minecraft properties under spec.  These include the memory, version type, and the EULA. If the eula is false, your server will go in a crash loop. 
 
 ```
 servercore:
@@ -71,10 +70,10 @@ If for some reason you need to redownload the server core, set the redownload fi
 Using domain name, you can declare the domain name you wish to use. If the domain is available, we will attempt to use this domain to route to your Minecraft server. Available primary domains are play.minecraftserverhost.xyz, play.minecraftserverhost.best, play.minecraftserver.host, play.minecraftserverhosting.sh, and play.mcserverhosting.net. 
 
 ```
-java:
+javaargs:
   args:
   argsdd: fml.queryResult:confirm
-  argsxx: -XX:+UseLargePagesInMetaspace -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:MaxGCPauseMillis=100 -XX:+DisableExplicitGC -XX:TargetSurvivorRatio=90 -XX:G1NewSizePercent=50 -XX:G1MaxNewSizePercent=80 -XX:G1MixedGCLiveThresholdPercent=50 -XX:+AlwaysPreTouch -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+  argsxx: -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:MaxGCPauseMillis=100 -XX:+DisableExplicitGC -XX:TargetSurvivorRatio=90 -XX:G1NewSizePercent=50 -XX:G1MaxNewSizePercent=80 -XX:G1MixedGCLiveThresholdPercent=50 -XX:+AlwaysPreTouch -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
 ```
 
 We allow you to set custom java args! We deploy some recommended ones by default. **Always** keep `-XX:+UnlockExperimentalVMOptions` and `-XX:+UseCGroupMemoryLimitForHeap` or your server could try to use more memory than it should.
@@ -133,8 +132,8 @@ The config section contains some general server.properties config that your serv
 These are override values. If you want to keep using these to set your server.properties, you can leave it as `true`. Otherwise, leave it as false. Force redownload will do the same for things such as the core server binaries. You'll usually want this `false` unless something goes very wrong, and you wish to reset your server without remaking the world. 
 
 ```
-  userID: 1000
-  groupID: 999
+  userID: 1001
+  groupID: 1000
 ```
 
 Finally, we have the group and user ID. The above values are what your server will use to run. When you create an SSH server to gain file access, each user has a group and user ID. More on that will be within the article. You can leave these alone unless you have multiple admins that you only wish to manage specific servers. 
