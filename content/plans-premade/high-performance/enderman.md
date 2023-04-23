@@ -1,22 +1,22 @@
 ---
-title: "City"
+title: "Enderman"
 draft: false
-category: "General"
-weight: 4
+category: "High Performance"
+weight: 6
 
 product:
-  id: "general-city"
-  name: "City"
-  price: "25.60"
+  id: "enderman"
+  name: "Enderman"
+  price: "38.4"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "8 GB"
+      value: "12 GB"
 
     - name: "Storage"
       type: "readonly"
-      value: "50GB"
+      value: "120GB"
 
   selectedPlan: "monthly-plan"
 
@@ -25,5 +25,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 25.60
+      itemPrice: 38.4
 ---

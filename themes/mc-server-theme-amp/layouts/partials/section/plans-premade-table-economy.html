@@ -1,39 +1,27 @@
 <section class="section-table padding-y-64">
   <div class="container">
-    <h2 class="font-size-24 font-weight-bold padding-bottom-32">Server Core Install</h2>
+    <h2 class="font-size-24 font-weight-bold padding-bottom-32">Model 1: Economy</h2>
+    <h2 class="font-size-24 font-weight-bold padding-bottom-32">PREORDER DISCOUNT: 50% OFF FIRST MONTH. INSTALL DATE 4/31/2023</h2>
+    <p class="font-size-18 font-weight-bold padding-bottom-16">Experience Smooth Gameplay with Our Budget-Friendly Refurbished Server Line.</p>
     <div class="row padding-bottom-32 overflow-x-auto">
       <table>
         <thead class="font-weight-semi-bold background-color-licorice border-radius-8">
           <tr class="">
-            <th class="text-align-left vertical-align-middle">Plan</th>
-            <th class="text-align-left vertical-align-middle">Server Type</th>
+            <th class="text-align-left vertical-align-middle">Plans</th>
+            <th class="text-align-left vertical-align-middle">RAM</th>
+            <th class="text-align-left vertical-align-middle">Storage</th>
             <th class="text-align-left vertical-align-middle">Price</th>
             <th class="text-align-center vertical-align-middle">Buy</th>
           </tr>
         </thead>
         <tbody>
           {{ $currentPage := . }}
-          {{ range (where .Pages ".Params.category" "Server") }}
+          {{ range (where .Pages ".Params.category" "Economy") }}
             <tr>
               <td>{{ .Title }}</td>
-              <td>
-                <select class="snipcart-add-item snipcart-add-item-select"
-                  data-item-name="{{ .Params.product.name }}"
-                  data-item-id="{{ .Params.product.id }}"
-                  data-item-price="{{ .Params.product.price }}"
-                  data-item-url="{{ $currentPage.Permalink }}"
-                  {{ range $i, $e := .Params.product.customFields }}
-                    data-item-custom{{ add $i 1 }}-name="{{ $e.name }}"
-                    data-item-custom{{ add $i 1 }}-type="{{ $e.type }}"
-                    data-item-custom{{ add $i 1 }}-value="{{ $e.value }}"
-                  {{ end }}
-                >
-                  <option value="vanilla">Vanilla</option>
-                  <option value="forge">Forge</option>
-                  <option value="spigot">Spigot</option>
-                  <option value="paper">Paper</option>
-                </select>
-              </td>
+              {{ range .Params.product.customfields }}
+                <td>{{ .value }}</td>
+              {{ end }}
               <td>{{ .Params.product.price }}</td>
               <td class="text-align-center">
                 <button class="snipcart-add-item snipcart-add-item-button"
@@ -45,6 +33,16 @@
                     data-item-custom{{ add $i 1 }}-name="{{ $e.name }}"
                     data-item-custom{{ add $i 1 }}-type="{{ $e.type }}"
                     data-item-custom{{ add $i 1 }}-value="{{ $e.value }}"
+                  {{ end }}
+
+                  data-item-selected-plan="{{ .Params.product.selectedPlan }}"
+
+                  {{ range $i, $e := .Params.product.availablePlans }}
+                    data-plan{{ add $i 1 }}-id="{{ $e.id }}"
+                    data-plan{{ add $i 1 }}-name="{{ $e.name }}"
+                    data-plan{{ add $i 1 }}-frequency="{{ $e.frequency }}"
+                    data-plan{{ add $i 1 }}-interval="{{ $e.interval }}"
+                    data-item-plan{{ add $i 1 }}-price="{{ $e.itemPrice }}"
                   {{ end }}
                 >
                   <amp-img

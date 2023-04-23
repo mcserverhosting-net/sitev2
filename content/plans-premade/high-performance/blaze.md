@@ -1,13 +1,13 @@
 ---
-title: "City"
+title: "Blaze"
 draft: false
-category: "General"
+category: "High Performance"
 weight: 4
 
 product:
-  id: "general-city"
-  name: "City"
-  price: "25.60"
+  id: "blaze"
+  name: "Blaze"
+  price: "25.6"
 
   customFields:
     - name: "RAM"
@@ -16,7 +16,7 @@ product:
 
     - name: "Storage"
       type: "readonly"
-      value: "50GB"
+      value: "80GB"
 
   selectedPlan: "monthly-plan"
 
@@ -25,5 +25,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 25.60
+      itemPrice: 25.6
 ---

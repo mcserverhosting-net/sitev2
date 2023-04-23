@@ -1,22 +1,23 @@
 ---
-title: "City"
+
+title: "Elder Guardian"
 draft: false
-category: "General"
-weight: 4
+category: "High Performance"
+weight: 8
 
 product:
-  id: "general-city"
-  name: "City"
-  price: "25.60"
+  id: "elder-guardian"
+  name: "Elder Guardian"
+  price: "51.2"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "8 GB"
+      value: "16 GB"
 
     - name: "Storage"
       type: "readonly"
-      value: "50GB"
+      value: "160GB"
 
   selectedPlan: "monthly-plan"
 
@@ -25,5 +26,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 25.60
+      itemPrice: 51.2
 ---

@@ -1,22 +1,22 @@
 ---
-title: "City"
+title: "chicken"
 draft: false
-category: "General"
-weight: 4
+category: "Economy"
+weight: 1
 
 product:
-  id: "general-city"
-  name: "City"
-  price: "25.60"
+  id: "chicken"
+  name: "Chicken"
+  price: "2.50"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "8 GB"
+      value: "2 GB"
 
     - name: "Storage"
       type: "readonly"
-      value: "50GB"
+      value: "20GB"
 
   selectedPlan: "monthly-plan"
 
@@ -25,5 +25,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 25.60
+      itemPrice: 2.50
 ---

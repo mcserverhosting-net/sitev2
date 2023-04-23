@@ -7,7 +7,7 @@ weight: 2
 product:
   id: "general-village"
   name: "Village"
-  price: "10.00"
+  price: "12.80"
 
   customFields:
     - name: "RAM"
@@ -18,14 +18,6 @@ product:
       type: "readonly"
       value: "20GB"
 
-    - name: "Server Quota"
-      type: "readonly"
-      value: "2"
-
-    - name: "Bungee Quota"
-      type: "readonly"
-      value: "1"
-
   selectedPlan: "monthly-plan"
 
   availablePlans:
@@ -33,5 +25,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 10.00
+      itemPrice: 12.80
 ---

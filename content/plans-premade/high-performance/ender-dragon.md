@@ -1,22 +1,22 @@
 ---
-title: "City"
+title: "Ender Dragon"
 draft: false
-category: "General"
-weight: 4
+category: "High Performance"
+weight: 1
 
 product:
-  id: "general-city"
-  name: "City"
-  price: "25.60"
+  id: "ender-dragon"
+  name: "Ender Dragon"
+  price: "6.4"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "8 GB"
+      value: "2 GB"
 
     - name: "Storage"
       type: "readonly"
-      value: "50GB"
+      value: "20GB"
 
   selectedPlan: "monthly-plan"
 
@@ -25,5 +25,6 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 25.60
+      itemPrice: 6.4
+
 ---
