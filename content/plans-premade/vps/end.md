@@ -1,37 +1,37 @@
 ---
-title: "End"
+title: "Forge Server"
 draft: false
-category: "VPS"
+category: "Server"
 weight: 3
 
 product:
-  id: "vps-end"
-  name: "End"
-  price: "90.00"
+  id: "forge-server"
+  name: "Forge Server"
+  price: "50.00"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "12 GB"
+      value: "8 GB"
 
     - name: "Storage"
       type: "readonly"
-      value: "200GB"
+      value: "100GB"
 
     - name: "Processor"
       type: "readonly"
-      value: "2"
+      value: "Ryzen 5000"
 
     - name: "Thread Count"
       type: "readonly"
-      value: "4"
+      value: "16"
 
-  selectedPlan: "monthly-plan"
+  selectedPlan: "one-time-purchase"
 
   availablePlans:
-    - id: "monthly-plan"
-      name: "Monthly Subscription"
-      frequency: "monthly"
-      interval: 1
-      itemPrice: 90.00 
+    - id: "one-time-purchase"
+      name: "One-time Purchase"
+      frequency: "one-time"
+      interval: 0
+      itemPrice: 50.00
 ---

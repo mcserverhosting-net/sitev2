@@ -7,7 +7,7 @@ weight: 1
 product:
   id: "general-hut"
   name: "Hut"
-  price: "5.00"
+  price: "6.40"
 
   customFields:
     - name: "RAM"
@@ -18,13 +18,6 @@ product:
       type: "readonly"
       value: "10GB"
 
-    - name: "Server Quota"
-      type: "readonly"
-      value: "1"
-
-    - name: "Bungee Quota"
-      type: "readonly"
-      value: "0"
 
   selectedPlan: "monthly-plan"
 
@@ -33,5 +26,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 5.00
+      itemPrice: 6.4
 ---

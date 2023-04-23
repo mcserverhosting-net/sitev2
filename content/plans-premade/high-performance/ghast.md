@@ -1,22 +1,22 @@
 ---
-title: "City"
+title: "Ghast"
 draft: false
-category: "General"
-weight: 4
+category: "High Performance"
+weight: 3
 
 product:
-  id: "general-city"
-  name: "City"
-  price: "25.60"
+  id: "ghast"
+  name: "Ghast"
+  price: "19.2"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "8 GB"
+      value: "6 GB"
 
     - name: "Storage"
       type: "readonly"
-      value: "50GB"
+      value: "60GB"
 
   selectedPlan: "monthly-plan"
 
@@ -25,5 +25,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 25.60
+      itemPrice: 19.2
 ---

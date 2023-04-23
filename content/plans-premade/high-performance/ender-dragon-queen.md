@@ -1,22 +1,22 @@
 ---
-title: "City"
+title: "The Ender Dragon Queen"
 draft: false
-category: "General"
-weight: 4
+category: "High Performance"
+weight: 10
 
 product:
-  id: "general-city"
-  name: "City"
-  price: "25.60"
+  id: "ender-dragon-queen"
+  name: "The Ender Dragon Queen"
+  price: "64"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "8 GB"
+      value: "20 GB"
 
     - name: "Storage"
       type: "readonly"
-      value: "50GB"
+      value: "200GB"
 
   selectedPlan: "monthly-plan"
 
@@ -25,5 +25,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 25.60
+      itemPrice: 64
 ---

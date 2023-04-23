@@ -1,22 +1,22 @@
 ---
-title: "City"
+title: "turtle"
 draft: false
-category: "General"
-weight: 4
+category: "Economy"
+weight: 3
 
 product:
-  id: "general-city"
-  name: "City"
-  price: "25.60"
+  id: "turtle"
+  name: "Turtle"
+  price: "7.50"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "8 GB"
+      value: "6 GB"
 
     - name: "Storage"
       type: "readonly"
-      value: "50GB"
+      value: "60GB"
 
   selectedPlan: "monthly-plan"
 
@@ -25,5 +25,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 25.60
+      itemPrice: 7.50
 ---

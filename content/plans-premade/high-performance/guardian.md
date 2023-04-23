@@ -1,22 +1,22 @@
 ---
-title: "City"
+title: "Guardian"
 draft: false
-category: "General"
-weight: 4
+category: "High Performance"
+weight: 7
 
 product:
-  id: "general-city"
-  name: "City"
-  price: "25.60"
+  id: "guardian"
+  name: "Guardian"
+  price: "44.8"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "8 GB"
+      value: "14 GB"
 
     - name: "Storage"
       type: "readonly"
-      value: "50GB"
+      value: "140GB"
 
   selectedPlan: "monthly-plan"
 
@@ -25,5 +25,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 25.60
+      itemPrice: 44.8
 ---

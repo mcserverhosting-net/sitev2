@@ -19,17 +19,15 @@ columns:
       - label: "Minecraft"
         link: "/plans"
 
-      - label: "VPS"
-        link: "/plans"
+      - label: "Panel"
+        link: "https://alpha.panel.mcsh.red"
 
       - label: "Database"
         link: "/plans"
 
   - title: "Partners"
     items:
-      - label: "Spongepowered"
-        link: "https://www.spongepowered.org?ref=mcserverhosting"
       - label: "Better Business Bureau"
         link: "https://www.bbb.org/us/va/virginia-beach/profile/web-hosting/mc-server-hosting-llc-0583-90409326"
 
-copyright: "(R) 2022 MC Server Hosting. All Rights Reserved."
+copyright: "(R) 2023 MC Server Hosting. All Rights Reserved."

@@ -1,22 +1,22 @@
 ---
-title: "City"
+title: "squid"
 draft: false
-category: "General"
-weight: 4
+category: "Economy"
+weight: 5
 
 product:
-  id: "general-city"
-  name: "City"
-  price: "25.60"
+  id: "squid"
+  name: "Squid"
+  price: "12.50"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "8 GB"
+      value: "10 GB"
 
     - name: "Storage"
       type: "readonly"
-      value: "50GB"
+      value: "100GB"
 
   selectedPlan: "monthly-plan"
 
@@ -25,5 +25,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 25.60
+      itemPrice: 12.50
 ---

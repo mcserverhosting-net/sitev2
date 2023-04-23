@@ -27,26 +27,26 @@ content:
     backgroundImage: ""
 
   whatYouGet:
-    title: "What you get with your purchase:"
+    title: "Discover the Ultimate Minecraft Gaming Experience"
     text: >
-      - DDR4 2666 ECC Memory<br>
-      - Ryzen 3000 & 5000 series processors<br>
-      - Replicated NVME storage<br>
-      - Simplified WebDAV access point to view all servers at once<br>
-      - DDOS Protection<br>
-      - Disk Snapshotting and Restoration (up to 7 per customer)<br><br>
-
-      All servers are routed through our public IP proxy.  Bungee servers
-      receive their own public IPv4 address.  Bungee servers live on our edge
-      routers for ultra-fast latency.  VPS servers receive their own public
-      IPv4 address. Note: VPS servers begin with Debian 10 running the 
-      Cockpit Dashboard. Please reach out to us if you would like an alternative OS.
-      <br><br>
-      
-      <br>
-      IMPORTANT NOTE: This site is currently in it's final stages before Q3. As such, new orders are
-      expected to take up to 48h until July 17th.
-      <br><br> Use code PREAUTOMATION at checkout to recieve 50% off your order.
+      Elevate your Minecraft adventures with our cutting-edge server hosting solutions, tailored to fit every gamer's unique requirements:
+      <br/>
+      <ul>
+        <li>🎮 Xeon-Powered Servers: Experience seamless vanilla gameplay or cozy multiplayer sessions with friends on our Intel Xeon E5-2680-powered servers, boasting DDR3 PC3-12800R RAM for optimal performance.</li><br/><br/>
+        <li>🎮 Ryzen 3000-5000 Servers: Unleash the full potential of diverse modpacks with our Ryzen 3000-5000 servers, equipped with ultra-fast DDR4 RAM running at speeds of up to 2600 MT/s.</li><br/><br/>
+        <li>🎮 Ryzen 7000 Servers: Dominate large server networks and enjoy extreme performance levels with our Ryzen 7000 servers, featuring cutting-edge DDR5 RAM with speeds reaching an incredible 5400 MT/s.</li>
+      </ul>
+      <br/><br/>
+      What sets MC Server Hosting apart from the competition is our unmatched focus on hardware excellence. Additionally, all our servers come with an array of premium features, including:
+      <br/><br/>
+      <ul>
+        <li>✅ Customized Pterodactyl Interface for seamless server management</li><br/>
+        <li>✅ Lightning-fast replicated NVME storage</li><br/>
+        <li>✅ Robust DDOS protection for uninterrupted gameplay</li><br/>
+        <li>✅ Disk snapshotting and restoration capabilities (up to 20 per customer)</li><br/>
+        <li>✅ Dedicated IP address for a personalized touch</li><br/>
+      </ul>
+      Choose MC Server Hosting and experience the pinnacle of Minecraft gameplay today!
 
     featuredImage:
       alt: "Featured Image"

@@ -18,14 +18,6 @@ product:
       type: "readonly"
       value: "30GB"
 
-    - name: "Server Quota"
-      type: "readonly"
-      value: "4"
-
-    - name: "Bungee Quota"
-      type: "readonly"
-      value: "1"
-
   selectedPlan: "monthly-plan"
 
   availablePlans:

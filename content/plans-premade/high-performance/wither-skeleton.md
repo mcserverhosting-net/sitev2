@@ -1,22 +1,22 @@
 ---
-title: "City"
+title: "Wither Skeleton"
 draft: false
-category: "General"
-weight: 4
+category: "High Performance"
+weight: 5
 
 product:
-  id: "general-city"
-  name: "City"
-  price: "25.60"
+  id: "wither-skeleton"
+  name: "Wither Skeleton"
+  price: "32"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "8 GB"
+      value: "10 GB"
 
     - name: "Storage"
       type: "readonly"
-      value: "50GB"
+      value: "100GB"
 
   selectedPlan: "monthly-plan"
 
@@ -25,5 +25,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 25.60
+      itemPrice: 32
 ---
