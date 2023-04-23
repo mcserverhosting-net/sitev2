@@ -29,6 +29,8 @@ content:
   whatYouGet:
     title: "Discover the Ultimate Minecraft Gaming Experience"
     text: >
+      USE CODE: PREORDER for 50% off M1 and M3 servers!
+      <br/><br/>
       Elevate your Minecraft adventures with our cutting-edge server hosting solutions, tailored to fit every gamer's unique requirements:
       <br/>
       <ul>
