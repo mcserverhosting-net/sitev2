@@ -1,52 +1,82 @@
 {{ if ne .Params.amp.enable false }}
 
 <!DOCTYPE html>
-<!--[if lt IE 8 ]><html {{ if isset $.Site.Params "amp" }}amp{{ end }} lang="en" class="no-js oldie"><![endif]-->
-<!--[if IE 8 ]><html {{ if isset $.Site.Params "amp" }}amp{{ end }} lang="en" class="no-js ie8"><![endif]-->
-<!--[if IE 9 ]><html {{ if isset $.Site.Params "amp" }}amp{{ end }} lang="en" class="no-js ie9"><![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--><html {{ if isset $.Site.Params "amp" }}amp{{ end }} lang="{{ with $.Site.LanguageCode }}{{ . }}{{ else }}en{{ end }}" class="no-js"><!--<![endif]-->
+<!--[if lt IE 8
+  ]><html {{ if isset $.Site.Params "amp" }}amp{{ end }} lang="en" class="no-js
+  oldie"><!
+[endif]-->
+<!--[if IE 8
+  ]><html {{ if isset $.Site.Params "amp" }}amp{{ end }} lang="en" class="no-js
+  ie8"><!
+[endif]-->
+<!--[if IE 9
+  ]><html {{ if isset $.Site.Params "amp" }}amp{{ end }} lang="en" class="no-js
+  ie9"><!
+[endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html {{ if isset $.Site.Params "amp" }}amp{{ end
+}} lang="{{ with $.Site.LanguageCode }}{{ . }}{{ else }}en{{ end }}"
+class="no-js"><!--<![endif]-->
 <head>
-    <title>{{ .Title }}</title>
-    <meta name="description" content="{{ .Site.Params.description }}">
-    <meta charset="utf-8">
+  <title>{{ .Title }}</title>
+  <meta name="description" content="{{ .Site.Params.description }}" />
+  <meta charset="utf-8" />
 
-    {{ partial "amp/header" . }}
+  {{ partial "amp/header" . }}
 
-    <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="canonical" href="{{ .Permalink }}" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1"
+  />
+  <link rel="stylesheet" href="/style.css" />
 
-    {{ with .OutputFormats.Get "RSS" }}
-      <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ site.Title }}" />
-      <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ site.Title }}" />
-    {{ end }}
+  {{ with .OutputFormats.Get "RSS" }}
+  <link
+    href="{{ .RelPermalink }}"
+    rel="alternate"
+    type="application/rss+xml"
+    title="{{ site.Title }}"
+  />
+  <link
+    href="{{ .RelPermalink }}"
+    rel="feed"
+    type="application/rss+xml"
+    title="{{ site.Title }}"
+  />
+  {{ end }}
 
-    <meta name="theme-color" content="{{ $.Site.Params.themeColor }}" />
+  <meta name="theme-color" content="{{ $.Site.Params.themeColor }}" />
 
-    {{ partial "seo/main" . }}
-
-    {{ if ( ne .Params.disableSnipcart true ) }}
-      <link rel="preconnect" href="https://app.snipcart.com">
-      <link rel="preconnect" href="https://cdn.snipcart.com">
-      <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css" />
-    {{ end }}
-    <meta name="amp-script-src" content="sha384-xmxQasq82hOaOb1lFvTFXNWfVhlQ7D6-HEnLxkwhl_4bZXOExdJELoe2WcNVm3u8">
+  {{ partial "seo/main" . }} {{ if ( ne .Params.disableSnipcart true ) }}
+  <link rel="preconnect" href="https://app.snipcart.com" />
+  <link rel="preconnect" href="https://cdn.snipcart.com" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css"
+  />
+  
+  {{ end }}
+  <meta
+    name="amp-script-src"
+    content="sha384-xmxQasq82hOaOb1lFvTFXNWfVhlQ7D6-HEnLxkwhl_4bZXOExdJELoe2WcNVm3u8"
+  />
 </head>
 
 <body>
-{{ if isset $.Site.Params "ampmanifest" }}
-{{ with $.Site.Data.app.banner }}{{ partial "amp/app-banner" . }}{{ end }}
-{{ end }}
-
-{{ else }}
-{{ partial "structure/head.no-amp" . }}
-{{ end }}
+  {{ if isset $.Site.Params "ampmanifest" }} {{ with $.Site.Data.app.banner }}{{
+  partial "amp/app-banner" . }}{{ end }} {{ end }} {{ else }} {{ partial
+  "structure/head.no-amp" . }} {{ end }}
+</body>

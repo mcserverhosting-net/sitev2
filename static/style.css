@@ -1,0 +1,215 @@
+/*Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap");
+
+.price-head ul {
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.price-head ul li {
+  border-right: 2px solid #fff;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.price-head ul li:last-child {
+  border: none;
+}
+.price-head img {
+  width: 150px;
+}
+
+/*Card body */
+.card-body {
+  background: #212035;
+}
+.col-md-4 {
+  width: 30% !important;
+}
+.card {
+  border: none;
+  --bs-card-border-width: 0 !important;
+  border-radius: 16px !important;
+}
+.card .card-top {
+  background-image: url(/images/price/frame66.jpeg);
+  padding: 12px 8px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.card .card-img img {
+  margin-top: 5px;
+  border: 5px solid;
+  background: linear-gradient(
+    120.63deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.51) 102.1%
+  );
+}
+.card .card-head {
+  display: flex;
+  align-items: center;
+}
+.card .card-head p {
+  font-family: "Lexend";
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 8px;
+  gap: 2px;
+  background: #e6dede;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+.card .card-head h6 {
+  display: flex;
+  justify-content: center;
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
+  color: #121212;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.15);
+}
+.card .card-head h5 {
+  position: absolute;
+  right: 8px;
+  top: 15px;
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 35px;
+  text-align: right;
+  color: #121212;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.15);
+}
+.card .card-head span {
+  font-weight: 400;
+  font-size: 12px;
+}
+.card .card-content ul li {
+  display: flex;
+  align-items: center;
+}
+.card .card-content ul li {
+  font-family: "Lexend";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.card .card-content ul li img {
+  width: 16px;
+  margin-right: 4px;
+}
+.card .card-content p {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+.card .card-content .content {
+  border-bottom: 1px solid #000000;
+}
+.card .card-feature {
+  display: flex;
+  margin-top: 8px;
+}
+.card .card-feature .feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .card-feature .feature h3 {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+}
+.card .card-feature .feature h2 {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+
+  color: #121212;
+}
+.card .card-feature .feature h2 span {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: auto;
+}
+
+.card .card-bottom {
+  background-color: #fff;
+  padding: 12px 8px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+.card .card-bottom ul li {
+  display: flex;
+  justify-content: space-between;
+}
+.card .card-bottom ul li h6 {
+  font-weight: 600;
+  border-bottom: 2px #000 solid;
+}
+.card .card-bottom ul li a {
+  background: #fece00;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  padding: 4px 16px;
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.card .card-bottom ul li p {
+  font-family: "Lexend";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  text-align: center;
+
+  color: #333333;
+}
+.card .card-bottom ul li {
+  margin-bottom: 12px;
+}
+.banner {
+  position: relative;
+}
+.banner .text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background: #e60021;
+  border: 5px solid #201b26;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 2px 5px;
+}
+.banner p {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #ffffff;
+}
