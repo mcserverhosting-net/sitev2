@@ -217,3 +217,44 @@
 button .snipcart-add-item {
   background: transparent !important;
 }
+
+/******************************************************************
+***********************************************/
+@media (max-width: 1030px) {
+  .card .card-head p{
+    font-size: 12px;
+    width: 80px;
+  }
+  .card .card-head h6{
+    margin-left: 24px;
+  }
+}
+
+@media (max-width: 930px) {
+  .card .card-head p{
+    font-size: 12px;
+    width: 80px;
+  }
+  .card .card-head h6{
+    margin-left: 42px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 790px) {
+  .col-md-4 {
+    width: 70% !important;
+  }
+  .margin5{
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 500px) {
+  .col-md-4 {
+    width: 90% !important;
+  }
+  .margin5{
+    margin-bottom: 36px;
+  }
+}

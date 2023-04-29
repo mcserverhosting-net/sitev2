@@ -71,13 +71,12 @@
     </ul>
   </section>
   <!--Card body-->
-  <section class="card-body py-5">
-    <div class="container">
+  <section class="card-body py-5 ">
       <div class="row justify-content-center">
 
         <!--Card-->
         {{ range .Params.product }}
-        <div class="col-md-4">
+        <div class="col-md-4 margin5">
           {{if .featured}}
           <div class="banner"><div class="text">
             <p>Recommended</p>
@@ -171,7 +170,6 @@
         {{end}}
 
       </div>
-    </div>
   </section>
   <!---->
   
