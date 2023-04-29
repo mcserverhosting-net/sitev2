@@ -6,22 +6,21 @@ product:
   - featured: false
     id: "basic"
     name: "Pichu"
-    price: 25
+    price: 5
     quota: 4
     measure: GB
     image: /images/price/cobblemonBg2.png
     selectedPlan: "monthly-plan"
 
     content:
-      - name: "Power Move"
-        content: "This is a paragraph of the feature of the Server plan for the Power Move."
+      - name: "Helping Hand"
+        content: "An optimized Cobblemon server great for friends!"
         icons:
           - /images/move-symbols/basic.svg
 
-      - name: "Power Move"
-        content: "This is a paragraph of the feature of the Server plan for the Power Move."
+      - name: "Spark"
+        content: "Just the right amount of power at the best price!"
         icons:
-          - /images/move-symbols/basic.svg
           - /images/move-symbols/electric.svg
 
     customFields:
@@ -30,10 +29,10 @@ product:
         value: "4 GB"
 
     featuredItems:
-      - name: Featured 1
+      - name: Dashboard Access
         icon: /images/move-symbols/fighting.svg
 
-      - name: Featured 1
+      - name: Snapshot Access
         icon: /images/move-symbols/steel.svg
 
     details:
@@ -47,7 +46,7 @@ product:
         name: "Monthly Subscription"
         frequency: "monthly"
         interval: 1
-        itemPrice: 25.00
+        itemPrice: 5.00
 
     data_plans:
       - id: monthly-plan
@@ -55,7 +54,7 @@ product:
         frequency: monthly
         interval: 1
         count: 10
-        price: 25
+        price: 5
 
   - featured: true
     id: "evolved"
