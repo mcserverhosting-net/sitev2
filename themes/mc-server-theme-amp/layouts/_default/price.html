@@ -76,187 +76,95 @@
       <div class="row justify-content-center">
 
         <!--Card-->
+        {{ range .Params.product }}
         <div class="col-md-4">
-          <div class="card">
-            <div class="card-top">
-              <div class="card-head">
-                <div class="col-md-4 "><P>BASIC</P></div>
-                <div class="col-md-4"><h6>Pichu</h6></div>
-                <div class="col-md-4 "><h5>8<span>GB</span></h5></div>
-             
-            </div>
-            <div class="card-img mb-1">
-              <img src="/images/price/pikaedited1.png" class="img-fluid" alt="">
-            </div>
-            <div class="card-content">
-              <div class="content py-3">
-                <ul>
-                  <li><img src="/images/move-symbols/basic.svg" alt="icon"><h4>Power Move</h4></li>
-                </ul>
-                <p>This is a paragraph of the feature of the Server plan for the Power Move.</p>
-              </div> 
-              <div class="content py-3">
-                <ul>
-                  <li><img src="/images/move-symbols/basic.svg" alt="icon"> <img src="/images/move-symbols/electric.svg" alt="icon"><h4>Power Move</h4></li>
-                </ul>
-                <p>This is a paragraph of the feature of the Server plan for the Power Move.</p>
-              </div>
-            </div>
-            <div class="card-feature">
-              <div class="col-md-4">
-                <div class="feature">
-                  <h3>Feature 1</h3>
-                  <img src="/images/move-symbols/fighting.svg" alt="">
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="feature">
-                  <h3>Feature 1</h3>
-                  <img src="/images/move-symbols/fighting.svg" alt="">
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="feature">
-                  <h3>Retreat Cost</h3>
-                  <h2>$90/<span>mo</span></h2>
-                </div>
-              </div>
-            </div>
-            </div>
-            <div class="card-bottom">
-              <ul>
-                <li class="mb-3"><h6>Stats</h6> <span><a href="">Buy Now</a></span></li>
-                <li><p>Ram</p> <p>8 GB</p></li>
-                <li><p>Storag</p> <p>80 GB</p></li>
-                <li><p>Server Quota</p> <p>1</p></li>
-                <li><p>Bungee Quota</p> <p>1</p></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!--Card-->
-        <div class="col-md-4">
+          {{if .featured}}
           <div class="banner"><div class="text">
             <p>Recommended</p>
           </div></div>
+          {{end}}
           <div class="card">
             <div class="card-top">
               <div class="card-head">
-                <div class="col-md-4 "><P>BASIC</P></div>
-                <div class="col-md-4"><h6>Pichu</h6></div>
-                <div class="col-md-4 "><h5>8<span>GB</span></h5></div>
+                <div class="col-md-4 "><P>{{.id}}</P></div>
+                <div class="col-md-4"><h6>{{.name}}</h6></div>
+                <div class="col-md-4 "><h5>{{.quota}}<span>{{.measure}}</span></h5></div>
              
             </div>
             <div class="card-img mb-1">
-              <img src="/images/price/pikaedited1.png" class="img-fluid" alt="">
+              <img src="{{.image}}" class="img-fluid" alt="">
             </div>
             <div class="card-content">
+              {{range .content}}
               <div class="content py-3">
                 <ul>
-                  <li><img src="/images/move-symbols/basic.svg" alt="icon"><h4>Power Move</h4></li>
+                  <li>
+                    {{range .icons}}
+                    <img src="{{.}}" alt="icon">
+                    {{end}}
+                    <h4>{{.name}}</h4></li>
                 </ul>
-                <p>This is a paragraph of the feature of the Server plan for the Power Move.</p>
-              </div> 
-              <div class="content py-3">
-                <ul>
-                  <li><img src="/images/move-symbols/basic.svg" alt="icon"> <img src="/images/move-symbols/electric.svg" alt="icon"><h4>Power Move</h4></li>
-                </ul>
-                <p>This is a paragraph of the feature of the Server plan for the Power Move.</p>
+                <p>{{.content}}</p>
               </div>
+              {{end}} 
+              
             </div>
             <div class="card-feature">
+              {{range .featuredItems}}
               <div class="col-md-4">
                 <div class="feature">
-                  <h3>Feature 1</h3>
-                  <img src="/images/move-symbols/fighting.svg" alt="">
+                  <h3>{{.name}}</h3>
+                  <img src="{{.icon}}" alt="">
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="feature">
-                  <h3>Feature 1</h3>
-                  <img src="/images/move-symbols/fighting.svg" alt="">
-                </div>
-              </div>
+              {{end}}
               <div class="col-md-4">
                 <div class="feature">
                   <h3>Retreat Cost</h3>
-                  <h2>$90/<span>mo</span></h2>
+                  <h2>${{.price}}/<span>mo</span></h2>
                 </div>
               </div>
             </div>
             </div>
             <div class="card-bottom">
               <ul>
-                <li class="mb-3"><h6>Stats</h6> <span><a href="">Buy Now</a></span></li>
-                <li><p>Ram</p> <p>8 GB</p></li>
-                <li><p>Storag</p> <p>80 GB</p></li>
-                <li><p>Server Quota</p> <p>1</p></li>
-                <li><p>Bungee Quota</p> <p>1</p></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+                {{ $currentPage := . }}
+                <li class="mb-3"><h6>Stats</h6>
+                  <button class="snipcart-add-item snipcart-add-item-button"
+                  data-item-name="{{ .name }}"
+                  data-item-id="{{ .id }}"
+                  data-item-price="{{ .price }}"
+                  data-item-url="{{ $currentPage.Permalink }}"
+                  {{ range $i, $e := .customFields }}
+                    data-item-custom{{ add $i 1 }}-name="{{ $e.name }}"
+                    data-item-custom{{ add $i 1 }}-type="{{ $e.type }}"
+                    data-item-custom{{ add $i 1 }}-value="{{ $e.value }}"
+                  {{ end }}
 
-        <!--Card-->
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-top">
-              <div class="card-head">
-                <div class="col-md-4 "><P>BASIC</P></div>
-                <div class="col-md-4"><h6>Pichu</h6></div>
-                <div class="col-md-4 "><h5>8<span>GB</span></h5></div>
-             
-            </div>
-            <div class="card-img mb-1">
-              <img src="/images/price/pikaedited1.png" class="img-fluid" alt="">
-            </div>
-            <div class="card-content">
-              <div class="content py-3">
-                <ul>
-                  <li><img src="/images/move-symbols/basic.svg" alt="icon"><h4>Power Move</h4></li>
-                </ul>
-                <p>This is a paragraph of the feature of the Server plan for the Power Move.</p>
-              </div> 
-              <div class="content py-3">
-                <ul>
-                  <li><img src="/images/move-symbols/basic.svg" alt="icon"> <img src="/images/move-symbols/electric.svg" alt="icon"><h4>Power Move</h4></li>
-                </ul>
-                <p>This is a paragraph of the feature of the Server plan for the Power Move.</p>
-              </div>
-            </div>
-            <div class="card-feature">
-              <div class="col-md-4">
-                <div class="feature">
-                  <h3>Feature 1</h3>
-                  <img src="/images/move-symbols/fighting.svg" alt="">
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="feature">
-                  <h3>Feature 1</h3>
-                  <img src="/images/move-symbols/fighting.svg" alt="">
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="feature">
-                  <h3>Retreat Cost</h3>
-                  <h2>$90/<span>mo</span></h2>
-                </div>
-              </div>
-            </div>
-            </div>
-            <div class="card-bottom">
-              <ul>
-                <li class="mb-3"><h6>Stats</h6> <span><a href="">Buy Now</a></span></li>
-                <li><p>Ram</p> <p>8 GB</p></li>
-                <li><p>Storag</p> <p>80 GB</p></li>
-                <li><p>Server Quota</p> <p>1</p></li>
-                <li><p>Bungee Quota</p> <p>1</p></li>
+                  data-item-selected-plan="{{ .selectedPlan }}"
+
+                  {{ range $i, $e := .availablePlans }}
+                    data-plan{{ add $i 1 }}-id="{{ $e.id }}"
+                    data-plan{{ add $i 1 }}-name="{{ $e.name }}"
+                    data-plan{{ add $i 1 }}-frequency="{{ $e.frequency }}"
+                    data-plan{{ add $i 1 }}-interval="{{ $e.interval }}"
+                    data-item-plan{{ add $i 1 }}-price="{{ $e.itemPrice }}"
+                  {{ end }}
+                >
+                  <a>Buy Now</a>
+                </button></li>
+                {{with .details}}
+                <li><p>Ram</p> <p>{{.ram}}</p></li>
+                <li><p>Storag</p> <p>{{.storage}}</p></li>
+                <li><p>Server Quota</p> <p>{{.server}}</p></li>
+                <li><p>Bungee Quota</p> <p>{{.bungee}}</p></li>
+                {{end}}
               </ul>
             </div>
           </div>
         </div>
+        {{end}}
+
       </div>
     </div>
   </section>
