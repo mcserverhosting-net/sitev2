@@ -214,3 +214,6 @@
 
   color: #ffffff;
 }
+button .snipcart-add-item {
+  background: transparent !important;
+}

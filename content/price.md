@@ -49,6 +49,14 @@ product:
         interval: 1
         itemPrice: 25.00
 
+    data_plans:
+      - id: monthly-plan
+        name: Monthly subscription
+        frequency: monthly
+        interval: 1
+        count: 10
+        price: 25
+
   - featured: true
     id: "evolved"
     name: "Pikachu"
@@ -95,6 +103,14 @@ product:
         interval: 1
         itemPrice: 50.00
 
+    data_plans:
+      - id: monthly-plan
+        name: Monthly subscription
+        frequency: monthly
+        interval: 1
+        count: 10
+        price: 50
+
   - featured: false
     id: "legendary"
     name: "Raichu"
@@ -103,6 +119,7 @@ product:
     measure: GB
     image: /images/price/raichuedited1.png
     selectedPlan: "monthly-plan"
+    description: "This is "
 
     content:
       - name: "Power Move"
@@ -134,10 +151,11 @@ product:
       server: 2
       bungee: 1
 
-    availablePlans:
-      - id: "monthly-plan"
-        name: "Monthly Subscription"
-        frequency: "monthly"
+    data_plans:
+      - id: monthly-plan
+        name: Monthly subscription
+        frequency: monthly
         interval: 1
-        itemPrice: 90.00
+        count: 10
+        price: 90
 ---

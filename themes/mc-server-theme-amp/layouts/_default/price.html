@@ -130,29 +130,34 @@
               <ul>
                 {{ $currentPage := . }}
                 <li class="mb-3"><h6>Stats</h6>
-                  <button class="snipcart-add-item snipcart-add-item-button"
-                  data-item-name="{{ .name }}"
-                  data-item-id="{{ .id }}"
-                  data-item-price="{{ .price }}"
-                  data-item-url="{{ $currentPage.Permalink }}"
-                  {{ range $i, $e := .customFields }}
-                    data-item-custom{{ add $i 1 }}-name="{{ $e.name }}"
-                    data-item-custom{{ add $i 1 }}-type="{{ $e.type }}"
-                    data-item-custom{{ add $i 1 }}-value="{{ $e.value }}"
-                  {{ end }}
+                  <button class="snipcart-add-item"
+                  data-item-id="{{.id}}"
+                  data-item-name="{{.name}}"
+                  data-item-price="{{.price}}"
+                  data-item-url="/"
+                  data-item-description="Painting lessons - 1h"
+                  data-item-selected-plan="monthly-plan"
 
-                  data-item-selected-plan="{{ .selectedPlan }}"
+                  {{ $plans := .customFields }}
+                  {{ range $i, $plan := $plans }}
+                  {{ $index := add $i 1 }}
+                  data-item-custom{{ $index }}-name="{{.name}}"
+                  data-item-custom{{ $index }}-type="{{.type}}"
+                  data-item-custom{{ $index }}-value="{{.value}}"
+                  {{end}}
 
-                  {{ range $i, $e := .availablePlans }}
-                    data-plan{{ add $i 1 }}-id="{{ $e.id }}"
-                    data-plan{{ add $i 1 }}-name="{{ $e.name }}"
-                    data-plan{{ add $i 1 }}-frequency="{{ $e.frequency }}"
-                    data-plan{{ add $i 1 }}-interval="{{ $e.interval }}"
-                    data-item-plan{{ add $i 1 }}-price="{{ $e.itemPrice }}"
-                  {{ end }}
-                >
-                  <a>Buy Now</a>
-                </button></li>
+                  {{range .data_plans}}
+                  data-plan1-id="{{.id}}"
+                  data-plan1-name="{{.name}}"
+                  data-plan1-frequency="{{.frequency}}"
+                  data-plan1-interval="{{.interval}}"
+                  data-plan1-count="{{.count}}"
+                  data-item-plan1-price="{{.price}}"
+                  {{end}}
+                    >
+                    <a >Buy Now</a>
+                </button>
+                </li>
                 {{with .details}}
                 <li><p>Ram</p> <p>{{.ram}}</p></li>
                 <li><p>Storag</p> <p>{{.storage}}</p></li>
