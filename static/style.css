@@ -122,7 +122,10 @@
 }
 .card .card-feature {
   display: flex;
-  margin-top: 8px;
+  
+}
+.mt {
+  margin-top: 16px !important;
 }
 .card .card-feature .feature {
   display: flex;
@@ -220,9 +223,7 @@
   text-align: center;
   color: #ffffff;
 }
-button .snipcart-add-item {
-  background: transparent !important;
-}
+
 
 /******************************************************************
 ***********************************************/
@@ -275,3 +276,4 @@ button .snipcart-add-item {
 .justify-content-center{
   justify-content: center;
 }
+

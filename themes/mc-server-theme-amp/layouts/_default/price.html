@@ -1,5 +1,22 @@
 {{ partial "structure/head" . }}
 
+<style>
+  .content h4{
+    color: #121212;
+  }
+  .card-bottom button  {
+  background: #fff;
+}
+.card .card-img amp-img {
+  margin-top: 5px;
+  border: 5px solid #0000 !important;
+  
+}
+.py-3 {
+  padding: 1rem 0rem;
+}
+
+</style>
 <!-- Price head -->
 <section class="price-head">
   <ul class="d-flex">
@@ -56,14 +73,14 @@
           </div>
           <div class="card-feature">
             {{range .featuredItems}}
-            <div class="col-md-4">
+            <div class="col-md-4 mt">
               <div class="feature">
                 <h3 style="color: #121212;">{{.name}}</h3>
                 <img src="{{.icon}}" alt="" />
               </div>
             </div>
             {{end}}
-            <div class="col-md-4">
+            <div class="col-md-4 mt">
               <div class="feature">
                 <h3>Retreat Cost</h3>
                 <h2>${{.price}}/<span>mo</span></h2>
