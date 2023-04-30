@@ -62,6 +62,7 @@
   gap: 2px;
   background: #e6dede;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  color: #121212;
 }
 .card .card-head h6 {
   display: flex;
@@ -114,6 +115,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  color: #121212;
 }
 .card .card-content .content {
   border-bottom: 1px solid #000000;
@@ -134,6 +136,10 @@
   font-size: 12px;
   line-height: 18px;
   text-align: center;
+  color: #121212;
+}
+.card .card-feature  h4{
+  color: #121212;
 }
 .card .card-feature .feature h2 {
   font-family: "Lexend";
@@ -142,15 +148,17 @@
   font-size: 18px;
   line-height: 30px;
   text-align: center;
-
   color: #121212;
 }
 .card .card-feature .feature h2 span {
   font-weight: 700;
   font-size: 12px;
   line-height: auto;
+  color: #121212;
 }
-
+.card .card-feature h6{
+  color: #121212;
+}
 .card .card-bottom {
   background-color: #fff;
   padding: 12px 8px;
@@ -164,6 +172,7 @@
 .card .card-bottom ul li h6 {
   font-weight: 600;
   border-bottom: 2px #000 solid;
+  color: #121212;
 }
 .card .card-bottom ul li a {
   background: #fece00;
@@ -181,9 +190,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-
   text-align: center;
-
   color: #333333;
 }
 .card .card-bottom ul li {
@@ -211,7 +218,6 @@
   font-size: 12px;
   line-height: 20px;
   text-align: center;
-
   color: #ffffff;
 }
 button .snipcart-add-item {
@@ -262,4 +268,10 @@ button .snipcart-add-item {
 /* responsive */
 .d-flex {
   display: flex;
+}
+.py-5 {
+  padding: 0rem 1rem;
+}
+.justify-content-center{
+  justify-content: center;
 }
