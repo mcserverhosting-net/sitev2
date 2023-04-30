@@ -12,10 +12,29 @@
   border: 5px solid #0000 !important;
   
 }
+
 .py-3 {
   padding: 1rem 0rem;
 }
-
+.card .data {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: none;
+}
+.card .data p{
+  background: none;
+  box-shadow: none;
+  font-weight: 700;
+}
+.justify-content-center{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.card-body {
+  padding-top: 3rem;
+}
 </style>
 <!-- Price head -->
 <section class="price-head">
@@ -29,7 +48,7 @@
   <div class="row justify-content-center">
     <!--Card-->
     {{ range .Params.product }}
-    <div class="col-md-4 margin5">
+    <div class="col-md-4 margin5 p0">
       {{if .featured}}
       <div class="banner">
         <div class="text">
@@ -42,8 +61,8 @@
           <div class="card-head">
             <div class="col-md-4"><p>{{.id}}</p></div>
             <div class="col-md-4"><h6>{{.name}}</h6></div>
-            <div class="col-md-4">
-              <h5>{{.quota}}<span>{{.measure}}</span></h5>
+            <div class="col-md-4 data">
+              <p>{{.quota}}<span>{{.measure}}</span></p>
             </div>
           </div>
           <div class="card-img mb-1">

@@ -2,6 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap");
 
+
 .price-head ul {
   justify-content: center;
   align-items: center;
@@ -25,7 +26,8 @@
   background: #212035;
 }
 .col-md-4 {
-  width: 30% !important;
+  width: 320px !important;
+  mar
 }
 .card {
   border: none;
@@ -223,7 +225,9 @@
   text-align: center;
   color: #ffffff;
 }
-
+.p0{
+  padding: 0px !important;
+}
 
 /******************************************************************
 ***********************************************/
@@ -250,7 +254,7 @@
 
 @media (max-width: 790px) {
   .col-md-4 {
-    width: 70% !important;
+    width: 320px !important;
   }
   .margin5 {
     margin-bottom: 24px;
@@ -259,7 +263,7 @@
 
 @media (max-width: 500px) {
   .col-md-4 {
-    width: 90% !important;
+    width: 320px !important;
   }
   .margin5 {
     margin-bottom: 36px;
