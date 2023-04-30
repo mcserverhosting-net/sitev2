@@ -38,7 +38,7 @@
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 }
-.card .card-img img {
+.card .card-img .cover {
   margin-top: 5px;
   border: 5px solid;
   background: linear-gradient(
@@ -221,21 +221,21 @@ button .snipcart-add-item {
 /******************************************************************
 ***********************************************/
 @media (max-width: 1030px) {
-  .card .card-head p{
+  .card .card-head p {
     font-size: 12px;
     width: 80px;
   }
-  .card .card-head h6{
+  .card .card-head h6 {
     margin-left: 24px;
   }
 }
 
 @media (max-width: 930px) {
-  .card .card-head p{
+  .card .card-head p {
     font-size: 12px;
     width: 80px;
   }
-  .card .card-head h6{
+  .card .card-head h6 {
     margin-left: 42px;
     font-size: 14px;
   }
@@ -245,7 +245,7 @@ button .snipcart-add-item {
   .col-md-4 {
     width: 70% !important;
   }
-  .margin5{
+  .margin5 {
     margin-bottom: 24px;
   }
 }
@@ -254,7 +254,12 @@ button .snipcart-add-item {
   .col-md-4 {
     width: 90% !important;
   }
-  .margin5{
+  .margin5 {
     margin-bottom: 36px;
   }
+}
+
+/* responsive */
+.d-flex {
+  display: flex;
 }
