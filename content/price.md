@@ -35,11 +35,20 @@ product:
       - name: Snapshot Access
         icon: /images/move-symbols/steel.svg
 
-    details:
-      ram: 4 GB
-      storage: 40 GB
-      server: 1
-      bungee: 0
+    
+    
+    detail:
+    - key: RAM
+      value: 4 GB
+    
+    - key: STORAGE
+      value: 40 GB
+    
+    - key: SERVER
+      value: 1
+    
+    - key: BUNGEE
+      value: 0
 
     availablePlans:
       - id: "monthly-plan"
@@ -88,12 +97,19 @@ product:
 
       - name: Featured 1
         icon: /images/move-symbols/steel.svg
-
-    details:
-      ram: 4 GB
-      storage: 40 GB
-      server: 1
-      bungee: 0
+    
+    detail:
+    - key: RAM
+      value: 4 GB
+    
+    - key: STORAGE
+      value: 40 GB
+    
+    - key: SERVER
+      value: 1
+    
+    - key: BUNGEE
+      value: 0
 
     availablePlans:
       - id: "monthly-plan"
@@ -143,12 +159,19 @@ product:
 
       - name: Featured 1
         icon: /images/move-symbols/steel.svg
-
-    details:
-      ram: 16 GB
-      storage: 160 GB
-      server: 2
-      bungee: 1
+    
+    detail:
+    - key: RAM
+      value: 16 GB
+    
+    - key: STORAGE
+      value: 160 GB
+    
+    - key: SERVER
+      value: 2
+    
+    - key: BUNGEE
+      value: 1
 
     data_plans:
       - id: monthly-plan

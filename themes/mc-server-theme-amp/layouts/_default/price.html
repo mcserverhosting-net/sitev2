@@ -140,22 +140,10 @@
                     <a >Buy Now</a>
                 </button>
             </li>
-            {{with .details}}
+            {{range .detail}}
             <li>
-              <p>Ram</p>
-              <p>{{.ram}}</p>
-            </li>
-            <li>
-              <p>Storag</p>
-              <p>{{.storage}}</p>
-            </li>
-            <li>
-              <p>Server Quota</p>
-              <p>{{.server}}</p>
-            </li>
-            <li>
-              <p>Bungee Quota</p>
-              <p>{{.bungee}}</p>
+              <p>{{.key}}</p>
+              <p>{{.value}}</p>
             </li>
             {{end}}
           </ul>
