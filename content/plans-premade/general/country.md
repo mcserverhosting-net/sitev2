@@ -7,7 +7,7 @@ weight: 6
 product:
   id: "general-country"
   name: "Hut"
-  price: "38.4"
+  price: "38.40"
 
   customFields:
     - name: "RAM"

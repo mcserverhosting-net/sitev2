@@ -7,7 +7,7 @@ weight: 10
 product:
   id: "ender-dragon-queen"
   name: "The Ender Dragon Queen"
-  price: "64"
+  price: "84.00"
 
   customFields:
     - name: "RAM"
@@ -25,5 +25,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 64
+      itemPrice: 84.00
 ---

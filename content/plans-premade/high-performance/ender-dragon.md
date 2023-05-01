@@ -7,7 +7,7 @@ weight: 1
 product:
   id: "ender-dragon"
   name: "Ender Dragon"
-  price: "6.4"
+  price: "8.40"
 
   customFields:
     - name: "RAM"
@@ -25,6 +25,6 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 6.4
+      itemPrice: 8.40
 
 ---

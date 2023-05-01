@@ -8,7 +8,7 @@ weight: 8
 product:
   id: "elder-guardian"
   name: "Elder Guardian"
-  price: "51.2"
+  price: "67.20"
 
   customFields:
     - name: "RAM"
@@ -26,5 +26,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 51.2
+      itemPrice: 67.20
 ---

@@ -7,7 +7,7 @@ weight: 5
 product:
   id: "wither-skeleton"
   name: "Wither Skeleton"
-  price: "32"
+  price: "42.00"
 
   customFields:
     - name: "RAM"
@@ -25,5 +25,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 32
+      itemPrice: 42.00
 ---

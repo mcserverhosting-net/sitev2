@@ -7,7 +7,7 @@ weight: 9
 product:
   id: "wither-storm"
   name: "The Wither Storm"
-  price: "57.6"
+  price: "75.60"
 
   customFields:
     - name: "RAM"
@@ -25,5 +25,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 57.6
+      itemPrice: 75.60
 ---

@@ -7,7 +7,7 @@ weight: 6
 product:
   id: "enderman"
   name: "Enderman"
-  price: "38.4"
+  price: "50.40"
 
   customFields:
     - name: "RAM"
@@ -25,5 +25,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 38.4
+      itemPrice: 50.40
 ---

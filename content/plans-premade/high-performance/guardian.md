@@ -7,7 +7,7 @@ weight: 7
 product:
   id: "guardian"
   name: "Guardian"
-  price: "44.8"
+  price: "58.80"
 
   customFields:
     - name: "RAM"
@@ -25,5 +25,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 44.8
+      itemPrice: 58.80
 ---

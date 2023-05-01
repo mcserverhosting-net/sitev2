@@ -7,7 +7,7 @@ weight: 3
 product:
   id: "ghast"
   name: "Ghast"
-  price: "19.2"
+  price: "25.20"
 
   customFields:
     - name: "RAM"
@@ -25,5 +25,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 19.2
+      itemPrice: 25.20
 ---

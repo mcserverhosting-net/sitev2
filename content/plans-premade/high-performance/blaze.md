@@ -7,7 +7,7 @@ weight: 4
 product:
   id: "blaze"
   name: "Blaze"
-  price: "25.6"
+  price: "33.60"
 
   customFields:
     - name: "RAM"
@@ -25,5 +25,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 25.6
+      itemPrice: 33.60
 ---

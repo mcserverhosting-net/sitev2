@@ -7,7 +7,7 @@ weight: 2
 product:
   id: "wither"
   name: "Wither"
-  price: "12.8"
+  price: "16.80"
 
   customFields:
     - name: "RAM"
@@ -25,5 +25,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 12.8
+      itemPrice: 16.80
 ---
