@@ -14,12 +14,12 @@ product:
 
     content:
       - name: "Helping Hand"
-        content: "An optimized Cobblemon server great for friends!"
+        content: "A tailored Cobblemon server experience perfect for friendly gatherings!"
         icons:
           - /images/move-symbols/basic.svg
 
       - name: "Spark"
-        content: "Just the right amount of power at the best price!"
+        content: "Balanced performance and affordability for an electrifying start!"
         icons:
           - /images/move-symbols/electric.svg
 
