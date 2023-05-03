@@ -11,6 +11,7 @@ product:
     measure: GB
     image: /images/price/cobblemonBg2.png
     selectedPlan: "monthly-plan"
+    description: "All you need for a small group of friends!"
 
     content:
       - name: "Helping Hand"
@@ -73,6 +74,7 @@ product:
     measure: GB
     image: /images/price/pikaedited1.png
     selectedPlan: "monthly-plan"
+    description: "A great plan for a great price!"
 
     content:
       - name: "Quick Attack"
@@ -135,7 +137,7 @@ product:
     measure: GB
     image: /images/price/raichuedited1.png
     selectedPlan: "monthly-plan"
-    description: "This is "
+    description: "Our most powerful cobblemon plan!"
 
     content:
       - name: "Agility"
