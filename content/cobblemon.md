@@ -32,7 +32,7 @@ product:
       - name: Packs a Punch
         icon: /images/move-symbols/fighting.svg
 
-      - name: Runs on Baremetal
+      - name: Runs Baremetal
         icon: /images/move-symbols/steel.svg
 
     
@@ -96,7 +96,7 @@ product:
       - name: Packs a Punch
         icon: /images/move-symbols/fighting.svg
 
-      - name: Runs on Baremetal
+      - name: Runs Baremetal
         icon: /images/move-symbols/steel.svg
     
     detail:
@@ -161,7 +161,7 @@ product:
       - name: Packs a Punch
         icon: /images/move-symbols/fighting.svg
 
-      - name: Runs on Baremetal
+      - name: Runs Baremetal
         icon: /images/move-symbols/steel.svg
     
     detail:
