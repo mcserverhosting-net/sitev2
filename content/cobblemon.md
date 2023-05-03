@@ -27,7 +27,7 @@ product:
     customFields:
       - name: "RAM"
         type: "readonly"
-        value: "4 GB"
+        value: "4 GiB"
 
     featuredItems:
       - name: Packs a Punch
@@ -41,9 +41,13 @@ product:
     detail:
     - key: CPU
       value: 2 Xeon E5
+
+    - key: RAM
+      value: 4 GiB DDR3
+
     
     - key: STORAGE
-      value: 40 GB
+      value: 40 GiB
     
     - key: DATABASE
       value: 2
@@ -92,7 +96,7 @@ product:
     customFields:
       - name: "RAM"
         type: "readonly"
-        value: "8 GB"
+        value: "8 GiB"
 
     featuredItems:
       - name: Packs a Punch
@@ -104,7 +108,10 @@ product:
     detail:
     - key: CPU
       value: 2 Ryzen 5000
-    
+
+    - key: RAM
+      value: 8 GiB DDR4
+
     - key: STORAGE
       value: 75 GiB
     
@@ -157,7 +164,7 @@ product:
     customFields:
       - name: "RAM"
         type: "readonly"
-        value: "16 GB"
+        value: "16 GiB"
 
     featuredItems:
       - name: Packs a Punch
@@ -169,6 +176,10 @@ product:
     detail:
     - key: CPU
       value: 4 Ryzen 5000
+
+    - key: RAM
+      value: 16 GiB DDR4
+
     
     - key: STORAGE
       value: 200 GiB
