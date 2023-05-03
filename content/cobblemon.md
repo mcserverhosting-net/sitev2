@@ -4,13 +4,13 @@ layout: price
 
 product:
   - featured: false
-    id: "cobblemon-pichu"
+    id: "basic"
     name: "Pichu"
     price: 5
     quota: 4
     measure: GB
     image: /images/price/cobblemonBg2.png
-    selectedPlan: "cobblemon-pichu-plan"
+    selectedPlan: "monthly-plan"
 
     content:
       - name: "Helping Hand"
@@ -51,14 +51,14 @@ product:
       value: 10
 
     availablePlans:
-      - id: "cobblemon-pichu-plan"
+      - id: "monthly-plan"
         name: "Cobblemon Pichu Plan"
         frequency: "monthly"
         interval: 1
         itemPrice: 5.00
 
     data_plans:
-      - id: cobblemon-pichu-plan
+      - id: monthly-plan
         name: Cobblemon Pichu Plan
         frequency: monthly
         interval: 1
@@ -66,13 +66,13 @@ product:
         price: 5
 
   - featured: true
-    id: "cobblemon-pikachu"
+    id: "evolved"
     name: "Pikachu"
-    price: 50
+    price: 32
     quota: 8
     measure: GB
     image: /images/price/pikaedited1.png
-    selectedPlan: "cobblemon-pikachu-plan"
+    selectedPlan: "monthly-plan"
 
     content:
       - name: "Quick Attack"
@@ -113,14 +113,14 @@ product:
       value: 20
 
     availablePlans:
-      - id: "cobblemon-pikachu-plan"
+      - id: "monthly-plan"
         name: "Cobblemon Pikachu Plan"
         frequency: "monthly"
         interval: 1
         itemPrice: 32.00
 
     data_plans:
-      - id: cobblemon-pikachu-plan
+      - id: monthly-plan
         name: Cobblemon Pikachu Plan
         frequency: monthly
         interval: 1
@@ -134,7 +134,7 @@ product:
     quota: 16
     measure: GB
     image: /images/price/raichuedited1.png
-    selectedPlan: "cobblemon-raichu-plan"
+    selectedPlan: "monthly-plan"
     description: "This is "
 
     content:
@@ -178,10 +178,10 @@ product:
       value: 50
 
     data_plans:
-      - id: cobblemon-raichu-plan
+      - id: monthly-plan
         name: Cobblemon Raichu Plan
         frequency: monthly
         interval: 1
         count: 999
-        price: 102.40
+        price: 90
 ---
