@@ -4,13 +4,13 @@ layout: price
 
 product:
   - featured: false
-    id: "basic"
+    id: "cobblemon-pichu"
     name: "Pichu"
     price: 5
     quota: 4
     measure: GB
     image: /images/price/cobblemonBg2.png
-    selectedPlan: "monthly-plan"
+    selectedPlan: "cobblemon-pichu-plan"
 
     content:
       - name: "Helping Hand"
@@ -29,61 +29,62 @@ product:
         value: "4 GB"
 
     featuredItems:
-      - name: Dashboard Access
+      - name: Packs a Punch
         icon: /images/move-symbols/fighting.svg
 
-      - name: Snapshot Access
+      - name: Runs on Baremetal
         icon: /images/move-symbols/steel.svg
 
     
     
     detail:
-    - key: RAM
-      value: 4 GB
+    - key: CPU
+      value: 2 Xeon E5
     
     - key: STORAGE
       value: 40 GB
     
-    - key: SERVER
-      value: 1
+    - key: DATABASE
+      value: 2
     
-    - key: BUNGEE
-      value: 0
+    - key: SNAPSHOTS
+      value: 10
 
     availablePlans:
-      - id: "monthly-plan"
-        name: "Monthly Subscription"
+      - id: "cobblemon-pichu-plan"
+        name: "Cobblemon Pichu Plan"
         frequency: "monthly"
         interval: 1
         itemPrice: 5.00
 
     data_plans:
-      - id: monthly-plan
-        name: Monthly subscription
+      - id: cobblemon-pichu-plan
+        name: Cobblemon Pichu Plan
         frequency: monthly
         interval: 1
-        count: 10
+        count: 999
         price: 5
 
   - featured: true
-    id: "evolved"
+    id: "cobblemon-pikachu"
     name: "Pikachu"
     price: 50
     quota: 8
     measure: GB
     image: /images/price/pikaedited1.png
-    selectedPlan: "monthly-plan"
+    selectedPlan: "cobblemon-pikachu-plan"
 
     content:
-      - name: "Power Move"
-        content: "This is a paragraph of the feature of the Server plan for the Power Move."
+      - name: "Quick Attack"
+        content: "Fast setup and easy management for an effortless start!"
         icons:
+          - /images/move-symbols/basic.svg
           - /images/move-symbols/basic.svg
 
-      - name: "Power Move"
-        content: "This is a paragraph of the feature of the Server plan for the Power Move."
+      - name: "Thunderbolt"
+        content: "Powerful performance for a smooth and lag-free experience!"
         icons:
-          - /images/move-symbols/basic.svg
+          - /images/move-symbols/electric.svg
           - /images/move-symbols/electric.svg
 
     customFields:
@@ -92,39 +93,39 @@ product:
         value: "8 GB"
 
     featuredItems:
-      - name: Featured 1
+      - name: Packs a Punch
         icon: /images/move-symbols/fighting.svg
 
-      - name: Featured 1
+      - name: Runs on Baremetal
         icon: /images/move-symbols/steel.svg
     
     detail:
-    - key: RAM
-      value: 4 GB
+    - key: CPU
+      value: 2 Ryzen 5000
     
     - key: STORAGE
-      value: 40 GB
+      value: 75 GiB
     
-    - key: SERVER
-      value: 1
+    - key: DATABASES
+      value: 5
     
-    - key: BUNGEE
-      value: 0
+    - key: SNAPSHOTS
+      value: 20
 
     availablePlans:
-      - id: "monthly-plan"
-        name: "Monthly Subscription"
+      - id: "cobblemon-pikachu-plan"
+        name: "Cobblemon Pikachu Plan"
         frequency: "monthly"
         interval: 1
-        itemPrice: 50.00
+        itemPrice: 32.00
 
     data_plans:
-      - id: monthly-plan
-        name: Monthly subscription
+      - id: cobblemon-pikachu-plan
+        name: Cobblemon Pikachu Plan
         frequency: monthly
         interval: 1
-        count: 10
-        price: 50
+        count: 999
+        price: 32
 
   - featured: false
     id: "legendary"
@@ -133,19 +134,22 @@ product:
     quota: 16
     measure: GB
     image: /images/price/raichuedited1.png
-    selectedPlan: "monthly-plan"
+    selectedPlan: "cobblemon-raichu-plan"
     description: "This is "
 
     content:
-      - name: "Power Move"
-        content: "This is a paragraph of the feature of the Server plan for the Power Move."
+      - name: "Agility"
+        content: "Super responsive support and priority service, for when you need it most!"
         icons:
+          - /images/move-symbols/basic.svg
+          - /images/move-symbols/basic.svg
           - /images/move-symbols/basic.svg
 
-      - name: "Power Move"
-        content: "This is a paragraph of the feature of the Server plan for the Power Move."
+      - name: "Thunder Punch"
+        content: "Robust infrastructure and superior power, for the most demanding servers!"
         icons:
-          - /images/move-symbols/basic.svg
+          - /images/move-symbols/electric.svg
+          - /images/move-symbols/electric.svg
           - /images/move-symbols/electric.svg
 
     customFields:
@@ -154,30 +158,30 @@ product:
         value: "16 GB"
 
     featuredItems:
-      - name: Featured 1
+      - name: Packs a Punch
         icon: /images/move-symbols/fighting.svg
 
-      - name: Featured 1
+      - name: Runs on Baremetal
         icon: /images/move-symbols/steel.svg
     
     detail:
-    - key: RAM
-      value: 16 GB
+    - key: CPU
+      value: 4 Ryzen 5000
     
     - key: STORAGE
-      value: 160 GB
+      value: 200 GiB
     
-    - key: SERVER
-      value: 2
+    - key: DATABASES
+      value: 25
     
-    - key: BUNGEE
-      value: 1
+    - key: SNAPSHOTS
+      value: 50
 
     data_plans:
-      - id: monthly-plan
-        name: Monthly subscription
+      - id: cobblemon-raichu-plan
+        name: Cobblemon Raichu Plan
         frequency: monthly
         interval: 1
-        count: 10
-        price: 90
+        count: 999
+        price: 102.40
 ---
