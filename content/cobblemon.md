@@ -25,31 +25,31 @@ product:
           - /images/move-symbols/electric.svg
 
     customFields:
-      - name: "ram"
+      - name: "RAM"
         type: "readonly"
         value: "4 GiB"
       
       - name: "nodemodel"
-        type: "readonly"
+        type: "hidden"
         value: "m1"
 
-      - name: "storage"
+      - name: "STORAGE"
         type: "readonly"
         value: "40 GiB"
 
-      - name: "database"
+      - name: "DATABASES"
         type: "readonly"
         value: 2
 
-      - name: "snapshots"
+      - name: "SNAPSHOTS"
         type: "readonly"
         value: 10
       
       - name: "allocations"
-        type: "readonly"
+        type: "hidden"
         value: 10
       
-      - name: "servertype"
+      - name: "SERVER TYPE"
         type: "readonly"
         value: "cobblemon"
 

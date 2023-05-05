@@ -15,28 +15,29 @@ product:
       type: "readonly"
       value: "16 GiB"
 
-    - name: "Storage"
+    - name: "STORAGE"
       type: "readonly"
       value: "160 GiB"
 
     - name: "nodemodel"
-      type: "readonly"
+      type: "hidden"
       value: "m3"
 
-    - name: "database"
+    - name: "DATABASES"
       type: "readonly"
       value: 1
 
-    - name: "snapshots"
+    - name: "SNAPSHOTS"
       type: "readonly"
       value: 10
       
     - name: "allocations"
-      type: "readonly"
+      type: "hidden"
       value: 10
       
-    - name: "servertype"
+    - name: "SERVER TYPE"
       options: "vanilla|paper|fabric|spongevanilla|forge"
+
 
 
   selectedPlan: "monthly-plan"

@@ -14,7 +14,7 @@ product:
       type: "readonly"
       value: "2 GiB"
 
-    - name: "Storage"
+    - name: "STORAGE"
       type: "readonly"
       value: "20 GiB" 
       
@@ -22,19 +22,19 @@ product:
       type: "hidden"
       value: "m1"
 
-    - name: "database"
+    - name: "DATABASES"
       type: "readonly"
       value: 1
 
-    - name: "snapshots"
+    - name: "SNAPSHOTS"
       type: "readonly"
       value: 10
       
     - name: "allocations"
-      type: "readonly"
+      type: "hidden"
       value: 10
       
-    - name: "servertype"
+    - name: "SERVER TYPE"
       options: "vanilla|paper|fabric|spongevanilla|forge"
 
 
