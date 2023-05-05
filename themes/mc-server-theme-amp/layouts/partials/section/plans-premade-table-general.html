@@ -9,6 +9,9 @@
             <th class="text-align-left vertical-align-middle">Plans</th>
             <th class="text-align-left vertical-align-middle">RAM</th>
             <th class="text-align-left vertical-align-middle">Storage</th>
+            <th class="text-align-left vertical-align-middle">Databases</th>
+            <th class="text-align-left vertical-align-middle">Snapshots</th>
+            <th class="text-align-left vertical-align-middle">Panel Users</th>
             <th class="text-align-left vertical-align-middle">Price</th>
             <th class="text-align-center vertical-align-middle">Buy</th>
           </tr>
@@ -19,7 +22,9 @@
             <tr>
               <td>{{ .Title }}</td>
               {{ range .Params.product.customfields }}
-                <td>{{ .value }}</td>
+                {{ if and (ne .type "hidden") (ne .name "SERVER TYPE") }}
+                  <td>{{ .value }}</td>
+                {{ end }}
               {{ end }}
               <td>{{ .Params.product.price }}</td>
               <td class="text-align-center">
@@ -30,8 +35,12 @@
                   data-item-url="{{ $currentPage.Permalink }}"
                   {{ range $i, $e := .Params.product.customFields }}
                     data-item-custom{{ add $i 1 }}-name="{{ $e.name }}"
-                    data-item-custom{{ add $i 1 }}-type="{{ $e.type }}"
-                    data-item-custom{{ add $i 1 }}-value="{{ $e.value }}"
+                    {{ if eq $e.name "SERVER TYPE" }}
+                      data-item-custom{{ add $i 1 }}-options="{{ $e.options }}"
+                    {{ else }}
+                      data-item-custom{{ add $i 1 }}-type="{{ $e.type }}"
+                      data-item-custom{{ add $i 1 }}-value="{{ $e.value }}"
+                    {{ end }}
                   {{ end }}
 
                   data-item-selected-plan="{{ .Params.product.selectedPlan }}"
