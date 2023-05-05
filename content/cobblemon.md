@@ -45,8 +45,8 @@ product:
         type: "readonly"
         value: 10
       
-      - name: "allocations"
-        type: "hidden"
+      - name: "PANEL USERS"
+        type: "readonly"
         value: 10
       
       - name: "SERVER TYPE"
@@ -120,31 +120,31 @@ product:
           - /images/move-symbols/electric.svg
 
     customFields:
-      - name: "ram"
+      - name: "RAM"
         type: "readonly"
         value: "8 GiB"
       
       - name: "nodemodel"
-        type: "readonly"
+        type: "hidden"
         value: "m2"
 
-      - name: "storage"
+      - name: "STORAGE"
         type: "readonly"
         value: "75 GiB"
 
-      - name: "database"
+      - name: "DATABASES"
         type: "readonly"
         value: 5
 
-      - name: "snapshots"
+      - name: "SNAPSHOTS"
         type: "readonly"
         value: 20
       
-      - name: "allocations"
+      - name: "PANEL USERS"
         type: "readonly"
         value: 20
       
-      - name: "servertype"
+      - name: "SERVER TYPE"
         type: "readonly"
         value: "cobblemon"
 
@@ -189,7 +189,7 @@ product:
   - featured: false
     id: "legendary"
     name: "Raichu"
-    price: 90
+    price: 68	
     quota: 16
     measure: GB
     image: /images/price/raichuedited1.png
@@ -212,31 +212,31 @@ product:
           - /images/move-symbols/electric.svg
 
     customFields:
-      - name: "ram"
+      - name: "RAM"
         type: "readonly"
         value: "16 GiB"
       
       - name: "nodemodel"
-        type: "readonly"
+        type: "hidden"
         value: "m2"
 
-      - name: "storage"
+      - name: "STORAGE"
         type: "readonly"
-        value: "200 GiB"
+        value: "160 GiB"
 
-      - name: "database"
+      - name: "DATABASES"
         type: "readonly"
-        value: 25
+        value: 16
 
-      - name: "snapshots"
+      - name: "SNAPSHOTS"
+        type: "readonly"
+        value: 60
+      
+      - name: "PANEL USERS"
         type: "readonly"
         value: 50
       
-      - name: "allocations"
-        type: "readonly"
-        value: 50
-      
-      - name: "servertype"
+      - name: "SERVER TYPE"
         type: "readonly"
         value: "cobblemon"
 
@@ -259,10 +259,10 @@ product:
       value: 200 GiB
     
     - key: DATABASES
-      value: 25
+      value: 16
     
     - key: SNAPSHOTS
-      value: 50
+      value: 60
 
     data_plans:
       - id: monthly-plan
@@ -270,5 +270,5 @@ product:
         frequency: monthly
         interval: 1
         count: 999
-        price: 90
+        price: 68
 ---
