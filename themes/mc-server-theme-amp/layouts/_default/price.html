@@ -1,0 +1,157 @@
+{{ partial "structure/head" . }}
+
+<style>
+  .content h4{
+    color: #121212;
+  }
+  .card-bottom button  {
+  background: #fff;
+}
+.card .card-img amp-img {
+  margin-top: 5px;
+  border: 5px solid #0000 !important;
+  
+}
+
+.py-3 {
+  padding: 1rem 0rem;
+}
+.card .data {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: none;
+}
+.card .data p{
+  background: none;
+  box-shadow: none;
+  font-weight: 700;
+}
+.justify-content-center{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.card-body {
+  padding-top: 3rem;
+}
+</style>
+<!-- Price head -->
+<section class="price-head">
+  <ul class="d-flex">
+    <li><img src="/images/price/image2.png" alt="Logo" class="img-fluid" /></li>
+    <li><img src="/images/price/image3.png" alt="Logo" class="img-fluid" /></li>
+  </ul>
+</section>
+<!--Card body-->
+<section class="card-body py-5">
+  <div class="row justify-content-center">
+    <!--Card-->
+    {{ range .Params.product }}
+    <div class="col-md-4 margin5 p0">
+      {{if .featured}}
+      <div class="banner">
+        <div class="text">
+          <amp-p >Recommended</amp-p>
+        </div>
+      </div>
+      {{end}}
+      <div class="card">
+        <div class="card-top">
+          <div class="card-head">
+            <div class="col-md-4"><p>{{.id}}</p></div>
+            <div class="col-md-4"><h6>{{.name}}</h6></div>
+            <div class="col-md-4 data">
+              <p>{{.quota}}<span>{{.measure}}</span></p>
+            </div>
+          </div>
+          <div class="card-img mb-1">
+            <amp-img
+              class="cover"
+              src="{{.image}}"
+              layout="responsive"
+              width="500"
+              height="300"
+            >
+            </amp-img>
+          </div>
+          <div class="card-content">
+            {{range .content}}
+            <div class="content py-3">
+              <ul>
+                <li>
+                  {{range .icons}}
+                  <img src="{{.}}" alt="icon" />
+                  {{end}}
+                  <h4>{{.name}}</h4>
+                </li>
+              </ul>
+              <p>{{.content}}</p>
+            </div>
+            {{end}}
+          </div>
+          <div class="card-feature">
+            {{range .featuredItems}}
+            <div class="col-md-4 mt">
+              <div class="feature">
+                <h3 style="color: #121212;">{{.name}}</h3>
+                <img src="{{.icon}}" alt="" />
+              </div>
+            </div>
+            {{end}}
+            <div class="col-md-4 mt">
+              <div class="feature">
+                <h3>Retreat Cost</h3>
+                <h2>${{.price}}/<span>mo</span></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-bottom">
+          <ul>
+            {{ $currentPage := . }}
+            <li class="mb-3">
+              <h6>Stats</h6>
+              <button class="snipcart-add-item"
+                  data-item-id="{{.id}}"
+                  data-item-name="{{.name}}"
+                  data-item-price="{{.price}}"
+                  data-item-url="/"
+                  data-item-description="{{.description}}"
+                  data-item-selected-plan="monthly-plan"
+
+                  {{ $plans := .customFields }}
+                  {{ range $i, $plan := $plans }}
+                  {{ $index := add $i 1 }}
+                  data-item-custom{{ $index }}-name="{{.name}}"
+                  data-item-custom{{ $index }}-type="{{.type}}"
+                  data-item-custom{{ $index }}-value="{{.value}}"
+                  {{end}}
+
+                  {{range .data_plans}}
+                  data-plan1-id="{{.id}}"
+                  data-plan1-name="{{.name}}"
+                  data-plan1-frequency="{{.frequency}}"
+                  data-plan1-interval="{{.interval}}"
+                  data-plan1-count="{{.count}}"
+                  data-item-plan1-price="{{.price}}"
+                  {{end}}
+                    >
+                    <a >Buy Now</a>
+                </button>
+            </li>
+            {{range .detail}}
+            <li>
+              <p>{{.key}}</p>
+              <p>{{.value}}</p>
+            </li>
+            {{end}}
+          </ul>
+        </div>
+      </div>
+    </div>
+    {{end}}
+  </div>
+</section>
+<!---->
+{{ partial "structure/foot" . }}
