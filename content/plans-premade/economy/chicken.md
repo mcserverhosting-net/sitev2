@@ -12,11 +12,31 @@ product:
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "2 GB"
+      value: "2 GiB"
 
     - name: "Storage"
       type: "readonly"
-      value: "20GB"
+      value: "20 GiB" 
+      
+    - name: "nodemodel"
+      type: "readonly"
+      value: "m1"
+
+    - name: "database"
+      type: "readonly"
+      value: 1
+
+    - name: "snapshots"
+      type: "readonly"
+      value: 10
+      
+    - name: "allocations"
+      type: "readonly"
+      value: 10
+      
+    - name: "servertype"
+      value: "vanilla|paper|fabric|spongevanilla|forge"
+
 
   selectedPlan: "monthly-plan"
 

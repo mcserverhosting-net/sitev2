@@ -25,9 +25,34 @@ product:
           - /images/move-symbols/electric.svg
 
     customFields:
-      - name: "RAM"
+      - name: "ram"
         type: "readonly"
         value: "4 GiB"
+      
+      - name: "nodemodel"
+        type: "readonly"
+        value: "m1"
+
+      - name: "storage"
+        type: "readonly"
+        value: "40 GiB"
+
+      - name: "database"
+        type: "readonly"
+        value: 2
+
+      - name: "snapshots"
+        type: "readonly"
+        value: 10
+      
+      - name: "allocations"
+        type: "readonly"
+        value: 10
+      
+      - name: "servertype"
+        type: "readonly"
+        value: "cobblemon"
+
 
     featuredItems:
       - name: Packs a Punch
@@ -54,6 +79,7 @@ product:
     
     - key: SNAPSHOTS
       value: 10
+
 
     availablePlans:
       - id: "monthly-plan"
@@ -94,9 +120,33 @@ product:
           - /images/move-symbols/electric.svg
 
     customFields:
-      - name: "RAM"
+      - name: "ram"
         type: "readonly"
         value: "8 GiB"
+      
+      - name: "nodemodel"
+        type: "readonly"
+        value: "m2"
+
+      - name: "storage"
+        type: "readonly"
+        value: "75 GiB"
+
+      - name: "database"
+        type: "readonly"
+        value: 5
+
+      - name: "snapshots"
+        type: "readonly"
+        value: 20
+      
+      - name: "allocations"
+        type: "readonly"
+        value: 20
+      
+      - name: "servertype"
+        type: "readonly"
+        value: "cobblemon"
 
     featuredItems:
       - name: Packs a Punch
@@ -162,9 +212,33 @@ product:
           - /images/move-symbols/electric.svg
 
     customFields:
-      - name: "RAM"
+      - name: "ram"
         type: "readonly"
         value: "16 GiB"
+      
+      - name: "nodemodel"
+        type: "readonly"
+        value: "m2"
+
+      - name: "storage"
+        type: "readonly"
+        value: "200 GiB"
+
+      - name: "database"
+        type: "readonly"
+        value: 25
+
+      - name: "snapshots"
+        type: "readonly"
+        value: 50
+      
+      - name: "allocations"
+        type: "readonly"
+        value: 50
+      
+      - name: "servertype"
+        type: "readonly"
+        value: "cobblemon"
 
     featuredItems:
       - name: Packs a Punch

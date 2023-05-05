@@ -18,6 +18,26 @@ product:
       type: "readonly"
       value: "10GB"
 
+    - name: "nodemodel"
+      type: "readonly"
+      value: "m1"
+
+    - name: "database"
+      type: "readonly"
+      value: 1
+
+    - name: "snapshots"
+      type: "readonly"
+      value: 10
+      
+    - name: "allocations"
+      type: "readonly"
+      value: 10
+      
+    - name: "servertype"
+      value: "vanilla|paper|fabric|spongevanilla|forge"
+
+
 
   selectedPlan: "monthly-plan"
 
