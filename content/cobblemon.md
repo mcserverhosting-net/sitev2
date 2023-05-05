@@ -203,7 +203,7 @@ product:
 
     content:
       - name: "Agility"
-        content: "Stay nimble and ahead of the curve with automatic upgrades to Ryzen 7000 when available!"
+        content: "Stay nimble with automatic upgrades to Ryzen 7000 when available!"
         icons:
           - /images/move-symbols/basic.svg
           - /images/move-symbols/basic.svg
