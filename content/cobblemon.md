@@ -194,7 +194,7 @@ product:
     measure: GB
     image: /images/price/raichuedited1.png
     selectedPlan: "monthly-plan"
-    description: "Our most powerful cobblemon plan!"
+    description: "Our most powerful cobblemon plan! Free upgrade to Ryzen 7000 when available!"
 
     content:
       - name: "Agility"
