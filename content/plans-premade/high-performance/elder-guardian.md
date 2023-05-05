@@ -31,8 +31,8 @@ product:
       type: "readonly"
       value: 10
       
-    - name: "allocations"
-      type: "hidden"
+    - name: "PANEL USERS"
+      type: "readonly"
       value: 10
       
     - name: "SERVER TYPE"

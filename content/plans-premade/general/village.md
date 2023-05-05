@@ -31,7 +31,7 @@ product:
       value: 10
       
     - name: "PANEL USERS"
-      type: "hidden"
+      type: "readonly"
       value: 10
       
     - name: "SERVER TYPE"

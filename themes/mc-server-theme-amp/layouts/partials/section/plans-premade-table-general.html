@@ -22,7 +22,7 @@
             <tr>
               <td>{{ .Title }}</td>
               {{ range .Params.product.customfields }}
-                {{ if and (ne .type "hidden") (ne .name "servertype") }}
+                {{ if and (ne .type "hidden") (ne .name "SERVER TYPE") }}
                   <td>{{ .value }}</td>
                 {{ end }}
               {{ end }}
@@ -35,7 +35,7 @@
                   data-item-url="{{ $currentPage.Permalink }}"
                   {{ range $i, $e := .Params.product.customFields }}
                     data-item-custom{{ add $i 1 }}-name="{{ $e.name }}"
-                    {{ if eq $e.name "servertype" }}
+                    {{ if eq $e.name "SERVER TYPE" }}
                       data-item-custom{{ add $i 1 }}-options="{{ $e.options }}"
                     {{ else }}
                       data-item-custom{{ add $i 1 }}-type="{{ $e.type }}"
