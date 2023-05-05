@@ -1,30 +1,30 @@
 ---
-title: "Ghast"
+title: "squid"
 draft: false
-category: "High Performance"
-weight: 3
+category: "Economy"
+weight: 5
 
 product:
-  id: "ghast"
-  name: "Ghast"
-  price: "25.20"
+  id: "squid"
+  name: "Squid"
+  price: "12.50"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "6 GiB"
+      value: "10 GiB"
 
     - name: "STORAGE"
       type: "readonly"
-      value: "60 GiB"
+      value: "100 GiB"
 
     - name: "nodemodel"
       type: "hidden"
-      value: "m3"
+      value: "m1"
 
     - name: "DATABASES"
       type: "readonly"
-      value: 1
+      value: 2
 
     - name: "SNAPSHOTS"
       type: "readonly"
@@ -45,5 +45,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 25.20
+      itemPrice: 12.50
 ---

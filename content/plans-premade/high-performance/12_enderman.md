@@ -1,38 +1,38 @@
 ---
-title: "City"
+title: "Enderman"
 draft: false
-category: "General"
-weight: 4
+category: "High Performance"
+weight: 6
 
 product:
-  id: "general-city"
-  name: "City"
-  price: "25.60"
+  id: "enderman"
+  name: "Enderman"
+  price: "50.40"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "8 GiB"
+      value: "12 GiB"
 
     - name: "STORAGE"
       type: "readonly"
-      value: "50 GiB"
+      value: "120 GiB"
 
     - name: "nodemodel"
       type: "hidden"
-      value: "m2"
+      value: "m3"
 
     - name: "DATABASES"
       type: "readonly"
-      value: 1
+      value: 12
 
     - name: "SNAPSHOTS"
       type: "readonly"
-      value: 10
+      value: 40
       
     - name: "PANEL USERS"
       type: "readonly"
-      value: 10
+      value: 50
       
     - name: "SERVER TYPE"
       options: "vanilla|paper|fabric|spongevanilla|forge"
@@ -45,5 +45,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 25.60
+      itemPrice: 50.40
 ---

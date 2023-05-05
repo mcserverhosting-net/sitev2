@@ -1,42 +1,41 @@
 ---
-title: "Guardian"
+title: "Region"
 draft: false
-category: "High Performance"
-weight: 7
+category: "General"
+weight: 5
 
 product:
-  id: "guardian"
-  name: "Guardian"
-  price: "58.80"
+  id: "region-town"
+  name: "Region"
+  price: "32.00"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "14 GiB"
+      value: "10 GiB"
 
     - name: "STORAGE"
       type: "readonly"
-      value: "140 GiB"
+      value: "75 GiB"
 
     - name: "nodemodel"
       type: "hidden"
-      value: "m3"
+      value: "m2"
 
     - name: "DATABASES"
       type: "readonly"
-      value: 1
+      value: 4
 
     - name: "SNAPSHOTS"
       type: "readonly"
-      value: 10
+      value: 25
       
     - name: "PANEL USERS"
       type: "readonly"
-      value: 10
+      value: 25
       
     - name: "SERVER TYPE"
       options: "vanilla|paper|fabric|spongevanilla|forge"
-
 
   selectedPlan: "monthly-plan"
 
@@ -45,5 +44,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 58.80
+      itemPrice: 32.00
 ---

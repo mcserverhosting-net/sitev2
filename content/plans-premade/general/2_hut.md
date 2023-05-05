@@ -1,22 +1,22 @@
 ---
-title: "Country"
+title: "Hut"
 draft: false
 category: "General"
-weight: 6
+weight: 1
 
 product:
-  id: "general-country"
+  id: "general-hut"
   name: "Hut"
-  price: "38.40"
+  price: "6.40"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "12 GiB"
+      value: "2 GiB"
 
     - name: "STORAGE"
       type: "readonly"
-      value: "100 GiB"
+      value: "10 GiB"
 
     - name: "nodemodel"
       type: "hidden"
@@ -24,7 +24,7 @@ product:
 
     - name: "DATABASES"
       type: "readonly"
-      value: 1
+      value: 2
 
     - name: "SNAPSHOTS"
       type: "readonly"
@@ -32,7 +32,7 @@ product:
       
     - name: "PANEL USERS"
       type: "readonly"
-      value: 10
+      value: 25
       
     - name: "SERVER TYPE"
       options: "vanilla|paper|fabric|spongevanilla|forge"
@@ -45,5 +45,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 38.4
+      itemPrice: 6.4
 ---

@@ -1,41 +1,42 @@
 ---
-title: "Region"
+title: "Wither"
 draft: false
-category: "General"
-weight: 5
+category: "High Performance"
+weight: 2
 
 product:
-  id: "region-town"
-  name: "Region"
-  price: "32.00"
+  id: "wither"
+  name: "Wither"
+  price: "16.80"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "10 GiB"
+      value: "4 GiB"
 
     - name: "STORAGE"
       type: "readonly"
-      value: "75 GiB"
+      value: "40 GiB"
 
     - name: "nodemodel"
       type: "hidden"
-      value: "m2"
+      value: "m3"
 
     - name: "DATABASES"
       type: "readonly"
-      value: 1
+      value: 4
 
     - name: "SNAPSHOTS"
       type: "readonly"
-      value: 10
+      value: 20
       
     - name: "PANEL USERS"
       type: "readonly"
-      value: 10
+      value: 50
       
     - name: "SERVER TYPE"
       options: "vanilla|paper|fabric|spongevanilla|forge"
+
 
   selectedPlan: "monthly-plan"
 
@@ -44,5 +45,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 32.00
+      itemPrice: 16.80
 ---

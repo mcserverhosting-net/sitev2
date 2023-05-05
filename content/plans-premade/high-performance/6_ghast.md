@@ -1,22 +1,22 @@
 ---
-title: "The Wither Storm"
+title: "Ghast"
 draft: false
 category: "High Performance"
-weight: 9
+weight: 3
 
 product:
-  id: "wither-storm"
-  name: "The Wither Storm"
-  price: "75.60"
+  id: "ghast"
+  name: "Ghast"
+  price: "25.20"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "18 GiB"
+      value: "6 GiB"
 
     - name: "STORAGE"
       type: "readonly"
-      value: "180 GiB"
+      value: "60 GiB"
 
     - name: "nodemodel"
       type: "hidden"
@@ -24,15 +24,15 @@ product:
 
     - name: "DATABASES"
       type: "readonly"
-      value: 1
+      value: 8
 
     - name: "SNAPSHOTS"
       type: "readonly"
-      value: 10
+      value: 25
       
     - name: "PANEL USERS"
       type: "readonly"
-      value: 10
+      value: 50
       
     - name: "SERVER TYPE"
       options: "vanilla|paper|fabric|spongevanilla|forge"
@@ -45,5 +45,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 75.60
+      itemPrice: 25.20
 ---

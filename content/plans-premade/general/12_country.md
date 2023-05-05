@@ -1,38 +1,38 @@
 ---
-title: "Blaze"
+title: "Country"
 draft: false
-category: "High Performance"
-weight: 4
+category: "General"
+weight: 6
 
 product:
-  id: "blaze"
-  name: "Blaze"
-  price: "33.60"
+  id: "general-country"
+  name: "Hut"
+  price: "38.40"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "8 GiB"
+      value: "12 GiB"
 
     - name: "STORAGE"
       type: "readonly"
-      value: "80 GiB"
+      value: "100 GiB"
 
     - name: "nodemodel"
       type: "hidden"
-      value: "m3"
+      value: "m2"
 
     - name: "DATABASES"
       type: "readonly"
-      value: 1
+      value: 6
 
     - name: "SNAPSHOTS"
       type: "readonly"
-      value: 10
+      value: 30
       
     - name: "PANEL USERS"
       type: "readonly"
-      value: 10
+      value: 25
       
     - name: "SERVER TYPE"
       options: "vanilla|paper|fabric|spongevanilla|forge"
@@ -45,5 +45,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 33.60
+      itemPrice: 38.4
 ---

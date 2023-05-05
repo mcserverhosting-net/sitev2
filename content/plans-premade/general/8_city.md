@@ -1,38 +1,38 @@
 ---
-title: "Ender Dragon"
+title: "City"
 draft: false
-category: "High Performance"
-weight: 1
+category: "General"
+weight: 4
 
 product:
-  id: "ender-dragon"
-  name: "Ender Dragon"
-  price: "8.40"
+  id: "general-city"
+  name: "City"
+  price: "25.60"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "2 GiB"
+      value: "8 GiB"
 
     - name: "STORAGE"
       type: "readonly"
-      value: "20 GiB"
+      value: "50 GiB"
 
     - name: "nodemodel"
       type: "hidden"
-      value: "m3"
+      value: "m2"
 
     - name: "DATABASES"
       type: "readonly"
-      value: 1
+      value: 4
 
     - name: "SNAPSHOTS"
       type: "readonly"
-      value: 10
+      value: 20
       
     - name: "PANEL USERS"
       type: "readonly"
-      value: 10
+      value: 25
       
     - name: "SERVER TYPE"
       options: "vanilla|paper|fabric|spongevanilla|forge"
@@ -45,6 +45,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 8.40
-
+      itemPrice: 25.60
 ---

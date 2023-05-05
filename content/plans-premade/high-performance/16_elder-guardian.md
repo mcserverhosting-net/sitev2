@@ -25,15 +25,15 @@ product:
 
     - name: "DATABASES"
       type: "readonly"
-      value: 1
+      value: 16
 
     - name: "SNAPSHOTS"
       type: "readonly"
-      value: 10
+      value: 60
       
     - name: "PANEL USERS"
       type: "readonly"
-      value: 10
+      value: 50
       
     - name: "SERVER TYPE"
       options: "vanilla|paper|fabric|spongevanilla|forge"

@@ -1,22 +1,22 @@
 ---
-title: "Wither Skeleton"
+title: "The Ender Dragon Queen"
 draft: false
 category: "High Performance"
-weight: 5
+weight: 10
 
 product:
-  id: "wither-skeleton"
-  name: "Wither Skeleton"
-  price: "42.00"
+  id: "ender-dragon-queen"
+  name: "The Ender Dragon Queen"
+  price: "84.00"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "10 GiB"
+      value: "20 GiB"
 
     - name: "STORAGE"
       type: "readonly"
-      value: "100 GiB"
+      value: "200 GiB"
 
     - name: "nodemodel"
       type: "hidden"
@@ -24,15 +24,15 @@ product:
 
     - name: "DATABASES"
       type: "readonly"
-      value: 1
+      value: 20
 
     - name: "SNAPSHOTS"
       type: "readonly"
-      value: 10
+      value: 90
       
     - name: "PANEL USERS"
       type: "readonly"
-      value: 10
+      value: 50
       
     - name: "SERVER TYPE"
       options: "vanilla|paper|fabric|spongevanilla|forge"
@@ -45,5 +45,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 42.00
+      itemPrice: 84.00
 ---

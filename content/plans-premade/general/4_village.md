@@ -1,38 +1,38 @@
 ---
-title: "The Ender Dragon Queen"
+title: "Village"
 draft: false
-category: "High Performance"
-weight: 10
+category: "General"
+weight: 2
 
 product:
-  id: "ender-dragon-queen"
-  name: "The Ender Dragon Queen"
-  price: "84.00"
+  id: "general-village"
+  name: "Village"
+  price: "12.80"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "20 GiB"
+      value: "4 GiB"
 
     - name: "STORAGE"
       type: "readonly"
-      value: "200 GiB"
+      value: "20 GiB"
 
     - name: "nodemodel"
       type: "hidden"
-      value: "m3"
+      value: "m2"
 
     - name: "DATABASES"
       type: "readonly"
-      value: 1
+      value: 2
 
     - name: "SNAPSHOTS"
       type: "readonly"
-      value: 10
+      value: 15
       
     - name: "PANEL USERS"
       type: "readonly"
-      value: 10
+      value: 25
       
     - name: "SERVER TYPE"
       options: "vanilla|paper|fabric|spongevanilla|forge"
@@ -45,5 +45,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 84.00
+      itemPrice: 12.80
 ---

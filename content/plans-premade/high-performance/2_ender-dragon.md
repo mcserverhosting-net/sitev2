@@ -1,22 +1,22 @@
 ---
-title: "Enderman"
+title: "Ender Dragon"
 draft: false
 category: "High Performance"
-weight: 6
+weight: 1
 
 product:
-  id: "enderman"
-  name: "Enderman"
-  price: "50.40"
+  id: "ender-dragon"
+  name: "Ender Dragon"
+  price: "8.40"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "12 GiB"
+      value: "2 GiB"
 
     - name: "STORAGE"
       type: "readonly"
-      value: "120 GiB"
+      value: "20 GiB"
 
     - name: "nodemodel"
       type: "hidden"
@@ -24,15 +24,15 @@ product:
 
     - name: "DATABASES"
       type: "readonly"
-      value: 1
+      value: 4
 
     - name: "SNAPSHOTS"
       type: "readonly"
-      value: 10
+      value: 15
       
     - name: "PANEL USERS"
       type: "readonly"
-      value: 10
+      value: 50
       
     - name: "SERVER TYPE"
       options: "vanilla|paper|fabric|spongevanilla|forge"
@@ -45,5 +45,6 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 50.40
+      itemPrice: 8.40
+
 ---

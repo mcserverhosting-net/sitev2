@@ -1,38 +1,38 @@
 ---
-title: "squid"
+title: "Blaze"
 draft: false
-category: "Economy"
-weight: 5
+category: "High Performance"
+weight: 4
 
 product:
-  id: "squid"
-  name: "Squid"
-  price: "12.50"
+  id: "blaze"
+  name: "Blaze"
+  price: "33.60"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "10 GiB"
+      value: "8 GiB"
 
     - name: "STORAGE"
       type: "readonly"
-      value: "100 GiB"
+      value: "80 GiB"
 
     - name: "nodemodel"
       type: "hidden"
-      value: "m1"
+      value: "m3"
 
     - name: "DATABASES"
       type: "readonly"
-      value: 1
+      value: 8
 
     - name: "SNAPSHOTS"
       type: "readonly"
-      value: 10
+      value: 30
       
     - name: "PANEL USERS"
       type: "readonly"
-      value: 10
+      value: 50
       
     - name: "SERVER TYPE"
       options: "vanilla|paper|fabric|spongevanilla|forge"
@@ -45,5 +45,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 12.50
+      itemPrice: 33.60
 ---

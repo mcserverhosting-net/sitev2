@@ -1,22 +1,22 @@
 ---
-title: "Wither"
+title: "Guardian"
 draft: false
 category: "High Performance"
-weight: 2
+weight: 7
 
 product:
-  id: "wither"
-  name: "Wither"
-  price: "16.80"
+  id: "guardian"
+  name: "Guardian"
+  price: "58.80"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "4 GiB"
+      value: "14 GiB"
 
     - name: "STORAGE"
       type: "readonly"
-      value: "40 GiB"
+      value: "140 GiB"
 
     - name: "nodemodel"
       type: "hidden"
@@ -24,15 +24,15 @@ product:
 
     - name: "DATABASES"
       type: "readonly"
-      value: 1
+      value: 16
 
     - name: "SNAPSHOTS"
       type: "readonly"
-      value: 10
+      value: 50
       
     - name: "PANEL USERS"
       type: "readonly"
-      value: 10
+      value: 50
       
     - name: "SERVER TYPE"
       options: "vanilla|paper|fabric|spongevanilla|forge"
@@ -45,5 +45,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 16.80
+      itemPrice: 58.80
 ---

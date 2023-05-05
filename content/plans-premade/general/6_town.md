@@ -1,41 +1,42 @@
 ---
-title: "sheep"
+title: "Town"
 draft: false
-category: "Economy"
-weight: 4
+category: "General"
+weight: 3
 
 product:
-  id: "sheep"
-  name: "Sheep"
-  price: "10.00"
+  id: "general-town"
+  name: "Town"
+  price: "15.00"
 
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "8 GiB"
+      value: "6 GiB"
 
     - name: "STORAGE"
       type: "readonly"
-      value: "80 GiB"
+      value: "30 GiB"
 
     - name: "nodemodel"
       type: "hidden"
-      value: "m1"
+      value: "m2"
 
     - name: "DATABASES"
       type: "readonly"
-      value: 1
+      value: 2
 
     - name: "SNAPSHOTS"
       type: "readonly"
-      value: 10
+      value: 15
       
     - name: "PANEL USERS"
       type: "readonly"
-      value: 10
+      value: 25
       
     - name: "SERVER TYPE"
       options: "vanilla|paper|fabric|spongevanilla|forge"
+
 
   selectedPlan: "monthly-plan"
 
@@ -44,6 +45,5 @@ product:
       name: "Monthly Subscription"
       frequency: "monthly"
       interval: 1
-      itemPrice: 10.00
+      itemPrice: 15.00
 ---
-
