@@ -21,7 +21,7 @@ product:
 
     - name: "nodemodel"
       type: "readonly"
-      value: "m1"
+      value: "m3"
 
     - name: "database"
       type: "readonly"
