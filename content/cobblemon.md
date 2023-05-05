@@ -80,6 +80,8 @@ product:
     - key: SNAPSHOTS
       value: 10
 
+    - key: IDEAL
+      value: "For 5-10 players"
 
     availablePlans:
       - id: "monthly-plan"
@@ -171,6 +173,9 @@ product:
     - key: SNAPSHOTS
       value: 20
 
+    - key: IDEAL
+      value: "For 10-25 players"
+
     availablePlans:
       - id: "monthly-plan"
         name: "Cobblemon Pikachu Plan"
@@ -198,7 +203,7 @@ product:
 
     content:
       - name: "Agility"
-        content: "Super responsive support and priority service, for when you need it most!"
+        content: "Stay nimble and ahead of the curve with automatic upgrades to Ryzen 7000 when available!"
         icons:
           - /images/move-symbols/basic.svg
           - /images/move-symbols/basic.svg
@@ -240,6 +245,7 @@ product:
         type: "readonly"
         value: "cobblemon"
 
+
     featuredItems:
       - name: Packs a Punch
         icon: /images/move-symbols/fighting.svg
@@ -263,6 +269,9 @@ product:
     
     - key: SNAPSHOTS
       value: 60
+
+    - key: IDEAL
+      value: "For 25+ players!"
 
     data_plans:
       - id: monthly-plan
