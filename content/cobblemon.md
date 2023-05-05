@@ -1,5 +1,5 @@
 ---
-title: pricing new
+title: MCSH + Cobblemon
 layout: price
 
 product:
