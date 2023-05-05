@@ -10,6 +10,9 @@
             <th class="text-align-left vertical-align-middle">Plans</th>
             <th class="text-align-left vertical-align-middle">RAM</th>
             <th class="text-align-left vertical-align-middle">Storage</th>
+            <th class="text-align-left vertical-align-middle">Databases</th>
+            <th class="text-align-left vertical-align-middle">Snapshots</th>
+            <th class="text-align-left vertical-align-middle">Panel Users</th>
             <th class="text-align-left vertical-align-middle">Price</th>
             <th class="text-align-center vertical-align-middle">Buy</th>
           </tr>
@@ -20,7 +23,9 @@
             <tr>
               <td>{{ .Title }}</td>
               {{ range .Params.product.customfields }}
-                <td>{{ .value }}</td>
+                {{ if and (ne .type "hidden") (ne .name "servertype") }}
+                  <td>{{ .value }}</td>
+                {{ end }}
               {{ end }}
               <td>{{ .Params.product.price }}</td>
               <td class="text-align-center">

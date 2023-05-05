@@ -19,7 +19,7 @@ product:
       value: "20 GiB" 
       
     - name: "nodemodel"
-      type: "readonly"
+      type: "hidden"
       value: "m1"
 
     - name: "database"

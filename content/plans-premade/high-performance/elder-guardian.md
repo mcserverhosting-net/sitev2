@@ -13,11 +13,11 @@ product:
   customFields:
     - name: "RAM"
       type: "readonly"
-      value: "16 GB"
+      value: "16 GiB"
 
     - name: "Storage"
       type: "readonly"
-      value: "160GB"
+      value: "160 GiB"
 
     - name: "nodemodel"
       type: "readonly"
@@ -36,7 +36,7 @@ product:
       value: 10
       
     - name: "servertype"
-      value: "vanilla|paper|fabric|spongevanilla|forge"
+      options: "vanilla|paper|fabric|spongevanilla|forge"
 
 
   selectedPlan: "monthly-plan"
