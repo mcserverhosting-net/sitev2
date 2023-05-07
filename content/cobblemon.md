@@ -101,7 +101,7 @@ product:
   - featured: true
     id: "evolved"
     name: "Pikachu"
-    price: 32
+    price: 25
     quota: 8
     measure: GB
     image: /images/price/pikaedited1.png
@@ -189,7 +189,7 @@ product:
         frequency: monthly
         interval: 1
         count: 999
-        price: 32
+        price: 25
 
   - featured: false
     id: "legendary"
