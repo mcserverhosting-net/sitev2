@@ -4,7 +4,7 @@ author: "Jeremy"
 tags: []
 date: 2020-08-10T05:38:44-04:00
 draft: false
-faqs: "Server Deployment dashboard"
+faqs: "Dashboard"
 ---
 
 ## Getting Started with the Dashboard
@@ -22,6 +22,6 @@ To upload files, you can use the file tab on the dashboard by following these st
 3. Click on the "Upload" button.
 4. Upload the files.
 
-To connect to SFTP and work on or upload files, go to the server you want to edit, then access the Settings. Under "SFTP Details," you will find your connection information, which can also be found [here](https://mcserverhosting.net/faqs/how-to-access-files-using-winscp/).
+To connect to SFTP and work on or upload/download files, go to the server you want to edit, then access the Settings. Under "SFTP Details" you will find your connection information, which can also be found [here](https://mcserverhosting.net/faqs/how-to-access-files-using-winscp/).
 
 If you encounter any issues while using the application, please contact us in the support channel on Discord for assistance.

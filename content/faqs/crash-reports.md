@@ -14,7 +14,15 @@ faqs: "Server Management"
 ### For Minecraft Client:
 
 1. Open the Windows start menu and type in "%appdata%" and press Enter.
-2. Open the .minecraft folder.
-3. Open either the logs or crash-reports folder.
+2. Open the `.minecraft` folder.
+3. Open either the `logs` or `crash-reports` folder.
    - Crash reports are files that get logged when Minecraft crashes.
-4. Open the latest.log for the latest log, and open the crash text file with the latest date and time on it.
+4. Open the `latest.log` for the latest log and open the crash text file with the latest date and time on it.
+
+
+### For Minecraft Server:
+
+1. Open the files tab.
+2. Open `crash-reports`.
+3. Find the one for the correct time.
+4. Open and read what happened.
