@@ -8,6 +8,11 @@ faqs: "Frequently Asked Questions"
 ---
 
 ## Frequently Asked Questions
+<style>
+table {
+  background-color: black;
+}
+</style>
 
 | Question                                                      | Answer                                                                                                    |
 | ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
