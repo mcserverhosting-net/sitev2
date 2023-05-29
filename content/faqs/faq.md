@@ -1,3 +1,9 @@
+<style>
+table {
+  background-color: black;  
+  color: white;           
+</style>
+
 ---
 title: "Frequently Asked Questions"
 author: "Jeremy"
@@ -8,11 +14,6 @@ faqs: "Frequently Asked Questions"
 ---
 
 ## Frequently Asked Questions
-<style>
-table {
-  background-color: black;
-}
-</style>
 
 | Question                                                      | Answer                                                                                                    |
 | ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
