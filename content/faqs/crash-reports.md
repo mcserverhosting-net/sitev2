@@ -23,6 +23,6 @@ faqs: "Server Management"
 ### For Minecraft Server:
 
 1. Open the files tab.
-2. Open `crash-reports`.
+2. Open `crash-reports` folder.
 3. Find the one for the correct time.
 4. Open and read what happened.
