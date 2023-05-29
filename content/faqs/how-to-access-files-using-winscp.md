@@ -1,13 +1,12 @@
-
 ---
-Author: quantomworks, Jeremy  
-Tags: ssh, files, terminal  
-Categories: Getting Started  
-Server Types: all  
-Date: 2019-12-28T04:37:53-05:00  
-Draft: false  
+title: "How to access files using WinSCP"
+author: "quantomworks, Jeremy"
+tags: []
+date: 2020-08-10T05:38:44-04:00
+draft: false
 faqs: "Server Management"
 ---
+
 # How to access files using WinSCP
 ![Computer Craft is an awesome mod by the way.](../../static/images/computer-craft-terminal.jpg)
 
