@@ -8,7 +8,8 @@ faqs: "Server Management"
 ---
 
 # How to access files using WinSCP
-![Computer Craft is an awesome mod by the way.](../../static/images/computer-craft-terminal.jpg)
+{{< amp-image width="650" height="361" layout="responsive" src="../../static/images/computer-craft-terminal.jpg" alt="Computer Craft is an awesome mod by the way.">}} 
+
 
 ## Now, let's access your files.
 
@@ -23,7 +24,7 @@ To access your files securely, you will need WinSCP. Follow the steps below to g
 
    **Option 2:**
    1. From the WinSCP home screen, select **New Site**.
-   2. On the right panel, under **Host name**, type in the server address.
+   2. On the right panel, under **Host name**, type in the server address.  
    3. For the **port number**, type in port 2022.
    4. For the **username**, type in your username that you see in settings on the dashboard.
    5. For the **password**, use the password for the dashboard.

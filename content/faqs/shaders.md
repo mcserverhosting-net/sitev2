@@ -1,6 +1,6 @@
 ---
 title: "Setting up sharders"
-author: "jeremy"
+author: "Jeremy"
 tags: ["server"]
 categories: ["Getting Started"]
 servertypes: ["all"]
