@@ -31,4 +31,4 @@ Yes, you can join the Discord server and create a ticket in the support channel.
 
 ### How do I cancel my plan?
 
-To cancel your plan, please reach out to our staff members in the support channel on Discord.
+To cancel your plan, please reach out to our staff members in the support channel on Discord, and make a ticket requesting to cancel.
