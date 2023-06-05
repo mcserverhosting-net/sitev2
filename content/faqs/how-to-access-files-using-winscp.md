@@ -8,8 +8,6 @@ faqs: "Server Management"
 ---
 
 # How to access files using WinSCP
-{{< amp-image width="650" height="361" layout="responsive" src="../../static/images/computer-craft-terminal.jpg" alt="Computer Craft is an awesome mod by the way.">}} 
-
 
 ## Now, let's access your files.
 
