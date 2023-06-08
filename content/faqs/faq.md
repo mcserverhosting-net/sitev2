@@ -1,6 +1,6 @@
 ---
 
-Title: "Commonly Asked Questions"
+Title: "Common Questions"
 
 Author: "Jeremy"
 
@@ -14,9 +14,9 @@ FAQs: "Frequently Asked Questions"
 
 
 ---
-## Commonly Asked Questions
+## Common Questions
 
-| Question                                                      | Answer                                                                                                    |
+| <style="color:blue;font-size:46px;"> Question                                                      | Answer                                                                                                    |
 | ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
 | How do I log in to my Minecraft server?                         | To log in to your Minecraft server, use the IP address provided in the dashboard settings.                |
 | How can I access files on my server?                            | You can access files using [SFTP](https://mcserverhosting.net/faqs/how-to-access-files-using-winscp/).      |

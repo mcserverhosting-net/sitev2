@@ -4,7 +4,7 @@ author: "Jeremy"
 tags: []
 date: 2020-08-10T05:38:44-04:00
 draft: false
-faqs: "Dashboard"
+faqs: "Panel"
 ---
 
 ## Getting Started with the Dashboard
