@@ -1,11 +1,10 @@
 ---
-Title: "Getting Started with the Dashboard"
-Author: "Jeremy"
-Tags: []
-Date: 2020-08-10
-Draft: False
-FAQs: "Panel"
-
+title: "Getting Started with the dashboard"
+author: "Jeremy"
+tags: []
+date: 2020-08-10T05:38:44-04:00
+draft: false
+faqs: "Panel"
 ---
 
 ## Getting Started with the Dashboard
@@ -16,7 +15,7 @@ FAQs: "Panel"
 4. Utilize the dashboard panel to perform various actions such as starting or stopping the Minecraft server, creating backups, and viewing logs.
 5. To start or stop the Minecraft server, click on the "Start" or "Stop" button on the dashboard panel.
 
-## Uploading Files
+## Uploading files
 
 To upload files, follow these steps using the file tab on the dashboard:
 
@@ -28,7 +27,7 @@ To upload files, follow these steps using the file tab on the dashboard:
 To connect via SFTP and work with files, access the Settings of the server you want to edit. Under "SFTP Details," you can find the connection information, also available [here](https://mcserverhosting.net/faqs/how-to-access-files-using-winscp/).
 If you encounter any issues while using the application, please contact our support channel on Discord for assistance.
 
-## Adding Users to Servers
+## Adding users to servers
 
 To add users to servers, follow these steps:
 1. Open the "USERS" tab.
