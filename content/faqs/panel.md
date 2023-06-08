@@ -7,7 +7,7 @@ draft: false
 faqs: "Panel"
 ---
 
-# Getting Started with the Dashboard
+Getting Started with the Dashboard
 
 1. Open a web browser and go to `https://alpha.panel.mcsh.red/` or [click here](https://alpha.panel.mcsh.red/).
 2. Log in to the dashboard using the login information provided in the email.
