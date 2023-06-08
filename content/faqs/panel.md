@@ -31,16 +31,15 @@ To upload files, follow these steps using the file tab on the dashboard:
 To connect via SFTP and work with files, access the Settings of the server you want to edit. Under "SFTP Details," you can find the connection information, which can be found [here](https://mcserverhosting.net/faqs/how-to-access-files-using-winscp/).
 
 
-## Uploading files
+## Adding users to servers
 
-To upload files, follow these steps using the file tab on the dashboard:
-
-1. Open the files tab.
-2. Navigate to the desired folder for file upload.
-3. Click on the "Upload" button.
-4. Upload the desired files.
-
-To connect via SFTP and work with files, access the Settings of the server you want to edit. Under "SFTP Details," you can find the connection information, which can be found [here](https://mcserverhosting.net/faqs/how-to-access-files-using-winscp/).
+To add users to servers, follow these steps:
+1. Open the "USERS" tab.
+2. Click on "New User".
+3. Enter the user's email.
+4. Assign appropriate permissions based on the user's needs.
+5. Click "Invite User".
+6. Instruct the user to create their account.
 
 If you encounter any issues while using the application, please contact us in the support channel on Discord for assistance.
 
