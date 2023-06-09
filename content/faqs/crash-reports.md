@@ -9,7 +9,6 @@ draft: false
 faqs: "Server Management"
 ---
 
-## How to Locate Logs/Crash Reports
 
 ### For Minecraft Client:
 
