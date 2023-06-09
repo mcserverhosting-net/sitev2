@@ -9,7 +9,6 @@ draft: false
 faqs: "Client Management"
 ---
 
-### How to install shaders
 1. Download and Install Optifine
    - Go to https://optifine.net/downloads
    - Download the version of Optifine that corresponds to your Minecraft version
