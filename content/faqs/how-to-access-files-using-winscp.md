@@ -7,7 +7,6 @@ draft: false
 faqs: "Server Management"
 ---
 
-# How to access files using WinSCP
 
 ## Now, let's access your files.
 
