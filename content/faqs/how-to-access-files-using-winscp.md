@@ -7,9 +7,8 @@ draft: false
 faqs: "Server Management"
 ---
 
-# How to access files using WinSCP
 
-## Now, let's access your files.
+ Now, let's access your files.
 
 To access your files securely, you will need WinSCP. Follow the steps below to get started:
 
