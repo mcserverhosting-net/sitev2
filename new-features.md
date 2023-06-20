@@ -1,30 +1,20 @@
 ---
-title: "testing"
-author: "quantomworks, Jeremy"
+title: "Can the staff add new features?"
+author: "Jeremy"
 tags: []
 date: 2020-08-10T05:38:44-04:00
 draft: false
 faqs: "Server Management"
 ---
 
+Our staff is committed to helping you enhance your server experience by adding new features. If you have specific feature requests or want to add new server cores, please follow these steps:
 
-To access your files securely, you will need WinSCP. Follow the steps below to get started:
+1. **Join our Discord server:** Join our Discord community to connect with our staff and other server owners. It's a great platform for sharing ideas, discussing server-related topics, and seeking assistance.
 
-1. Go to your dashboard and navigate to **Settings**.
-2. Click the **Launch SFTP** button under **SFTP Details**. Alternatively, you can follow the steps below to set up a new site in WinSCP.
+2. **Create a support ticket:** Once you're in our Discord server, create a support ticket to request the addition of new features or server cores. In the ticket, provide details about the features you would like to add and any specific requirements or preferences you may have.
 
-  **Option 1:**
-   1. Click the **Launch SFTP** button under **SFTP Details**.
-   2. You'll be directed to the server's files on the right side, while your local files will be displayed on the left.
+Our dedicated staff members will carefully review your request and respond to it as soon as possible. While we cannot guarantee that all feature requests will be implemented, we highly value your input and continuously strive to improve our services based on user feedback.
 
-   **Option 2:**
-   1. From the WinSCP home screen, select **New Site**.
-   2. On the right panel, under **Host name**, type in the server address.  
-   3. For the **port number**, type in port 2022.
-   4. For the **username**, type in your username that you see in settings on the dashboard.
-   5. For the **password**, use the password for the dashboard.
-   6. Hit **Save** and give the site a name like "My MCSH server", then click **OK**.
-   7. Click **Login**.
+Feel free to reach out to our staff through the support ticket system in our Discord server. We are here to listen to your needs and assist you in expanding and customizing your server to meet your requirements.
 
- 
-That's it! If you have any questions, feel free to reach out to us on [Discord](https://mcserverhosting.net/discord).
+We appreciate your interest in adding new features to your server and look forward to working with you to enhance your Minecraft experience.
