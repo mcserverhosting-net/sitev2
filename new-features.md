@@ -1,15 +1,14 @@
 ---
 title: "Can the staff add new features?"
 author: "Jeremy"
-tags: ["server"]
-categories: ["server features"]
-date: 2020-08-10
-draft: False
+tags: []
+categories: []
+date: 2020-08-10T05:38:44-04:00
+draft: false
 faqs: "Dashboard"
 ---
 
-
-our staff is here to help you enhance your server experience. If you have specific feature requests or if you want to add new server cores, follow these steps:
+Our staff is here to help you enhance your server experience. If you have specific feature requests or if you want to add new server cores, follow these steps:
 
 1. **Join our Discord server:** Join our Discord community to connect with our staff and other server owners. It's a great platform for sharing ideas, discussing server-related topics, and seeking assistance.
 
