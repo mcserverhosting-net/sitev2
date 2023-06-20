@@ -1,7 +1,8 @@
 ---
 title: "Can the staff add new features?"
 author: "Jeremy"
-tags: []
+tags: ["server"]
+categories: ["server features"]
 date: 2020-08-10
 draft: False
 faqs: "Dashboard"
