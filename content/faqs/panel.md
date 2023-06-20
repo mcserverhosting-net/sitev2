@@ -9,8 +9,6 @@ faqs: "Dashboard"
 
 
 
-## Getting Started with the Dashboard
-
 1. 1: Open a web browser and go to `https://alpha.panel.mcsh.red/` or [click here](https://alpha.panel.mcsh.red/).
 2. 2: Log in to the dashboard using the login information provided in the email.
 3. 3: Once logged in, you will see an overview of the Minecraft server's current status, including memory and CPU usage, and the server address.
