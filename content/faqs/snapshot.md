@@ -1,7 +1,7 @@
 ---
 title: "snapshots"
 author: "luther"
-tags: "snapshot"
+tags: [snapshot]
 date: "2023-06-19"
 draft: "false"
 faq: "snapshots"
