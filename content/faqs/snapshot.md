@@ -1,8 +1,8 @@
 ---
-title: "snapshots"
+title: "Snapshots"
 author: "luther"
-tags: [snapshot]
-date: "2023-06-19"
+tags: ["snapshot"]
+categories: "Dashboard"
 draft: false
 faq: "snapshots"
 ---
