@@ -1,3 +1,11 @@
+---
+title: "snapshots"
+author: "luther"
+tags: "snapshot"
+date: "2023-06-19"
+draft: "false"
+faq: "snapshots"
+---
 # what is a snapshot?
 * **A snapshot, is a point-in-time copy or image of the server's entire state, including its operating system, applications, and data. It captures the server's configuration, files, and settings, allowing for easy backup, recovery, or duplication of the server. Snapshots are useful for creating backups, testing new configurations or updates, and restoring the server to a previous state if needed. They provide a convenient way to preserve and manage the server's integrity and ensure its availability and reliability.**
 ## Why should I take a snapshot of my server?
