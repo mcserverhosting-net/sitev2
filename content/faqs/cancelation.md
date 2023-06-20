@@ -8,9 +8,9 @@ draft: false
 faqs: "cancelations"
 ---
 
-# Frequently Asked Questions
 
-   ## canceling your subscription via discord
+
+   # Canceling your subscription via discord
 
 #### We understand that circumstances change, and you may need to cancel your server subscription with _MC Server Hosting LLC_. To ensure a streamlined process, we require that all server subscription cancellation requests be made via Discord. 
 In this FAQ article, we address common questions and provide important information regarding the cancellation process, including the requirement for an email address and reason for cancellation, as well as the timing of cancellation completion.
