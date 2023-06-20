@@ -3,7 +3,7 @@ title: "snapshots"
 author: "luther"
 tags: [snapshot]
 date: "2023-06-19"
-draft: "false"
+draft: false
 faq: "snapshots"
 ---
 # what is a snapshot?
