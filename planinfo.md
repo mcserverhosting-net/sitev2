@@ -1,12 +1,11 @@
 ---
-Title: "I just purchased a plan but haven't received any information."
-Author: "Jeremy"
-Tags: []
-Date: 2020-08-10
-Draft: False
-FAQs: "Dashboard"
+title: "I just purchased a plan but haven't received any information"
+author: "jeremy"
+tags: []
+categories: []
+draft: false
+faqs: "Dashboard"
 ---
-
 
 We apologize for any inconvenience caused by not receiving the necessary information after purchasing a plan. To resolve this issue, please follow these steps:
 
