@@ -2,9 +2,9 @@
 title: "Can the staff add new features?"
 author: "Jeremy"
 tags: []
-categories: []
+date: 2020-08-10T05:38:44-04:00
 draft: false
-faqs: "Dashboard"
+faqs: "Server Management"
 ---
 
 Our staff is committed to helping you enhance your server experience by adding new features. If you have specific feature requests or want to add new server cores, please follow these steps:
