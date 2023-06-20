@@ -1,10 +1,10 @@
 ---
-Title: "Can the staff add new features?"
-Author: "Jeremy"
-Tags: []
-Date: 2020-08-10
-Draft: False
-FAQs: "Dashboard"
+title: "Can the staff add new features?"
+author: "Jeremy"
+tags: []
+date: 2020-08-10
+draft: False
+faqs: "Dashboard"
 ---
 
 
