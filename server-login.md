@@ -7,17 +7,30 @@ Draft: False
 FAQs: "Server Management"
 ---
 
+If you've recently set up your Minecraft server and are wondering how to log in, don't worry - we've got you covered! Just follow these simple steps:
 
-To log in to your Minecraft server, follow these steps:
+1. **Obtain the IP address:** To log in to your Minecraft server, you need to obtain the IP address. The IP address is a unique identifier that allows your Minecraft game to connect to the server. It is provided to you when you set up your server and can usually be found in the dashboard settings. Here's how you can locate the IP address:
 
-1. **Obtain the IP address:** Access the dashboard settings of your Minecraft server.
-2. **Locate the IP address:** In the dashboard settings, you will find the IP address associated with your server.
-3. **Launch Minecraft:** Open the Minecraft game on your device.
-4. **Select "Multiplayer":** From the main menu, click on the "Multiplayer" option.
-5. **Click "Add Server":** In the multiplayer menu, click on the "Add Server" button.
-6. **Enter server information:** In the server information fields, provide a name for the server and enter the IP address you obtained from the dashboard settings.
-7. **Click "Done":** Save the server information by clicking the "Done" button.
-8. **Select the server:** From the multiplayer menu, select the server you just added.
-9. **Click "Join Server":** Finally, click on the "Join Server" button to log in and access your Minecraft server.
+   - Access the dashboard of your Minecraft server. This is typically a web-based control panel that allows you to manage your server.
+   - Look for the IP address information in the dashboard. It is often displayed prominently, such as at the top right of the console page for your server. The IP address may be in the form of numbers separated by periods (e.g., 123.456.789.0).
+   ![Console Page](../../static/images/consolepage.jpg)
 
-By following these steps, you will be able to log in to your Minecraft server using the provided IP address. If you encounter any issues or have further questions, please reach out to our support team for assistance.
+2. **Launch Minecraft:** Once you have the IP address, open the Minecraft game on your device. Make sure you have the correct version of Minecraft installed to ensure compatibility with the server.
+
+   - Locate the Minecraft application on your device and launch it.
+
+3. **Go to the "Multiplayer" menu:** From the main menu, click on the "Multiplayer" option.
+
+4. **Add the server:** In the multiplayer menu, click on the "Add Server" button.
+
+5. **Enter server details:** In the server information fields, give your server a name and enter the IP address you obtained from the dashboard settings.
+
+6. **Save the server:** Click the "Done" button to save the server information.
+
+7. **Join the server:** From the multiplayer menu, select the server you just added.
+
+8. **Log in and play:** Finally, click on the "Join Server" button to log in and start playing on your Minecraft server.
+
+Please note that it may take a few moments for the server to appear in the server list after you add it. Additionally, ensure that you have the correct version of Minecraft installed and that the server is online and accessible.
+
+If you encounter any issues or have further questions, don't hesitate to reach out to our support team. We're here to assist you and ensure that you have a smooth and enjoyable Minecraft experience on your server.
