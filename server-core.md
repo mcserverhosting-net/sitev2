@@ -24,4 +24,4 @@ To change server cores, follow these steps:
 
 4. **Restart the server:** The server will now use the new jar file as the server core.
 
-If you encounter any issues or have further questions, feel free to reach out to us for assistance.
+If you encounter any issues, feel free to reach out to us for assistance.
