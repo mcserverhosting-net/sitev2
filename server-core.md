@@ -6,8 +6,8 @@ Date: 2020-08-10
 Draft: False
 FAQs: "Dashboard"
 ---
-
 ## How to change server cores?
+Note: we can do this on the staff end easier
 
 To change server cores, follow these steps:
 
@@ -18,6 +18,8 @@ To change server cores, follow these steps:
 3. **Modify the startup command:** Find the startup command for your server, which should contain the parameter for the server jar file. It may look like this: `"SERVER JAR FILE"`. Replace `"SERVER JAR FILE"` with the name of the newly uploaded jar file.
 
    For example, if the new jar file is named `arclight-forge-1.16.5-1.0.24.jar`, modify the startup command to `"arclight-forge-1.16.5-1.0.24.jar"`.
+   
+![server core](../../static/images/servercore.jpg)
 
 4. **Restart the server:** Save the changes and restart the server. The server will now use the new jar file as the server core.
 
