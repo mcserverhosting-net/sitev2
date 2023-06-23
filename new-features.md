@@ -2,19 +2,23 @@
 title: "Can the staff add new features?"
 author: "Jeremy"
 tags: []
-date: 2020-08-10T05:38:44-04:00
+date: 2020-08-10
 draft: false
-faqs: "Server Management"
+faqs: "Dashboard"
 ---
 
-Our staff is committed to helping you enhance your server experience by adding new features. If you have specific feature requests or want to add new server cores, please follow these steps:
+At MC Server Hosting, we are dedicated to providing you with a unique and personalized server experience. We understand that each server owner has specific needs and preferences, and our staff is here to help you bring your vision to life.
 
-1. **Join our Discord server:** Join our Discord community to connect with our staff and other server owners. It's a great platform for sharing ideas, discussing server-related topics, and seeking assistance.
+If you have any requests for new features to be added to your server, we encourage you to follow these steps:
 
-2. **Create a support ticket:** Once you're in our Discord server, create a support ticket to request the addition of new features or server cores. In the ticket, provide details about the features you would like to add and any specific requirements or preferences you may have.
+1. **Join our Discord server:** Become part of our lively Discord community, where you can connect with our staff and fellow server owners. This is the perfect platform to share your ideas, engage in discussions about server-related topics, and seek assistance from our knowledgeable team.
 
-Our dedicated staff members will carefully review your request and respond to it as soon as possible. While we cannot guarantee that all feature requests will be implemented, we highly value your input and continuously strive to improve our services based on user feedback.
+2. **Create a support ticket:** Once you've joined our Discord server, create a support ticket to outline your feature requests. Please provide us with detailed information about the features you would like to add, including any specific requirements or preferences you may have. 
 
-Feel free to reach out to our staff through the support ticket system in our Discord server. We are here to listen to your needs and assist you in expanding and customizing your server to meet your requirements.
+Please note that while we strive to accommodate as many requests as possible, we may not be able to fulfill all feature requests due to technical limitations or compatibility issues. Nonetheless, we highly value your feedback and continuously work to improve our services based on user input.
 
-We appreciate your interest in adding new features to your server and look forward to working with you to enhance your Minecraft experience.
+It's important to mention that we do not directly manage mods. If you are looking to modify your server's core, please refer to our FAQ section on server cores at [Server Core](https://mcserverhosting.net/faqs/server-core).
+
+Our dedicated support team will carefully review your feature requests and respond to you as soon as possible. We are here to listen to your needs and assist you in expanding and customizing your server to meet your requirements.
+
+We appreciate your enthusiasm for adding new features to your server, and we're excited to collaborate with you in enhancing your Minecraft experience. Together, we can create a server that truly stands out.
