@@ -1,5 +1,5 @@
 ---
-title: "I just purchased a plan but haven't received any information."
+title: "I just purchased a plan but haven't received any information"
 author: "Jeremy"
 tags: []
 date: 2023-6-23
