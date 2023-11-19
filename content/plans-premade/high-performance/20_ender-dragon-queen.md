@@ -1,49 +1,39 @@
 ---
 title: "The Ender Dragon Queen"
 draft: false
-category: "High Performance"
+category: "Self Hosted"
 weight: 10
 
 product:
   id: "ender-dragon-queen"
   name: "The Ender Dragon Queen"
-  price: "84.00"
+  price: "295.00"
 
   customFields:
+    - name: "CPU"
+      type: "readonly"
+      value: "8"
+
     - name: "RAM"
       type: "readonly"
-      value: "20 GiB"
+      value: "8 GiB"
 
     - name: "STORAGE"
       type: "readonly"
-      value: "200 GiB"
+      value: "128GiB|256GiB[+10]|512GiB[+30]|1024GiB[+30]"
 
     - name: "nodemodel"
       type: "hidden"
-      value: "m3"
+      value: "selfhost"
 
-    - name: "DATABASES"
-      type: "readonly"
-      value: 20
-
-    - name: "SNAPSHOTS"
-      type: "readonly"
-      value: 90
-      
-    - name: "PANEL USERS"
-      type: "readonly"
-      value: 50
-      
-    - name: "SERVER TYPE"
-      options: "vanilla|paper|fabric|spongevanilla|forge"
-
+    - name: "WIFI"
+      type: "checkbox"
+      value: "true[10]|false"
 
   selectedPlan: "monthly-plan"
 
   availablePlans:
     - id: "monthly-plan"
       name: "Monthly Subscription"
-      frequency: "monthly"
-      interval: 1
-      itemPrice: 84.00
+      itemPrice: 295.00
 ---

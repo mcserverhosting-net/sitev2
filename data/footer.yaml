@@ -29,5 +29,7 @@ columns:
     items:
       - label: "Better Business Bureau"
         link: "https://www.bbb.org/us/va/virginia-beach/profile/web-hosting/mc-server-hosting-llc-0583-90409326"
+      - label: "Cobblemon"
+        link: "https://cobblemon.com/"
 
 copyright: "(R) 2023 MC Server Hosting. All Rights Reserved."

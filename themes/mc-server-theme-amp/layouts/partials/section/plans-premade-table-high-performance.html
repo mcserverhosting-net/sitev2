@@ -1,13 +1,14 @@
 <section class="section-table padding-y-64">
   <div class="container">
-    <h2 class="font-size-24 font-weight-bold padding-bottom-32">Model 3: Ryzen 7000</h2>
-    <h2 class="font-size-24 font-weight-bold padding-bottom-32">PREORDER DISCOUNT: 50% OFF FIRST MONTH. INSTALL DATE 5/26/2023</h2>
-    <p class="font-size-18 font-weight-bold padding-bottom-16">Unleash Unprecedented Performance with Our Ryzen 7000 Plans</p>
+    <h2 class="font-size-24 font-weight-bold padding-bottom-32">NEW: Self Hosted</h2>
+    <h2 class="font-size-24 font-weight-bold padding-bottom-32">ARM Powered Minecraft Servers in a box! Shipped and hosted by you!</h2>
+    <p class="font-size-18 font-weight-bold padding-bottom-16">Low power, Customizable, and owned by you!</p>
     <div class="row padding-bottom-32 overflow-x-auto">
       <table>
         <thead class="font-weight-semi-bold background-color-licorice border-radius-8">
           <tr class="">
             <th class="text-align-left vertical-align-middle">Plans</th>
+            <th class="text-align-left vertical-align-middle">CPU</th>
             <th class="text-align-left vertical-align-middle">RAM</th>
             <th class="text-align-left vertical-align-middle">Storage</th>
             <th class="text-align-left vertical-align-middle">Databases</th>
@@ -19,11 +20,11 @@
         </thead>
         <tbody>
           {{ $currentPage := . }}
-          {{ range (where .Pages ".Params.category" "High Performance") }}
+          {{ range (where .Pages ".Params.category" "Self Hosted") }}
             <tr>
               <td>{{ .Title }}</td>
               {{ range .Params.product.customfields }}
-                {{ if and (ne .type "hidden") (ne .name "SERVER TYPE") }}
+                {{ if and (ne .type "hidden") (ne .name "WIFI") }}
                   <td>{{ .value }}</td>
                 {{ end }}
               {{ end }}
@@ -36,7 +37,7 @@
                   data-item-url="{{ $currentPage.Permalink }}"
                   {{ range $i, $e := .Params.product.customFields }}
                     data-item-custom{{ add $i 1 }}-name="{{ $e.name }}"
-                    {{ if eq $e.name "SERVER TYPE" }}
+                    {{ if eq $e.name "WIFI"}}
                       data-item-custom{{ add $i 1 }}-options="{{ $e.options }}"
                     {{ else }}
                       data-item-custom{{ add $i 1 }}-type="{{ $e.type }}"
@@ -49,8 +50,6 @@
                   {{ range $i, $e := .Params.product.availablePlans }}
                     data-plan{{ add $i 1 }}-id="{{ $e.id }}"
                     data-plan{{ add $i 1 }}-name="{{ $e.name }}"
-                    data-plan{{ add $i 1 }}-frequency="{{ $e.frequency }}"
-                    data-plan{{ add $i 1 }}-interval="{{ $e.interval }}"
                     data-item-plan{{ add $i 1 }}-price="{{ $e.itemPrice }}"
                   {{ end }}
                 >

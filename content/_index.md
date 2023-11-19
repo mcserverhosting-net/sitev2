@@ -18,13 +18,14 @@ menu:
 home:
   hero:
     titles:
-      - "High Performance"
-      - "Hosting for your"
+      - "Code BLACKFRIDAY"
+      - "It's here :)"
     subtitles:
-      - "Minecraft"
-      - "Web"
-      - "VPS"
-      - "Database"
+      - "95% off Vanilla"
+      - "95% off Cobblemon"
+      - "95% off Forge"
+      - "95% off Fabric"
+      - "95% off Paper"
 
     image: "/images/hero-image.svg"
     animation: "/animation/hero.json"
