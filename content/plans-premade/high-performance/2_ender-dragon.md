@@ -1,50 +1,39 @@
 ---
 title: "Ender Dragon"
 draft: false
-category: "High Performance"
+category: "Self Hosted"
 weight: 1
 
 product:
   id: "ender-dragon"
   name: "Ender Dragon"
-  price: "8.40"
+  price: "195.00"
 
   customFields:
+    - name: "CPU"
+      type: "readonly"
+      value: "4"
+
     - name: "RAM"
       type: "readonly"
-      value: "2 GiB"
+      value: "4 GiB"
 
     - name: "STORAGE"
-      type: "readonly"
-      value: "20 GiB"
+      value: "32GiB|64GiB[+10]|128GiB[+30]"
+
+    - name: "WIFI"
+      type: "checkbox"
+      value: "true[10]|false"
 
     - name: "nodemodel"
       type: "hidden"
-      value: "m3"
-
-    - name: "DATABASES"
-      type: "readonly"
-      value: 4
-
-    - name: "SNAPSHOTS"
-      type: "readonly"
-      value: 15
-      
-    - name: "PANEL USERS"
-      type: "readonly"
-      value: 50
-      
-    - name: "SERVER TYPE"
-      options: "vanilla|paper|fabric|spongevanilla|forge"
-
+      value: "selfhost"
 
   selectedPlan: "monthly-plan"
 
   availablePlans:
     - id: "monthly-plan"
       name: "Monthly Subscription"
-      frequency: "monthly"
-      interval: 1
-      itemPrice: 8.40
+      itemPrice: 195.00
 
 ---

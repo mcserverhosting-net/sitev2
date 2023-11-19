@@ -29,14 +29,13 @@ content:
   whatYouGet:
     title: "Discover the Ultimate Minecraft Gaming Experience"
     text: >
-      USE CODE: PREORDER for 50% off upcomming M3 servers!
+      USE CODE: BLACKFRIDAY for 95% off your first month with us!
       <br/><br/>
       Elevate your Minecraft adventures with our cutting-edge server hosting solutions, tailored to fit every gamer's unique requirements:
       <br/>
       <ul>
         <li>🎮 Xeon-Powered Servers: Experience seamless vanilla gameplay or cozy multiplayer sessions with friends on our Intel Xeon E5-2680-powered servers, boasting DDR3 PC3-12800R RAM for optimal performance.</li><br/><br/>
         <li>🎮 Ryzen 3000-5000 Servers: Unleash the full potential of diverse modpacks with our Ryzen 3000-5000 servers, equipped with ultra-fast DDR4 RAM running at speeds of up to 2600 MT/s.</li><br/><br/>
-        <li>🎮 Ryzen 7000 Servers: Dominate large server networks and enjoy extreme performance levels with our Ryzen 7000 servers, featuring cutting-edge DDR5 RAM with speeds reaching an incredible 5400 MT/s.</li>
       </ul>
       <br/><br/>
       What sets MC Server Hosting apart from the competition is our unmatched focus on hardware excellence. Additionally, all our servers come with an array of premium features, including:

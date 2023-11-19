@@ -1,5 +1,5 @@
 +++
-title = "Custom Plans"
+title = "Panel Login"
 draft = false
 
 index = true
