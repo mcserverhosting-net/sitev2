@@ -1,7 +1,7 @@
 ---
 title: Refund Policy Guide
 FAQ: Understand the Refund Policy for Your Minecraft Server
-categories: ["Server Management"]
+faqs: ["Server Management"]
 date: 2023-11-23
 draft: false
 ---

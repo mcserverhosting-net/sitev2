@@ -1,7 +1,7 @@
 ---
 title: Advanced Server Configuration - Security Measures
 FAQ: Essential Security Plugins and Measures for Minecraft Servers
-categories: ["Server Management"]
+faqs: ["Server Management"]
 ---
 
 ## Overview of Server Security in Minecraft

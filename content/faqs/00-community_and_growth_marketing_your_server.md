@@ -2,7 +2,7 @@
 title: Community and Growth - Marketing Your Minecraft Server
 FAQ: How to Effectively Market Your Minecraft Server
 weight: 20
-categories: ["Server Management", "Community Engagement"]
+faqs: ["Server Management", "Community Engagement"]
 ---
 
 ## Developing a Strong Marketing Plan for Your Minecraft Server

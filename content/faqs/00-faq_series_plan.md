@@ -1,6 +1,6 @@
 ---
 title: Minecraft Server Hosting FAQ Series Plan
-categories: ["Server Hosting Basics", "Server Configuration", "Server Management", "Community Engagement"]
+faqs: ["Server Hosting Basics", "Server Configuration", "Server Management", "Community Engagement"]
 ---
 
 ## Table of Contents

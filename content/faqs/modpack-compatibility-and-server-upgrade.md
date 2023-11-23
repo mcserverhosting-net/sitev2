@@ -4,7 +4,7 @@ There are also two categoreis here. Shoould always be one.
 
 ---
 title: Troubleshooting Modpack Issues and Upgrading Server Plans
-categories: ['Modpacks', 'Server Management']
+faqs: ['Modpacks', 'Server Management']
 date: 2023-11-22
 draft: false
 ---

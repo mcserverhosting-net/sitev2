@@ -1,7 +1,7 @@
 ---
 title: Setting Up Your Server - Understanding Hardware Requirements
 FAQ: What Hardware Do You Need for Your Minecraft Server?
-categories: ["Server Hosting Basics", "Server Setup"]
+faqs: ["Server Hosting Basics", "Server Setup"]
 ---
 
 ## Hardware Essentials for Your MC Server Hosting LLC Minecraft Server

@@ -8,7 +8,7 @@ We support vanilla, paper, fabric, spongevanilla, and forge for server types.
 
 ---
 title: How do I add mods to my server?
-categories: ["Server Modification"]
+faqs: ["Server Modification"]
 date: 2023-11-20
 draft: false
 ---

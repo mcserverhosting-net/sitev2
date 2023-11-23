@@ -1,5 +1,5 @@
 title: Troubleshooting Modpack Compatibility and Performance Issues
-categories: ['Modpacks']
+faqs: ['Modpacks']
 date: 2023-11-22
 draft: false
 

@@ -2,7 +2,7 @@
 title: "Server Snapshots: Your Guide to Data Preservation"
 author: "luther"
 tags: ["snapshot", "backup", "server"]
-categories: "Dashboard"
+faqs: "Dashboard"
 draft: false
 faqs: "Dashboard"
 ---

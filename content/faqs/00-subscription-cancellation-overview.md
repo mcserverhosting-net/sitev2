@@ -1,5 +1,5 @@
 title: Subscription Cancellation Overview
-categories: ['Account Management']
+faqs: ['Account Management']
 date: 2023-11-22
 draft: false
 

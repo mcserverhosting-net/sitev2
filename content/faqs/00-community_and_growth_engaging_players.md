@@ -2,7 +2,7 @@
 title: Community and Growth - Engaging Players in Your Minecraft Server
 FAQ: How to Keep Players Engaged and Foster Community Growth
 weight: 10
-categories: ["Server Management", "Community Building"]
+faqs: ["Server Management", "Community Building"]
 ---
 
 ## Engaging Players on Your Minecraft Server

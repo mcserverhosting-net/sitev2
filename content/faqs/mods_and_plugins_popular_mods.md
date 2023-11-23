@@ -1,7 +1,7 @@
 ---
 title: Mods and Plugins - Popular Mods
 # FAQ: Popular Mods for Minecraft Servers
-categories: ["Server Management"]
+faqs: ["Server Management"]
 ---
 
 Mods can greatly expand the possibilities of Minecraft, providing new experiences beyond the base game. This FAQ will introduce some of the most popular mods and the impact they have on Minecraft servers.

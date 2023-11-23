@@ -1,7 +1,7 @@
 ---
 title: Introduction to Minecraft Server Hosting at MC Server Hosting LLC
 FAQ: Getting Started with Minecraft Server Hosting at MC Server Hosting LLC
-categories: ["Server Hosting Basics"]
+faqs: ["Server Hosting Basics"]
 ---
 
 ## Understanding Minecraft Server Hosting

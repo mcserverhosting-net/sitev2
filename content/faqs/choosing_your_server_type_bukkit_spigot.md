@@ -3,7 +3,7 @@ Bukkit is retired
 ---
 title: Choosing Your Server Type - Bukkit/Spigot
 # FAQ: Bukkit/Spigot Minecraft Servers
-categories: ["Server Management"]
+faqs: ["Server Management"]
 ---
 
 Bukkit and Spigot servers are widely used in the Minecraft community for their ability to support plugins. This FAQ will delve into Bukkit/Spigot servers, highlight their benefits, and discuss their unique aspects.

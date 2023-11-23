@@ -2,7 +2,7 @@
 title: "Cancellation Guide: How to Cancel Your Minecraft Server Subscription"
 author: "luther"
 tags: ["Server Cancellation", "Subscription", "Server Management"]
-categories: ["Server Management"]
+faqs: ["Server Management"]
 servertypes: ["all"]
 draft: false
 faqs: "Cancellations"

@@ -20,7 +20,7 @@ Allows a user to perform a server restart. This allows them to start the server 
 ---
 title: Network Configuration and Security
 FAQ: Minecraft Server Network Configuration and Security
-categories: ["Server Management"]
+faqs: ["Server Management"]
 Ensuring your Minecraft server is securely configured and its network is set up properly are critical steps in hosting. In this FAQ, we will cover the basics of network configuration and the security measures you should implement to protect your server and players.
 
 Network Configuration Basics

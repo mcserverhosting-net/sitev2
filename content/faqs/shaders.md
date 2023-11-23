@@ -2,7 +2,7 @@
 title: "Minecraft Shaders Guide: Installing and Enjoying Shaders"
 author: "Jeremy"
 tags: ["Server", "Minecraft", "Shaders", "Graphics"]
-categories: ["Getting Started"]
+faqs: ["Getting Started"]
 servertypes: ["all"]
 date: 2020-07-06T05:38:44-04:00
 draft: false

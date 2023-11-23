@@ -10,7 +10,7 @@ Encourage the use of spark profiler https://spark.lucko.me/ that can run on many
 ---
 title: Advanced Server Configuration - Optimizing Performance
 # FAQ: Optimizing Minecraft Server Performance
-categories: ["Server Management"]
+faqs: ["Server Management"]
 ---
 
 Performance optimization is essential for providing the best experience on your Minecraft server. This FAQ will address strategies to enhance server performance, reduce lag, and ensure smooth gameplay for all players.

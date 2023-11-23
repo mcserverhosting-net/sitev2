@@ -1,6 +1,6 @@
 title: Essential Plugins for Your Minecraft Server
 
-categories: ['Server Management']
+faqs: ['Server Management']
 date: 2023-11-22
 draft: false
 

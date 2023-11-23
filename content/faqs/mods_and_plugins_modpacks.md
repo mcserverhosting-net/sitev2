@@ -1,7 +1,7 @@
 ---
 title: Mods and Plugins - Modpacks
 # FAQ: Utilizing Modpacks on Minecraft Servers
-categories: ["Server Management"]
+faqs: ["Server Management"]
 ---
 
 Modpacks can revolutionize a Minecraft server by bundling together mods to create a unique and thematic experience. This FAQ will provide insights into what modpacks are and the advantages and logistics of using them on your server.

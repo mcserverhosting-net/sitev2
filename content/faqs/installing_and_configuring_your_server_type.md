@@ -3,7 +3,7 @@ As a host, we install the server for them based on compatible types. They are pr
 ---
 title: Installing and Configuring Your Server Software
 # FAQ: Installing and Configuring Minecraft Server Software
-categories: ["Server Management"]
+faqs: ["Server Management"]
 ---
 
 Now that you understand what hardware is needed for your Minecraft server, it's time to delve into the installation and configuration of the server software. Whether you're setting up a Vanilla, Bukkit/Spigot, Forge, Modpacks, or Bedrock Edition server, this guide will provide step-by-step instructions to get your server up and running.

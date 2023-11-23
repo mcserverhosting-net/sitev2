@@ -1,6 +1,6 @@
 ---
 title: What happens to my data if the server has technical issues?
-categories: ["Data Management"]
+faqs: ["Data Management"]
 date: 2023-11-22
 draft: false
 ---

@@ -2,7 +2,7 @@
 title: "Understanding Crash Reports and Logs - Minecraft Server Management"
 author: "Jeremy"
 tags: ["Crash Reports", "Minecraft Logs", "Server Management", "Troubleshooting"]
-categories: ["Getting Started"]
+faqs: ["Getting Started"]
 servertypes: ["all"]
 date: 2020-07-06T05:38:44-04:00
 draft: false

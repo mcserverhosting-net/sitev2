@@ -3,7 +3,7 @@ We do not yet support bedrock edition servers. Users can make a bungee proxy wit
 ---
 title: Choosing Your Server Type - Bedrock Edition
 # FAQ: Bedrock Edition Minecraft Servers
-categories: ["Server Management"]
+faqs: ["Server Management"]
 ---
 
 The Bedrock Edition of Minecraft allows for cross-platform play, connecting players across multiple devices. This FAQ will explore Bedrock servers, their benefits, and unique features.
