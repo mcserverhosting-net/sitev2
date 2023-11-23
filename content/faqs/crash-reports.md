@@ -1,7 +1,7 @@
 ---
-title: "How to Locate Logs and Crash Reports"
+title: "Understanding Crash Reports and Logs - Minecraft Server Management"
 author: "Jeremy"
-tags: ["server"]
+tags: ["Crash Reports", "Minecraft Logs", "Server Management", "Troubleshooting"]
 categories: ["Getting Started"]
 servertypes: ["all"]
 date: 2020-07-06T05:38:44-04:00
@@ -9,19 +9,20 @@ draft: false
 faqs: "Server Management"
 ---
 
+# Minecraft Client: Locating Logs and Crash Reports
 
-### For Minecraft Client:
+When Minecraft encounters an issue and crashes, a crash report or log file may be generated to help diagnose the problem. Here's how to find them:
 
-1. Open the Windows start menu and type in "%appdata%" and press Enter.
-2. Open the `.minecraft` folder.
-3. Open either the `logs` or `crash-reports` folder.
-   - Crash reports are files that get logged when Minecraft crashes.
-4. Open the `latest.log` for the latest log and open the crash text file with the latest date and time on it.
+- Open the Windows Start Menu, type in "%appdata%" and press Enter.
+- Navigate to the `.minecraft` folder.
+- Inside, you'll find the `logs` and `crash-reports` folders.
+- Open `latest.log` for the most recent log, and the crash report with the latest date and time for crash details.
 
+# Minecraft Server: Accessing Crash Reports
 
-### For Minecraft Server:
+Server crash reports provide crucial information following server crashes.
 
-1. Open the files tab.
-2. Open `crash-reports` folder.
-3. Find the one for the correct time.
-4. Open and read what happened.
+- In your server's dashboard, open the 'Files' tab.
+- Enter the `crash-reports` folder.
+- Select the report that corresponds with the recent crash time.
+- Review the report to understand the cause of the crash.

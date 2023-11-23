@@ -1,7 +1,7 @@
 ---
-title: "Setting up sharders"
+title: "Minecraft Shaders Guide: Installing and Enjoying Shaders"
 author: "Jeremy"
-tags: ["server"]
+tags: ["Server", "Minecraft", "Shaders", "Graphics"]
 categories: ["Getting Started"]
 servertypes: ["all"]
 date: 2020-07-06T05:38:44-04:00
@@ -9,19 +9,23 @@ draft: false
 faqs: "Client Management"
 ---
 
-1. Download and Install Optifine
-   - Go to https://optifine.net/downloads
-   - Download the version of Optifine that corresponds to your Minecraft version
-   - Double-click the downloaded file to install it
-2. Download a Shaders Pack
-   - There are many shaders packs available online. Choose one and download it.
-   - Make sure the shaders pack is compatible with your version of Optifine and Minecraft.
-3. Open Your Shaders Folder
-   - In Minecraft, go to Options > Video Settings > Shaders.
-   - Click "Shaders Folder" to open the shaders folder.
-4. Install The Shaders Pack
-   - Move the downloaded shaders pack into the shaders folder.
-   - In Minecraft, select the shaders pack from the list of shaders.
-   - Enjoy your new shaders!
+# How to Install and Enjoy Shaders in Minecraft
 
+## Download and Install Optifine
+- Go to the [Optifine Downloads page](https://optifine.net/downloads).
+- Select the version of Optifine that matches your Minecraft version.
+- Execute the downloaded file to install it.
+
+## Download a Shaders Pack
+- Choose a compatible shaders pack from an online source.
+- Ensure compatibility with your version of Minecraft and Optifine.
+
+## Access Your Shaders Folder
+- In Minecraft, navigate to Options > Video Settings > Shaders.
+- Click on "Shaders Folder" to open it.
+
+## Install the Shaders Pack
+- Drag the downloaded shaders pack into the shaders folder.
+- Select the desired shaders pack from within Minecraft's shader settings.
+- Enjoy a visually enhanced experience!
 
