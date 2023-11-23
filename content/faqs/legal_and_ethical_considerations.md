@@ -1,7 +1,6 @@
 ---
 title: Legal and Ethical Considerations
-# FAQ: Legal and Ethical Considerations in Minecraft Server Hosting
-faqs: ["Server Management"]
+faqs: ["Server Hosting Basics"]
 ---
 
 Running a Minecraft server comes with a set of legal and ethical responsibilities. This FAQ will address common questions related to the legal aspects of hosting a server and the ethical considerations to keep in mind.

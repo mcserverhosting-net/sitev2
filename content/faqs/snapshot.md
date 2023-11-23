@@ -2,9 +2,8 @@
 title: "Server Snapshots: Your Guide to Data Preservation"
 author: "luther"
 tags: ["snapshot", "backup", "server"]
-faqs: "Dashboard"
+faqs: "Server Management"
 draft: false
-faqs: "Dashboard"
 ---
 
 # What Is a Minecraft Server Snapshot?

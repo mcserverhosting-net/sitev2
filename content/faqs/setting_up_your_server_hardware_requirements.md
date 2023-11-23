@@ -1,7 +1,7 @@
 ---
-title: Setting Up Your Server - Understanding Hardware Requirements
+title: Understanding Hardware Requirements
 FAQ: What Hardware Do You Need for Your Minecraft Server?
-faqs: ["Server Hosting Basics", "Server Setup"]
+faqs: ["Server Hosting Basics"]
 ---
 
 ## Hardware Essentials for Your MC Server Hosting LLC Minecraft Server
@@ -20,5 +20,3 @@ The performance and capability of your Minecraft server hinge on the hardware it
 - **Robust Network Capacity**: Benefit from our high-speed internet connections, with optimal upload and download speeds to support all your players.
 
 By hosting with us, you won’t need to worry about scalability or performance. We offer a range of pre-made server plans that cater to different server sizes and requirements—find the perfect fit for you on our plans page.
-
-Stay tuned for our next FAQ where we guide you through choosing the best server type for your needs.

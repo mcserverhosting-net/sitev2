@@ -1,6 +1,6 @@
 ---
 title: My server is stuck on startup, what should I do?
-faqs: ["Server Troubleshooting"]
+faqs: ["Troubleshooting"]
 date: 2023-11-22
 draft: false
 ---

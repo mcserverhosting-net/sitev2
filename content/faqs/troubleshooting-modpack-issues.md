@@ -1,7 +1,9 @@
-title: Troubleshooting Modpack Compatibility and Performance Issues
-faqs: ['Modpacks']
+---
+title: Modpack Compatibility and Performance Issues
+faqs: ['Troubleshooting']
 date: 2023-11-22
 draft: false
+---
 
 ## Introduction
 Experiencing issues with your modpack can lead to unexpected downtime and a less enjoyable experience for your players. This guide will provide you with a detailed process to troubleshoot and resolve the most common modpack-related issues.

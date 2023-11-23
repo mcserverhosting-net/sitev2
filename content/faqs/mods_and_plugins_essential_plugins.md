@@ -1,9 +1,10 @@
+---
 title: Essential Plugins for Your Minecraft Server
 
 faqs: ['Server Management']
 date: 2023-11-22
 draft: false
-
+---
 ## Introduction
 For Spigot servers, plugins are essential for enhancing both management and the player experience. Below is a curated list of plugins that can significantly improve your server's functionality.
 
@@ -26,5 +27,3 @@ For Spigot servers, plugins are essential for enhancing both management and the 
 - **Spartan AntiCheat**: Helps maintain fair play on the server.
 
 Remember: While we recommend these plugins to enhance your server experience, please note that we do not provide direct support for the individual plugins. Always download from reputable sources like the official SpigotMC resources page, and keep the plugins up to date for the best performance and security.
-
-In our next article, explore how modpacks can further customize and add exciting features to your server.

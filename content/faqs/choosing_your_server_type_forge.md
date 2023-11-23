@@ -1,7 +1,7 @@
 ---
-title: Choosing Your Server Type - Forge
+title: Forge
 # FAQ: Forge Minecraft Servers
-faqs: ["Server Management"]
+faqs: ["Choosing Your Server Type"]
 ---
 
 Forge servers enable the use of mods that change gameplay, add new content, or tweak existing features. This FAQ will cover what a Forge server is, its benefits, and provide a basic overview.

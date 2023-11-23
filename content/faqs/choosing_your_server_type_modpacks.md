@@ -1,9 +1,8 @@
-Add external links to CurseForge and TechnicPack so that users know where to go. 
-
 ---
-title: Choosing Your Server Type - Modpacks
+title: Modpacks
 FAQ: Modpack Minecraft Servers
-faqs: ["Server Management"]
+faqs: ["Choosing Your Server Type"]
+---
 
 Modpacks bundle together a collection of mods to create a unique Minecraft experience. This FAQ will explore what modpacks are, their benefits, and how they can transform your server hosting experience.
 

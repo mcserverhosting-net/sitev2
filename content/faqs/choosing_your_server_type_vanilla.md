@@ -1,7 +1,6 @@
 ---
-title: Choosing Your Server Type - Vanilla
-# FAQ: Vanilla Minecraft Servers
-faqs: ["Server Management"]
+title: Vanilla
+faqs: ["Choosing Your Server Type"]
 ---
 
 Vanilla Minecraft servers are the most basic form of server hosting and an excellent starting point for beginners. This FAQ will cover what a Vanilla server is, its benefits, and some limitations.

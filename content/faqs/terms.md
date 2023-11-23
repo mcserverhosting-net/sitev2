@@ -2,7 +2,7 @@
 title: "Terms of Use"
 author: "Samuel"
 tags: ["server"]
-faqs: ["Getting Started"]
+faqs: ["Account Management"]
 servertypes: ["all"]
 date: 2020-07-06T05:38:44-04:00
 draft: false

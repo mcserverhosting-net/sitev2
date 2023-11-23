@@ -1,11 +1,10 @@
-
 ---
-title: "Kubectyl Dashboard Guide: Managing Your Minecraft Server"
+title: "Getting Started with the Kubectyl Dashboard"
 author: "Jeremy"
 tags: ["Kubectyl", "Dashboard", "Minecraft", "Server Management"]
 date: 2020-08-10T05:38:44-04:00
 draft: false
-faqs: "Dashboard Panel Guide"
+faqs: "Server Hosting Basics"
 ---
 
 # Getting Started with the Kubectyl Dashboard

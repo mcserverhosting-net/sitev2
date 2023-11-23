@@ -1,8 +1,7 @@
 ---
-title: Advanced Server Configuration - Automating Server Management with Kubectyl
-FAQ: How to Automate Server Tasks Using Kubectyl
+title: Automating Server Management with Kubectyl
 weight: 15
-faqs: ["Server Management", "Automation"]
+faqs: ["Advanced Server Configuration"]
 ---
 
 ## Automating Your Minecraft Server Management with Kubectyl

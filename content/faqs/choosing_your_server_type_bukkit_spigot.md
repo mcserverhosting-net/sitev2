@@ -1,16 +1,13 @@
-Bukkit is retired
-
 ---
-title: Choosing Your Server Type - Bukkit/Spigot
-# FAQ: Bukkit/Spigot Minecraft Servers
-faqs: ["Server Management"]
+title: Spigot
+faqs: ["Choosing Your Server Type"]
 ---
 
 Bukkit and Spigot servers are widely used in the Minecraft community for their ability to support plugins. This FAQ will delve into Bukkit/Spigot servers, highlight their benefits, and discuss their unique aspects.
 
-## What are Bukkit/Spigot Minecraft Servers?
+## What are Spigot Minecraft Servers?
 
-**Bukkit/Spigot servers** are modified versions of the Minecraft server software that allow the use of plugins to add new features, enhance gameplay, and manage the server more effectively.
+**Spigot servers** are modified versions of the Minecraft server software that allow the use of plugins to add new features, enhance gameplay, and manage the server more effectively.
 
 ## Benefits of Hosting a Bukkit/Spigot Server
 

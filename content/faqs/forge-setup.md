@@ -1,6 +1,6 @@
 ---
 title: How do I set up a server with Forge?
-faqs: ["Server Setup"]
+faqs: ["Choosing Your Server Type"]
 date: 2023-11-21
 draft: false
 ---
