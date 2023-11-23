@@ -1,30 +1,26 @@
 ---
-title: "How to access files using WinSCP"
+title: "WinSCP Guide for Secure Minecraft Server File Access"
 author: "quantomworks, Jeremy"
-tags: []
+tags: ["WinSCP", "File Transfer", "Secure File Access", "Minecraft Server Management"]
 date: 2020-08-10T05:38:44-04:00
 draft: false
 faqs: "Server Management"
 ---
 
+## Accessing Your Minecraft Server Files with WinSCP
 
-To access your files securely, you will need WinSCP. Follow the steps below to get started:
+To securely manage your server files, WinSCP is an excellent choice. Here's how to start:
 
-1. Go to your dashboard and navigate to **Settings**.
-2. Click the **Launch SFTP** button under **SFTP Details**. Alternatively, you can follow the steps below to set up a new site in WinSCP.
+- Go to your dashboard and select 'Settings'.
+- Under 'SFTP Details', click 'Launch SFTP'.
 
-  **Option 1:**
-   1. Click the **Launch SFTP** button under **SFTP Details**.
-   2. You'll be directed to the server's files on the right side, while your local files will be displayed on the left.
+Alternatively, set up a new site in WinSCP directly:
 
-   **Option 2:**
-   1. From the WinSCP home screen, select **New Site**.
-   2. On the right panel, under **Host name**, type in the server address.  
-   3. For the **port number**, type in port 2022.
-   4. For the **username**, type in your username that you see in settings on the dashboard.
-   5. For the **password**, use the password for the dashboard.
-   6. Hit **Save** and give the site a name like "My MCSH server", then click **OK**.
-   7. Click **Login**.
+- Open WinSCP and select 'New Site'.
+- Use the server address as the host name.
+- Enter '2022' for the port number.
+- Your dashboard username is your WinSCP username.
+- The dashboard password is also your WinSCP password.
+- Save the settings with a name like "My MCSH server" and connect by clicking 'Login'.
 
- 
-That's it! If you have any questions, feel free to reach out to us on [Discord](https://mcserverhosting.net/discord).
+For any assistance, our Discord community and support team are ready to help.
