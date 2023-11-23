@@ -4,6 +4,7 @@ FAQ: Understand the Refund Policy for Your Minecraft Server
 categories: ["Server Management"]
 date: 2023-11-23
 draft: false
+---
 
 ## Refund Policy Process
 
@@ -15,5 +16,3 @@ To inquire about a refund after canceling your subscription, please follow these
 4. Wait for a response; refund requests are handled on a case-by-case basis.
 
 If you have additional questions or need assistance, our support team is here to help guide you through the process.
-
----

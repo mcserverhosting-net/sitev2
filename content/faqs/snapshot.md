@@ -5,6 +5,7 @@ tags: ["snapshot", "backup", "server"]
 categories: "Dashboard"
 draft: false
 faqs: "Dashboard"
+---
 
 # What Is a Minecraft Server Snapshot?
 
@@ -29,4 +30,3 @@ Automate the process by scheduling regular snapshots:
 1. Access the "schedules" tab in your server panel.
 2. Set the schedule's name, frequency, and conditions for the snapshots.
 
-(remainder of the content is formatted systematically with similar SEO optimizations)
