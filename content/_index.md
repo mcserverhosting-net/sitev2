@@ -18,14 +18,14 @@ menu:
 home:
   hero:
     titles:
-      - "Code BLACKFRIDAY"
-      - "It's here :)"
+      - "High performance"
+      - "Hosting for you :)"
     subtitles:
-      - "95% off Vanilla"
-      - "95% off Cobblemon"
-      - "95% off Forge"
-      - "95% off Fabric"
-      - "95% off Paper"
+      - "Vanilla"
+      - "Cobblemon"
+      - "Forge"
+      - "Fabric"
+      - "Paper"
 
     image: "/images/hero-image.svg"
     animation: "/animation/hero.json"
