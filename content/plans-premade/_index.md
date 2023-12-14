@@ -29,7 +29,6 @@ content:
   whatYouGet:
     title: "Discover the Ultimate Minecraft Gaming Experience"
     text: >
-      USE CODE: BLACKFRIDAY for 95% off your first month with us! Applies to ECONOMY servers only.
       <br/><br/>
       Elevate your Minecraft adventures with our cutting-edge server hosting solutions, tailored to fit every gamer's unique requirements:
       <br/>
