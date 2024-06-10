@@ -27,7 +27,7 @@ content:
     backgroundImage: ""
   
   notice: 
-    title: "**We are currently at capacity. There is a 2 day order completion**" 
+    text: "**We are currently at capacity. There is a 2 day order completion**" 
 
   whatYouGet:
     title: "Discover the Ultimate Minecraft Gaming Experience"
