@@ -26,12 +26,10 @@ content:
     subtitle: "Monthly Pricing. No hidden fees. Value Included."
     backgroundImage: ""
   
-  notice: 
-    text: "**We are currently at capacity. There is a 2 day order completion**" 
-
   whatYouGet:
     title: "Discover the Ultimate Minecraft Gaming Experience"
-    text: >
+    text: > 
+    **We are currently at capacity. There is a 2 day order completion**    
       <br/><br/>
       Elevate your Minecraft adventures with our cutting-edge server hosting solutions, tailored to fit every gamer's unique requirements:
       <br/>
