@@ -29,7 +29,7 @@ content:
   whatYouGet:
     title: "Discover the Ultimate Minecraft Gaming Experience"
     text: >
-      **We are currently at capacity. There is a 2 day order completion**    
+      <b>*We are currently at capacity. There is a 2 day order completion*</b>    
       <br/><br/>
       Elevate your Minecraft adventures with our cutting-edge server hosting solutions, tailored to fit every gamer's unique requirements:
       <br/>
